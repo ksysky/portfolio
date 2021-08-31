@@ -258,7 +258,7 @@ html {
 	position: absolute;
 	width: 18px;
 	height: 23px;
-	background-color: none;
+	background: none;
 }
 
 .header .menu > ul > li:hover > ul {
