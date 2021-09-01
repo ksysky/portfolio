@@ -66,6 +66,7 @@ $(function () {
 			arrows: true,
 			autoplay: true,
 			autoplaySpeed: 4000,
+			touchMove: true,
 		})
 
 		.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
