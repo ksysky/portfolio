@@ -246,11 +246,18 @@ body {
 	transition: all .3s ease;
 }
 
+.logo_nav .header_flex {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .logo_nav .logo {
-	position: absolute;
+	/* position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%); */
 	width: 118px;
 }
 
@@ -279,13 +286,14 @@ body {
 
 .logo_nav .nav > ul ul {
 	position: absolute;
-	width: 100%;
+	width: 1240px;
 	height: 100px;
 	top: 100px;
 	left: 0;
-	background-color: #fff;
 	display: none;
 	z-index: 4;
+	display: inline-block;
+	background-color: #fff;
 }
 
 .logo_nav .nav > ul ul li {
@@ -306,6 +314,7 @@ body {
 }
 
 .logo_nav .nav > ul ul.mini li {
+	display: inline;
 	margin: 0 0 0 50px;
 }
 
@@ -324,9 +333,9 @@ body {
 
 /* 검색창 */
 .nav_right {
-	position: absolute;
-	top: 35px;
-	right: 190px;
+	display: inline-flex;
+	justify-content: flex-end;
+	width: 410px;
 }
 
 .search_box {
@@ -469,10 +478,15 @@ body {
 	border-right: 5px solid transparent;
 }
 
+.basket {
+	position: relative;
+	width: 20px;
+	height: 25px;
+	margin-left: 30px;
+}
+
 .basket a {
-	position: absolute;
-	top: 5px;
-	right: -43px;
+	display: block;
 	width: 20px;
 	height: 25px;
 	background: url(../img/btn_bsk.gif) no-repeat center;
@@ -481,10 +495,10 @@ body {
 .basket a::after {
 	content: "";
 	position: absolute;
-	top: -10px;
-	right: -5px;
-	width: 8px;
-	height: 8px;
+	top: -7px;
+	right: -1px;
+	width: 5px;
+	height: 5px;
 	background-color: #aaa;
 	border-radius: 50%;
 }
@@ -1320,4 +1334,34 @@ body {
 #btn_top.on {
   position: absolute;
   bottom: 615px;
+}
+
+/* 반응형 대응 */
+html {
+	font-size: 62.5%;
+}
+
+@media (max-width: 1260px) {
+	.container {width: 100%;}
+	.row {padding: 0 24px;}
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+	
+}
+
+@media (max-width: 600px) {
+	
+}
+
+@media (max-width: 480px) {
+	
+}
+
+@media (max-width: 320px) {
+	
 }
