@@ -9,7 +9,7 @@ a {color: #222; text-decoration: none;}
 /*a:hover {color: #2698cb;}*/
 
 /* 폰트 초기화 */
-body, input, textarea, select, button, table {font-family: 'Pretendard-Regular', 'Nanum Gothic', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff'); color: #222; font-size: 13px; font-weight: 400; font-style: normal; line-height: 1.5;}
+body, input, textarea, select, button, table {font-family: 'Pretendard-Regular', 'Nanum Gothic', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; /* src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');*/ color: #222; font-size: 13px; font-weight: 400; font-style: normal; line-height: 1.5;}
 
 /* 폰트 스타일 초기화 */
 em, address {font-style: normal;}
@@ -30,7 +30,7 @@ img, video {width: 100%;}
 img {width: 100%;}
 
 /* clearfix */
-.clearfix {*zoom: 1;}
+/* .clearfix {*zoom: 1;} */
 .clearfix:before, .clearfix:after {display: block; content: ''; line-height: 0;}
 .clearfix:after {clear: both;}
 
