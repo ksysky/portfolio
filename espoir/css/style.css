@@ -307,14 +307,15 @@ body {
 	font-weight: 600;
 }
 
+/* .logo_nav .nav li.two {
+	position: relative;
+} */
+
 .logo_nav .nav > ul ul.mini {
-	width: 37.5%;
-	left: auto;
-	right: 0;
+	width: 500px;
 }
 
 .logo_nav .nav > ul ul.mini li {
-	display: inline;
 	margin: 0 0 0 50px;
 }
 
