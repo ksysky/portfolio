@@ -4,12 +4,14 @@ $(function () {
 	
 	$(window).scroll(function(){
 		var window = $(this).scrollTop();
-		
+
 		if (logo_nav <= window) {
 			$(".logo_nav").addClass("fixed");
+			$(".nav_back").addClass("up");
 			$(".header_nav").addClass("none");
 		} else {
 			$(".logo_nav").removeClass("fixed");
+			$(".nav_back").removeClass("up");
 			$(".header_nav").removeClass("none");
 		}
 	})
@@ -25,12 +27,20 @@ $(".lang > .btn").click(function (e) {
 
 
 // 서브 메뉴 효과
-$(".nav > ul > li").mouseenter(function () {
+$(".logo_nav .nav > ul ul").hide();
+
+$(".nav > ul > li").mouseover(function () {
 	$(this).find("> ul").show();
+	$(".nav_back").show();
+});
+
+$(".event_menu").mouseover(function () {
+	$(".nav_back").hide();
 });
 
 $(".nav > ul > li").mouseleave(function () {
 	$(this).find("> ul").hide();
+	$(".nav_back").hide();
 });
 
 
