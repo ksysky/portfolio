@@ -43,6 +43,20 @@ $(".nav > ul > li").mouseleave(function () {
 	$(".nav_back").hide();
 });
 
+// 모바일 메뉴
+$(".m_nav_icon").click(function(e) {
+	e.preventDefault();
+
+	if ($(".m_nav_menu").hasClass('on')) {
+		$(".m_nav_menu").removeClass('on');
+	} else {
+		$(".m_nav_menu").addClass('on');
+	}
+});
+
+$(".close_icon").click(function() {
+	$(".m_nav_menu").removeClass('on');
+});
 
 // 서치박스 나타내기
 $(".search_area > input").click(function (e) {
