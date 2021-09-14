@@ -1473,6 +1473,7 @@ html {
 	.row {padding: 0 16px;}
 
 	.logo_nav .logo a img {width: 90px;}
+	.m_nav_icon {left: 20px;}
 }
 
 @media (max-width: 600px) {
