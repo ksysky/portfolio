@@ -1482,16 +1482,18 @@ html {
 @media (max-width: 480px) {
 	#header .logo_nav {height: 55px;}
 	.logo_nav .header_flex {height: 55px;}
+	.logo_nav .logo {margin-top: 5px;}
 	.logo_nav .logo a img {width: 70px;}
 
 	.search_box .search_area .search_icon {width: 20px; height: 20px;}
 
 	.basket {margin-left: 20px;}
-	.basket a {width: 18px; height: 23px; background-size: cover;}
+	.basket a {width: 18px; height: 23px; background-size: 100%;}
 	.basket a::after {top: -3px; right: 0;}
+	.basket a span {top: 8.5px;}
 
-	.m_nav_icon {top: 20px; width: 20px; height: 16px;}
-	.m_nav_icon a span:nth-child(2) {top: 6px;}
+	.m_nav_icon {top: 20px; width: 20px; height: 17px;}
+	.m_nav_icon a span:nth-child(2) {top: 7px;}
 
 	#banner {top: 55px;}
 }
