@@ -90,6 +90,7 @@ $(function () {
 			arrows: true,
 			autoplay: true,
 			autoplaySpeed: 4000,
+			dots: true,
 			touchMove: true,
 		})
 
