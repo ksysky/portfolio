@@ -692,12 +692,11 @@ body {
 /* 베스트셀러 */
 .top_tit {
 	text-align: center;
-	font-size: 45px;
+	font-size: 4.5rem;
 	font-weight: 500;
 	font-family: 'Oswald', sans-serif;
 	letter-spacing: 3px;
 	margin-bottom: 20px;
-	margin-top: 150px;
 }
 
 .con {
@@ -1470,6 +1469,8 @@ html {
 }
 
 @media (max-width: 840px) {
+	html {font-size: 50%;}
+
 	#header .header_nav {display: none;}
 	#header .logo_nav {height: 70px;}
 	.logo_nav .header_flex {height: 70px;}
@@ -1483,8 +1484,12 @@ html {
 	#banner {top: 70px;}
 	.slider {height: 450px;}
 	.slider img {height: 450px; object-fit: cover;}
-	.slick_counter, .slick-arrow {display: none;}
+	.slick_counter {display: none;}
+	.slider .slick-arrow {display: none;}
 	.slick-dots {display: block;}
+
+	#best {margin-top: 140px;}
+	.list1 > ul > li:nth-child(5), .list1 > ul > li:nth-child(6) {display: none;}
 }
 
 @media (max-width: 768px) {
