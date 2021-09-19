@@ -642,6 +642,7 @@ body {
 }
 
 .slick-dots {
+	display: none;
 	position: absolute;
 	bottom: 10px;
 	right: 16px;
@@ -1483,6 +1484,7 @@ html {
 	.slider {height: 450px;}
 	.slider img {height: 450px; object-fit: cover;}
 	.slick_counter, .slick-arrow {display: none;}
+	.slick-dots {display: block;}
 }
 
 @media (max-width: 768px) {
