@@ -723,7 +723,7 @@ body {
 	line-height: 70px;
 	top: 0;
 	right: 0;
-	font-size: 20px;
+	font-size: 2rem;
 	letter-spacing: 1px;
 	color: #fff;
 	background-color: #ff2a00;
@@ -749,33 +749,38 @@ body {
 
 .hash {
 	color: #a0a0a0;
-	font-size: 15px;
+	font-size: 1.5rem;
 	margin: 10px 0;
 }
 
 .pro_name {
 	height: 50px;
-	font-size: 15px;
+	font-size: 1.5rem;
 }
 
 .box_bottom {
 	position: relative;
 	overflow: hidden;
+	margin-top: 20px;
 }
 
 .box_bottom li {
 	float: left;
 	height: 22px;
 	line-height: 22px;
-	margin-right: 10px;
-	font-size: 17px;
+	margin-right: 20px;
 }
 
 .box_bottom li.del span {
-	font-size: 16px;
+	font-size: 1.6rem;
 	font-weight: lighter;
 	color: #a0a0a0;
 	text-decoration: line-through;
+}
+
+.box_bottom li.price span {
+	font-size: 2rem;
+	font-weight: bold;
 }
 
 .box_bottom .basket {
@@ -857,12 +862,14 @@ body {
 	position: absolute;
 	top: 10px;
 	left: 25%;
+	font-size: 1.5rem;
 }
 
 .list2 .img-box .tit_s {
 	position: absolute;
 	top: 70px;
 	left: 25%;
+	font-size: 1.5rem;
 }
 
 .list2 li:not(:first-child) .img-box .tit_s::after {
@@ -891,8 +898,9 @@ body {
 .list2 .review_box .review_letter {
 	display: inline-block;
 	width: 100%;
-	height: 100px;
+	height: auto;
 	margin-bottom: 20px;
+	font-size: 1.5rem;
 }
 
 .list2 .review_box .review_popup a {
@@ -901,10 +909,15 @@ body {
 	font-weight: 600;
 	color: #000;
 	margin-bottom: 10px;
+	font-size: 1.4rem;
 }
 
 .list2 .review_box .date {
 	color: #666;
+}
+
+.list2 .review_img {
+	display: none;
 }
 
 /* 리얼 리뷰 팝업창 */
@@ -1489,7 +1502,15 @@ html {
 	.slick-dots {display: block;}
 
 	#best {margin-top: 140px;}
+	.list1 .cell {width: 50%;}
 	.list1 > ul > li:nth-child(5), .list1 > ul > li:nth-child(6) {display: none;}
+	.box_bottom {margin-top: 10px;}
+
+	.list2 .clearfix {margin-left: 0; margin-right: 0;}
+	.list2 .cell {width: 100%; padding-left: 0; padding-right: 0;}
+	.list2 .cell:nth-child(2), .list2 .cell:nth-child(3) {display: none;}
+	.list2 .img-box {height: auto;}
+	.list2 .review_img {display: block; width: 100%; height: 400px; margin-top: 40px; background: url(/img/brush_review.jpeg) no-repeat center; background-size: cover;}
 }
 
 @media (max-width: 768px) {
@@ -1506,6 +1527,8 @@ html {
 @media (max-width: 600px) {
 	.slider {height: 380px;}
 	.slider img {height: 380px; object-fit: cover;}
+
+	.sale {width: 50px; height: 50px; line-height: 50px;}
 }
 
 @media (max-width: 480px) {
@@ -1525,6 +1548,8 @@ html {
 	.m_nav_icon a span:nth-child(2) {top: 7px;}
 
 	#banner {top: 55px;}
+
+	.list2 .review_img {height: 300px;}
 }
 
 @media (max-width: 320px) {
