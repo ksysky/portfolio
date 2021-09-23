@@ -1201,27 +1201,27 @@ body {
 
 /* 룩북 반응형 모바일 슬라이드 */
 .lookbook_m {
-	width: 100%;
-	height: 800px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: red;
+}
+
+.lookbook_m > div {
+	width: 300px;
+	height: 500px;
+	background-color: #000;
 }
 
 .lookbook_m .look1 {
-	width: 300px;
-	height: 500px;
-	background: url(../img/IMG1578CrI293768553.jpg) no-repeat center;
-	background-size: cover;
+	
 }
 
 .lookbook_m .look2 {
-	width: 300px;
-	height: 500px;
 	background: url(../img/IMG1578iox296725083.png) no-repeat center;
 	background-size: cover;
 }
 
 .lookbook_m .look3 {
-	width: 300px;
-	height: 500px;
 	background: url(../img/IMG1578MYo294232008.jpg) no-repeat center;
 	background-size: cover;
 }
