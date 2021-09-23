@@ -577,8 +577,8 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) rotate(45deg);
-	width: 3px;
-	height: 100%;
+	width: 5%;
+	height: 85%;
 	background-color: #000002;
 }
 
@@ -809,7 +809,8 @@ body {
 .bottom_btn {
 	width: 100%;
 	text-align: center;
-	margin: 80px 0;
+	margin-top: 60px;
+	margin-bottom: 80px;
 }
 
 .bottom_btn .viewmore {
@@ -972,7 +973,7 @@ body {
 }
 
 .popup .pop_review h1 {
-	font-size: 18px;
+	font-size: 1.8rem;
 	font-weight: 700;
 	padding-bottom: 60px;
 }
@@ -982,25 +983,25 @@ body {
 }
 
 .popup .pop_review .pop_reviewer .pop_tit {
-	font-size: 25px;
+	font-size: 2.5rem;
 	font-weight: 700;
 	padding-bottom: 40px;
 }
 	
 .popup .pop_review .pop_reviewer .pop_tit_s {
 	width: 100%;
-	font-size: 17px;
+	font-size: 1.7rem;
 	padding: 10px 0;
 	border-bottom: 1px solid #ddd;
 }
 
 .popup .pop_review .pop_reviewer dl dt {
-	font-size: 20px;
+	font-size: 2rem;
 	padding: 15px 0;
 }
 
 .popup .pop_review .pop_reviewer dl dd {
-	font-size: 16px;
+	font-size: 1.6rem;
 	line-height: 1.9;
 }
 
@@ -1025,7 +1026,7 @@ body {
 /* 룩북 */
 .look_book_tit {
 	text-align: center;
-	font-size: 22px;
+	font-size: 2.2rem;
 	margin-top: -10px;
 }
 
@@ -1198,6 +1199,32 @@ body {
 	left: 35px;
 }
 
+/* 룩북 반응형 모바일 슬라이드 */
+.lookbook_m {
+	width: 100%;
+	height: 800px;
+}
+
+.lookbook_m .look1 {
+	width: 300px;
+	height: 500px;
+	background: url(../img/IMG1578CrI293768553.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.lookbook_m .look2 {
+	width: 300px;
+	height: 500px;
+	background: url(../img/IMG1578iox296725083.png) no-repeat center;
+	background-size: cover;
+}
+
+.lookbook_m .look3 {
+	width: 300px;
+	height: 500px;
+	background: url(../img/IMG1578MYo294232008.jpg) no-repeat center;
+	background-size: cover;
+}
 
 /* 공지 */
 #notice dl {
@@ -1472,6 +1499,9 @@ html {
 @media (max-width: 1260px) {
 	.container {width: 100%;}
 	.row {padding: 0 24px;}
+
+	.look_book_box {display: none;}
+	.lookbook_m {display: block;}
 }
 
 @media (max-width: 1024px) {
@@ -1510,7 +1540,13 @@ html {
 	.list2 .cell {width: 100%; padding-left: 0; padding-right: 0;}
 	.list2 .cell:nth-child(2), .list2 .cell:nth-child(3) {display: none;}
 	.list2 .img-box {height: auto;}
-	.list2 .review_img {display: block; width: 100%; height: 400px; margin-top: 40px; background: url(/img/brush_review.jpeg) no-repeat center; background-size: cover;}
+	.list2 .review_img {display: block; width: 100%; height: 400px; margin-top: 40px; background: url(../img/brush_review.jpeg) no-repeat center; background-size: cover;}
+
+	.popup {background-color: rgba(255,255,255);}
+	.popup .pop_review {width: 100%; height: 100%; padding-left: 0; padding-right: 0;}
+	.popup .pop_review h1 {margin-left: 60px; padding-bottom: 30px;}
+	.popup .pop_review .pop_reviewer {padding-bottom: 40px;}
+	
 }
 
 @media (max-width: 768px) {
@@ -1519,7 +1555,6 @@ html {
 	.logo_nav .logo a img {width: 90px;}
 	.m_nav_icon {left: 20px;}
 
-	/* #banner {max-height: 500px;} */
 	.slider {height: 400px;}
 	.slider img {height: 400px; object-fit: cover;}
 }
@@ -1537,12 +1572,9 @@ html {
 	.logo_nav .logo {margin-top: 5px;}
 	.logo_nav .logo a img {width: 70px;}
 
-	.search_box .search_area .search_icon {width: 20px; height: 20px;}
+	.search_box .search_area .search_icon {top: -9px; width: 20px; height: 20px;}
 
-	.basket {margin-left: 20px;}
-	.basket a {width: 18px; height: 23px; background-size: 100%;}
-	.basket a::after {top: -3px; right: 0;}
-	.basket a span {top: 8.5px;}
+	.basket {display: none;}
 
 	.m_nav_icon {top: 20px; width: 20px; height: 17px;}
 	.m_nav_icon a span:nth-child(2) {top: 7px;}
@@ -1550,6 +1582,9 @@ html {
 	#banner {top: 55px;}
 
 	.list2 .review_img {height: 300px;}
+
+	.popup .pop_review h1 {margin-left: 40px;}
+	.popup .pop_review .pop_reviewer {padding: 0 40px 40px;}
 }
 
 @media (max-width: 320px) {

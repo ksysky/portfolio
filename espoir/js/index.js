@@ -92,6 +92,14 @@ $(function () {
 			autoplaySpeed: 4000,
 			dots: true,
 			touchMove: true,
+			responsive: [
+				{
+				  breakpoint: 840,
+				  settings: {
+					arrows: false,
+				  }
+				}
+			]
 		})
 
 		.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
@@ -136,6 +144,14 @@ $(".box2 .pop_box_2").mouseover(function () {
 $(".box2 .pop_box_2").mouseleave(function () {
 	$(".pop2").css("display", "none");
 	$(".b2").removeClass("on");
+});
+
+// 룩북 반응형 모바일 슬라이드
+$('.lookbook_m').slick({
+	arrows: true,
+	centerMode: true,
+	centerPadding: '24px',
+	slidesToShow: 1,
 });
 
 
