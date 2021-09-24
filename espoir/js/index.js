@@ -149,7 +149,7 @@ $(".box2 .pop_box_2").mouseleave(function () {
 // 룩북 반응형 모바일 슬라이드
 $('.lookbook_m').slick({
 	centerMode: true,
-	centerPadding: '24px',
+	// centerPadding: '8px',
 	slidesToShow: 1,
 	arrows: true
 });
