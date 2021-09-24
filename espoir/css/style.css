@@ -1221,15 +1221,10 @@ body {
 }
 
 .lookbook_m div {
-	width: 450px;
+	width: 400px;
 	height: 100%;
 	margin: 0 auto;
 	background-color: #fff;
-}
-
-.lookbook_m .slick-center {
-	
-	border: 1px solid red;
 }
 
 .lookbook_m div .look_img {
@@ -1240,8 +1235,8 @@ body {
 
 .lookbook_m div .look_img span {
 	position: absolute;
-	left: 45px;
-	bottom: 20px;
+	left: 20px;
+	bottom: 15px;
 	font-size: 4rem;
 	font-family: 'Oswald', sans-serif;
 	font-weight: bold;
