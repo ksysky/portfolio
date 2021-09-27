@@ -1,8 +1,8 @@
 // 헤더 스크롤 효과
 $(function () {
 	var logo_nav = $(".logo_nav").offset().top;
-	
-	$(window).scroll(function(){
+
+	$(window).scroll(function () {
 		var window = $(this).scrollTop();
 
 		if (logo_nav <= window) {
@@ -44,7 +44,7 @@ $(".nav > ul > li").mouseleave(function () {
 });
 
 // 모바일 메뉴
-$(".m_nav_icon").click(function(e) {
+$(".m_nav_icon").click(function (e) {
 	e.preventDefault();
 
 	if ($(".m_nav_menu").hasClass('on')) {
@@ -54,7 +54,7 @@ $(".m_nav_icon").click(function(e) {
 	}
 });
 
-$(".close_icon").click(function() {
+$(".close_icon").click(function () {
 	$(".m_nav_menu").removeClass('on');
 });
 
@@ -92,14 +92,12 @@ $(function () {
 			autoplaySpeed: 4000,
 			dots: true,
 			touchMove: true,
-			responsive: [
-				{
-				  breakpoint: 840,
-				  settings: {
+			responsive: [{
+				breakpoint: 840,
+				settings: {
 					arrows: false,
-				  }
 				}
-			]
+			}]
 		})
 
 		.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
@@ -147,11 +145,21 @@ $(".box2 .pop_box_2").mouseleave(function () {
 });
 
 // 룩북 반응형 모바일 슬라이드
-$('.lookbook_m').slick({
-	// centerMode: true,
-	// centerPadding: '8px',
-	slidesToShow: 1,
-	arrows: true
+$(".lookbook_m").slick({
+	centerMode: true,
+	slidesToShow: 3,
+	infinite: true,
+	arrows: true,
+	autoplay: true,
+	autoplaySpeed: 3000,
+	responsive: [
+		{
+			breakpoint: 840,
+			settings: {
+			centerPadding: '0px'
+			}
+		}
+	]
 });
 
 
@@ -168,8 +176,8 @@ $(".notice_slides").slick({
 
 
 // 오른쪽 top 버튼 스크롤
-$(window).scroll(function(){
-	if ( $(this).scrollTop() > 1000 ) {
+$(window).scroll(function () {
+	if ($(this).scrollTop() > 1000) {
 		$("#btn_top").show();
 	} else {
 		$("#btn_top").hide();
@@ -177,31 +185,33 @@ $(window).scroll(function(){
 });
 
 
-$("#btn_top").click(function(){
-	$("html,body").animate({scrollTop: 0}, 400);
+$("#btn_top").click(function () {
+	$("html,body").animate({
+		scrollTop: 0
+	}, 400);
 	return false;
 });
 
 
-$(function() {
+$(function () {
 
-  var $w = $(window),
-    footerHei = $('#footer').outerHeight(),
-    $btn_top = $('#btn_top');
+	var $w = $(window),
+		footerHei = $('#footer').outerHeight(),
+		$btn_top = $('#btn_top');
 
-  $w.on('scroll', function() {
+	$w.on('scroll', function () {
 
-    var sT = $w.scrollTop();
-    var val = $(document).height() - $w.height() - footerHei;
+		var sT = $w.scrollTop();
+		var val = $(document).height() - $w.height() - footerHei;
 
-    if (sT >= val)
-        $btn_top.addClass('on')
-    else
-    	$btn_top.removeClass('on')
-    
+		if (sT >= val)
+			$btn_top.addClass('on')
+		else
+			$btn_top.removeClass('on')
 
 
-  });
+
+	});
 
 
 });
