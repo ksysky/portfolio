@@ -1589,8 +1589,8 @@ html {
 	.container {width: 100%;}
 	.row {padding: 0 24px;}
 
-	.look_book_box {display: none;}
-	.lookbook_m {display: block;}
+	/* .look_book_box {display: none;}
+	.lookbook_m {display: block;} */
 }
 
 @media (max-width: 1024px) {
@@ -1688,6 +1688,11 @@ html {
 
 	.popup .pop_review h1 {margin-left: 40px;}
 	.popup .pop_review .pop_reviewer {padding: 0 40px 40px;}
+
+	.lookbook_m .slick-prev {width: 60px; height: 60px; top: 60%; left: 0;}
+	.lookbook_m .slick-next {width: 60px; height: 60px; top: 60%; right: 0;}
+	.lookbook_m .slick-center .look_img {transform: scale(1);}
+	.lookbook_m .look .look_img span {font-size: 3rem;}
 }
 
 @media (max-width: 320px) {

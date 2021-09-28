@@ -156,7 +156,25 @@ $(".lookbook_m").slick({
 		{
 			breakpoint: 840,
 			settings: {
-			centerPadding: '0px'
+				centerMode: true,
+				centerPadding: '0px',
+				slidesToShow: 3,
+				infinite: true,
+				arrows: true,
+				autoplay: true,
+				autoplaySpeed: 3000,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				centerMode: true,
+				centerPadding: '16px',
+				slidesToShow: 1,
+				infinite: true,
+				arrows: true,
+				autoplay: true,
+				autoplaySpeed: 3000,
 			}
 		}
 	]
