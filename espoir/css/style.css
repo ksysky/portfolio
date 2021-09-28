@@ -1510,7 +1510,7 @@ body {
 /* 푸터 아랫부분 오른쪽 */
 .bf_right .sns_nav {
 	position: absolute;
-	top: 45px;
+	bottom: 0;
 	right: 0;
 }
 
