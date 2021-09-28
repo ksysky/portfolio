@@ -1260,7 +1260,6 @@ body {
 .lookbook_m .slick-center .look_img {
 	transform: scale(1.1);
 	transition: all .5s;
-	z-index: 3;
 }
 
 .lookbook_m .look .look_img {
@@ -1280,6 +1279,8 @@ body {
 .lookbook_m .look .look_product .product_1 img {
 	width: 200px;
 	margin: 0 auto;
+	position: relative;
+	z-index: 10;
 }
 
 .lookbook_m .look .look_product .product_1 span {
@@ -1693,6 +1694,9 @@ html {
 	.lookbook_m .slick-next {width: 60px; height: 60px; top: 60%; right: 0;}
 	.lookbook_m .slick-center .look_img {transform: scale(1);}
 	.lookbook_m .look .look_img span {font-size: 3rem;}
+	.look_product {margin-top: 0;}
+	.lookbook_m .look .look_product .product_1 img {width: 180px;}
+	.lookbook_m .look .look_product .product_2 img {width: 160px;}
 }
 
 @media (max-width: 320px) {
