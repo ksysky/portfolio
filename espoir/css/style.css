@@ -1329,7 +1329,7 @@ body {
 
 #notice dl dt {
 	position: absolute;
-	font-size: 15px;
+	font-size: 1.5rem;
 	font-weight: 600;
 }
 
@@ -1344,7 +1344,7 @@ body {
 
 #notice dl .notice_slides div a {
 	color: #000;
-	font-size: 15px;
+	font-size: 1.5rem;
 }
 
 #notice dl dd .more {
@@ -1355,7 +1355,7 @@ body {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 600;
 	text-transform: uppercase;
-	font-size: 10px;
+	font-size: 1rem;
 }
 
 /* 푸터 윗부분 메뉴 */
@@ -1668,6 +1668,8 @@ html {
 	.sale {width: 50px; height: 50px; line-height: 50px;}
 
 	.lookbook_m .look .look_img span {font-size: 2rem;}
+
+	#notice dl {padding: 0 16px;}
 }
 
 @media (max-width: 480px) {
@@ -1697,6 +1699,9 @@ html {
 	.look_product {margin-top: 0;}
 	.lookbook_m .look .look_product .product_1 img {width: 180px;}
 	.lookbook_m .look .look_product .product_2 img {width: 160px;}
+
+	#notice dl .notice_slides {padding-left: 65px; padding-right: 0;}
+	#notice dl dd .more {right: 16px;}
 }
 
 @media (max-width: 320px) {
