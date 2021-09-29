@@ -523,7 +523,7 @@ body {
 .m_nav_icon a span {
 	position: absolute;
 	width: 100%;
-	height: 5%;
+	height: 10%;
 	background: #000002;
 }
 
@@ -539,22 +539,24 @@ body {
 	bottom: 0;
 }
 
-.m_nav_menu {
+.m_nav {
 	position: fixed;
 	top: 0;
 	left: -100%;
 	width: 100%;
 	height: 100%;
 	background: #fff;
+	z-index: 8;
+	overflow: auto;
 	transition: .3s ease-in-out;
 }
 
-.m_nav_menu.on {
+.m_nav.on {
 	left: 0;
 }
 
 .m_nav_menu .m_logo {
-	width: 95px;
+	width: 120px;
 	margin: 24px 0 15px 24px;
 }
 

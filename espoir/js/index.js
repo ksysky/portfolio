@@ -47,15 +47,17 @@ $(".nav > ul > li").mouseleave(function () {
 $(".m_nav_icon").click(function (e) {
 	e.preventDefault();
 
-	if ($(".m_nav_menu").hasClass('on')) {
-		$(".m_nav_menu").removeClass('on');
+	if ($(".m_nav").hasClass('on')) {
+		$(".m_nav").removeClass('on');
 	} else {
-		$(".m_nav_menu").addClass('on');
+		$(".m_nav").addClass('on');
+		$("body").css("overflow-y", "hidden");
 	}
 });
 
 $(".close_icon").click(function () {
-	$(".m_nav_menu").removeClass('on');
+	$(".m_nav").removeClass('on');
+	$("body").css("overflow-y", "auto");
 });
 
 // 서치박스 나타내기
