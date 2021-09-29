@@ -1363,7 +1363,7 @@ body {
 	float: left;
 	width: 33.3333%;
 	height: 260px;
-	padding-top: 70px;
+	padding: 50px 0;
 }
 
 .top_foot div a {
@@ -1378,6 +1378,7 @@ body {
 
 .top_foot .tf_1 a dd {
 	position: relative;
+	width: 230px;
 	font-size: 25px;
 	font-weight: 500;
 	margin-top: 20px;
@@ -1388,7 +1389,7 @@ body {
 	content: "";
 	position: absolute;
 	top: -22px;
-	right: 170px;
+	right: 0;
 	width: 26px;
 	height: 26px;
 	background: url(../img/ico_feel.png);
@@ -1462,7 +1463,14 @@ body {
 }
 
 .bottom_foot .bf_left {
+	position: relative;
 	width: 70%;
+}
+
+.bottom_foot .bf_left .sns_top {
+	display: none;
+	top: -50px;
+	left: -10px;
 }
 
 .bottom_foot .bf_right {
@@ -1507,18 +1515,18 @@ body {
 	margin-top: 12px;
 }
 
-/* 푸터 아랫부분 오른쪽 */
-.bf_right .sns_nav {
+/* 푸터 아랫부분 sns (모바일에서는 위치 바뀜) */
+.sns_nav {
 	position: absolute;
 	bottom: 0;
 	right: 0;
 }
 
-.bf_right .sns_nav li {
+.sns_nav li {
 	float: left;
 }
 
-.bf_right .sns_nav li a {
+.sns_nav li a {
 	display: inline-block;
 	width: 27px;
 	height: 27px;
@@ -1526,37 +1534,37 @@ body {
 	text-indent: -9999px;
 }
 
-.bf_right .sns_nav li.insta a {
+.sns_nav li.insta a {
 	background: url(../img/ico_insta.png) no-repeat center center;
 }
 
-.bf_right .sns_nav li.facebook a {
+.sns_nav li.facebook a {
 	background: url(../img/ico_facebook.png) no-repeat center center;
 }
 
-.bf_right .sns_nav li.twitter a {
+.sns_nav li.twitter a {
 	background: url(../img/ico_twitter.png) no-repeat center center;
 }
 
-.bf_right .sns_nav li.kakao a {
+.sns_nav li.kakao a {
 	background: url(../img/ico_kakao.png) no-repeat center center;
 }
 
-.bf_right .sns_nav li.blog a {
+.sns_nav li.blog a {
 	background: url(../img/ico_blog.png) no-repeat center center;
 }
 
-.bf_right .sns_nav li.mail a {
+.sns_nav li.mail a {
 	background: url(../img/ico_mail.png) no-repeat center center;
 }
 
-.bf_right .ico_wa {
+/* .bf_right .ico_wa {
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	width: 160px;
 	display: block;
-}
+} */
 
 /* 탑 버튼 */
 #btn_top {
@@ -1601,6 +1609,11 @@ html {
 	.search_box {width: 205px;}
 
 	.lookbook_m .look .look_img span {font-size: 2.5rem;}
+
+	.bottom_foot .bf_left {width: 100%;}
+	.bottom_foot .bf_right {display: none;}
+	.bottom_foot .bf_left .sns_top {display: block;}
+	.sns_bottom {display: none;}
 }
 
 @media (max-width: 840px) {
@@ -1648,6 +1661,8 @@ html {
 @media (max-width: 768px) {
 	.row {padding: 0 16px;}
 
+	#footer {padding: 70px 60px;}
+
 	.logo_nav .logo a img {width: 90px;}
 	.m_nav_icon {left: 20px;}
 
@@ -1659,9 +1674,18 @@ html {
 	.lookbook_m .look .look_img span {left: 15px;}
 	.lookbook_m .look .look_product .product_1 img {width: 150px;}
 	.lookbook_m .look .look_product .product_2 img {width: 130px;}
+
+	#footer .row {padding: 0;}
+	.top_foot div {width: 100%; float: none; height: auto; padding: 0;}
+	.top_foot .tf_1 {display: none;}
+	.top_foot .tf_2 {margin-bottom: 35px;}
+	.top_foot .tf_3 {text-align: left; margin-bottom: 90px;}
+	.top_foot .tf_3 .login li:first-child a {margin-left: 0;}
 }
 
 @media (max-width: 600px) {
+	#footer {padding: 35px 30px;}
+
 	.slider {height: 380px;}
 	.slider img {height: 380px; object-fit: cover;}
 
