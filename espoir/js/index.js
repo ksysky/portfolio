@@ -92,14 +92,7 @@ $(function () {
 			arrows: true,
 			autoplay: true,
 			autoplaySpeed: 4000,
-			dots: true,
-			touchMove: true,
-			responsive: [{
-				breakpoint: 840,
-				settings: {
-					arrows: false,
-				}
-			}]
+			touchMove: true
 		})
 
 		.on('beforeChange', function (event, slick, currentSlide, nextSlide) {

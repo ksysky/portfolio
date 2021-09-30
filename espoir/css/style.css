@@ -628,7 +628,6 @@ body {
 	top: 85px;
 	width: 32px;
 	height: 44px;
-	background: none;
 	text-indent: -9999px;
 	z-index: 2;
 	cursor: pointer;
@@ -644,33 +643,6 @@ body {
 	background: url(../img/arrow_photo_next.png) no-repeat center;
 }
 
-.slick-dots {
-	display: none;
-	position: absolute;
-	bottom: 10px;
-	right: 16px;
-}
-
-.slick-dots li {
-	display: inline-block;
-}
-
-.slick-dots li:nth-child(2) {
-	margin: 0 8px;
-}
-
-.slick-dots li button {
-	width: 12px;
-	height: 12px;
-	border-radius: 100%;
-	background-color: #fff;
-	font-size: 0;
-}
-
-.slick-dots li.slick-active button {
-	border: 3px solid #000002;	
-}
-
 .slick_counter {
 	position: absolute;
 	width: 120px;
@@ -679,7 +651,7 @@ body {
 	text-align: center;
 	top: 84px;
 	left: 140px;
-	font-size: 17px;
+	font-size: 1.7rem;
 	border-radius: 22px;
 	letter-spacing: 1px;
 	color: #ddd;
@@ -1293,7 +1265,7 @@ body {
 .lookbook_m .look .look_product .product_1 span {
 	display: block;
 	margin-top: 20px;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	font-weight: 600;
 }
 
@@ -1312,7 +1284,7 @@ body {
 .lookbook_m .look .look_product .product_2 span {
 	display: block;
 	margin-top: 20px;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	font-weight: 600;
 }
 
@@ -1615,6 +1587,11 @@ html {
 	.nav_right {width: 280px;}
 	.search_box {width: 205px;}
 
+	.slick_counter {top: auto; left: auto; bottom: 24px; right: 24px;}
+	.slider .slick-prev {left: auto; right: 110px;}
+	.slider .slick-next {left: auto; right: 24px;}
+	.slider .slick-arrow {top: auto; bottom: 24px;}
+
 	.lookbook_m .look .look_img span {font-size: 2.5rem;}
 
 	.bottom_foot .bf_left {width: 100%;}
@@ -1642,9 +1619,6 @@ html {
 	#banner {top: 70px;}
 	.slider {height: 450px;}
 	.slider img {height: 450px; object-fit: cover;}
-	.slick_counter {display: none;}
-	.slider .slick-arrow {display: none;}
-	.slick-dots {display: block;}
 
 	#best {margin-top: 140px;}
 	.list1 .cell {width: 50%;}
@@ -1678,6 +1652,10 @@ html {
 
 	.slider {height: 400px;}
 	.slider img {height: 400px; object-fit: cover;}
+	.slick_counter {width: 95px; height: 30px; line-height: 30px; bottom: 16px; right: 16px; background-color: rgba(50,50,50,0.7);}
+	.slider .slick-prev {right: 80px;}
+	.slider .slick-next {right: 16px;}
+	.slider .slick-arrow {bottom: 9px; background-size: 4px;}
 
 	.lookbook_m .slick-prev {width: 80px; height: 80px;}
 	.lookbook_m .slick-next {width: 80px; height: 80px;}
