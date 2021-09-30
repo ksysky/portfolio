@@ -204,7 +204,6 @@ $(window).scroll(function () {
 	}
 });
 
-
 $("#btn_top").click(function () {
 	$("html,body").animate({
 		scrollTop: 0
@@ -212,15 +211,12 @@ $("#btn_top").click(function () {
 	return false;
 });
 
-
 $(function () {
-
 	var $w = $(window),
 		footerHei = $('#footer').outerHeight(),
 		$btn_top = $('#btn_top');
 
 	$w.on('scroll', function () {
-
 		var sT = $w.scrollTop();
 		var val = $(document).height() - $w.height() - footerHei;
 
@@ -228,10 +224,15 @@ $(function () {
 			$btn_top.addClass('on')
 		else
 			$btn_top.removeClass('on')
-
-
-
 	});
+});
 
+$(window).resize(function() {
+	const w_width = $(window).width();
 
+	if (w_width < 1240) {
+		$("#btn_top").css("visibility", "hidden");
+	} else {
+		$("#btn_top").css("visibility", "visible");
+	}
 });
