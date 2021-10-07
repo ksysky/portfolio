@@ -100,7 +100,6 @@ $(function () {
 		});
 });
 
-
 // 리얼 리뷰 팝업창
 $(".click_1").click(function (e) {
 	e.preventDefault();
