@@ -713,10 +713,10 @@ body {
 
 .sale {
 	position: absolute;
-	width: 70px;
-	height: 70px;
+	width: 60px;
+	height: 60px;
 	text-align: center;
-	line-height: 70px;
+	line-height: 60px;
 	top: 0;
 	right: 0;
 	font-size: 2rem;
@@ -732,7 +732,7 @@ body {
 }
 
 .list1 .cell {
-	width: 33.3333%;
+	width: 25%;
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-top: 50px;
@@ -1598,8 +1598,6 @@ html {
 	.container {width: 100%;}
 	.row {padding: 0 24px;}
 
-	/* .look_book_box {display: none;}
-	.lookbook_m {display: block;} */
 }
 
 @media (max-width: 1024px) {
@@ -1607,6 +1605,9 @@ html {
 	.logo_nav .logo {width: 100px;}
 	.nav_right {width: 280px;}
 	.search_box {width: 205px;}
+
+	.list1 .cell {width: 33.3333%;}
+	.list1 .cell.hide {display: none;}
 
 	.slider {height: 590px;}
 	.slider .bs1, .slider .bs2, .slider .bs3 {height: 590px;}
