@@ -29,7 +29,6 @@ body {
 /* 헤더 */
 .header {
 	position: relative;
-	margin-bottom: 10px;
 }
 
 .header::after {
@@ -187,12 +186,15 @@ body {
 .m_nav {
 	position: fixed;
 	top: 0;
-	right: 0;
+	right: -60%;
 	display: block;
 	width: 60%;
 	height: 100%;
 	z-index: 20;
 	background-color: #fff;
+	border-left: 2px solid #5a87c5;
+	box-sizing: border-box;
+	transition: all .3s;
 }
 
 .m_nav .nav_close {
@@ -259,6 +261,10 @@ body {
 	right: 24px;
 	content: "\f078";
     font: 15px/1 'FontAwesome';
+}
+
+.m_nav .m_menu > ul > li.active > a:after {
+	content: "\f077";
 }
 
 .m_nav .m_menu li a {
@@ -872,24 +878,14 @@ body {
 
 /* 화면 너비 0 ~ 1024px 데스크탑 */
 @media (max-width: 1024px) {
+	#header {height: 70px;}
+
 	.container {
 		width: 100%;
 	}
 
-	.header {
-		margin-bottom: 20px;
-	}
-
 	.header .header_nav {
 		display: none;
-	}
-
-	.header .header_nav.on {
-		display: block;
-	}
-
-	.header .header_logo {
-		margin-top: 20px;
 	}
 
 	.header .header_logo .pc_logo {
@@ -898,11 +894,13 @@ body {
 
 	.header .header_logo .m_logo {
 		display: block;
+		width: 130px;
+		padding-top: 17px;
 	}
 
 	.header .nav_btn {
 		display: block;
-		top: -2px;
+		top: 15px;
 	}
 
 	.nav {

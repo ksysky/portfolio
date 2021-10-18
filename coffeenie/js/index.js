@@ -10,20 +10,26 @@ $(".nav ul").mouseout(function(){
 });
 
 // 반응형 메뉴
-// $(".nav_btn").click(function(){
-// 	$(".header .header_nav").toggleClass("on");
-// 	$(".m_nav").toggleClass("on");
-// 	$(".nav_close").css("display", "block");
-// 	$(".m_nav.on").css("display", "block");
-// });
+$(".nav_btn").click(function(){
+	$(".m_nav").css("right", "0");
+});
 
-// $(".nav_close").click(function(){
-// 	$(".m_nav").css("display", "none");
-// 	$(".header .header_nav").removeClass("on");
-// 	$(".m_nav").removeClass("on");
-// });
+$(".nav_close").click(function(){
+	$(".m_nav").css("right", "-60%");
+});
 
-
+// 반응형 모바일 메뉴
+$(".m_menu > ul > li").click(function(){
+	if ($(this).hasClass("active")) { // class 존재 확인
+		$(this).removeClass("active"); // active class를 없앰
+		$(this).find("> ul").slideUp(300); // 자식 ul을 찾아 슬라이드 올리기
+	} else {
+		$(this).addClass("active"); // active class를 생성
+		$(this).find("> ul").slideDown(300); // 자식 ul을 찾아 슬라이드 내리기
+		$(this).siblings().removeClass("active"); // this의 형제 li을 찾아 active class를 없앰
+		$(this).siblings().find("> ul").stop().slideUp(300); // this의 형제 li의 자식 ul은 슬라이드 올리기
+	}
+});
 
 //$(".m_nav.on .nav ul li").click(function(){
 //	$(".nav > ul ul").slideToggle();
