@@ -10,18 +10,18 @@ $(".nav ul").mouseout(function(){
 });
 
 // 반응형 메뉴
-//$(".nav_btn").click(function(){
-//	$(".header .header_nav").toggleClass("on");
-//	$(".m_nav").toggleClass("on");
-//	$(".nav_close").css("display", "block");
-//	$(".m_nav.on").css("display", "block");
-//});
-//
-//$(".nav_close").click(function(){
-//	$(".m_nav").css("display", "none");
-//	$(".header .header_nav").removeClass("on");
-//	$(".m_nav").removeClass("on");
-//});
+// $(".nav_btn").click(function(){
+// 	$(".header .header_nav").toggleClass("on");
+// 	$(".m_nav").toggleClass("on");
+// 	$(".nav_close").css("display", "block");
+// 	$(".m_nav.on").css("display", "block");
+// });
+
+// $(".nav_close").click(function(){
+// 	$(".m_nav").css("display", "none");
+// 	$(".header .header_nav").removeClass("on");
+// 	$(".m_nav").removeClass("on");
+// });
 
 
 
