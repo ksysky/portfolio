@@ -78,16 +78,16 @@ body {
 
 .header .nav_btn {
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 16px;
+	right: 20px;
 	float: right;
 	display: none;
 }
 
 .header .nav_btn a {
 	position: relative;
-	width: 65px;
-	height: 40px;
+	width: 35px;
+	height: 35px;
 	display: block;
 	color: #ccc;
 }
@@ -894,18 +894,25 @@ body {
 
 	.header .nav_btn {
 		display: block;
-		top: 15px;
+		
 	}
 
 	.nav {
 		display: none;
 	}
 
+	.m_nav .m_menu > ul > li > a:after {top: 18px;}
+
 	#banner {margin-top: 70px;}
 }
 
 @media (max-width: 720px) {
+	.header .nav_btn {right: 16px;}
 	.m_nav {right: -75%; width: 75%;}
+	.m_nav .m_login a:first-child {margin-left: 16px;}
+	.m_nav .nav_close {right: 16px;}
+	.m_nav .m_menu li a {padding: 15px 16px;}
+	.m_nav .m_menu > ul > li > a:after {right: 16px;}
 }
 
 @media (max-width: 480px) {
