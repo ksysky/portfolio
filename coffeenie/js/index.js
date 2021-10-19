@@ -10,12 +10,14 @@ $(".nav ul").mouseout(function(){
 });
 
 // 반응형 메뉴
-$(".nav_btn").click(function(){
-	$(".m_nav").css("right", "0");
+$(".nav_btn").click(function(e){
+	e.preventDefault();
+	$(".m_nav").addClass("on");
 });
 
-$(".nav_close").click(function(){
-	$(".m_nav").css("right", "-60%");
+$(".nav_close").click(function(e){
+	e.preventDefault();
+	$(".m_nav").removeClass("on");
 });
 
 // 반응형 모바일 메뉴

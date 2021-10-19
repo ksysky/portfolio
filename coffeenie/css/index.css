@@ -7,6 +7,7 @@ body {
 
 #header {
 	width: 100%;
+	background-color: #fff;
 }
 
 #banner {
@@ -197,6 +198,10 @@ body {
 	transition: all .3s;
 }
 
+.m_nav.on {
+	right: 0;
+}
+
 .m_nav .nav_close {
 	position: absolute;
 	top: 22px;
@@ -230,7 +235,7 @@ body {
 
 .m_nav .m_login a {
 	margin: 0 10px;
-	font-size: 15px;
+	font-size: 1.5rem;
 	color: #5A87C5;
 	font-weight: bold;
 }
@@ -253,6 +258,10 @@ body {
 
 .m_nav .m_menu > ul > li > a {
 	position: relative;
+}
+
+.m_nav .m_menu > ul > li.active > a {
+	color: #5A87C5;
 }
 
 .m_nav .m_menu > ul > li > a:after {
@@ -861,24 +870,9 @@ body {
 }
 
 /* media query */
-/* 화면 너비 0 ~ 1520px 데스크탑 */
-
-/* @media (max-width: 1520px) {
-	#banner {width: 100%;}
-} */
-
-
-/* 화면 너비 0 ~ 1200px 데스크탑 */
-
-/* @media (max-width: 1200px) {
-	.insta .ins_img li:nth-child(9) {display: none;}
-	.insta .ins_img li:last-child {display: none;}
-} */
-
-
-/* 화면 너비 0 ~ 1024px 데스크탑 */
 @media (max-width: 1024px) {
-	#header {height: 70px;}
+	html {font-size: 50%;}
+	#header {position: fixed; top: 0; left: 0; height: 70px; z-index: 15;}
 
 	.container {
 		width: 100%;
@@ -907,13 +901,13 @@ body {
 		display: none;
 	}
 
-	/* 모바일 메뉴 */
+	#banner {margin-top: 70px;}
+}
 
-	/* .m_nav.on {display: block;} */
-	/* .m_nav.on::after {content: ""; display: block; width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 50; background-color: rgba(0,0,0,0.5);}
-	.m_nav.on .nav {position: absolute; width: 80%; height: 100%; top: 0; right: 0; z-index: 55; background-color: #fff; border-bottom: none;}
-	.m_nav.on .nav > ul {max-width: none;}
-	.m_nav.on .nav > ul > li {position: relative; float: none; width: 100%; text-align: left; border-bottom: 2px solid #5a87c5;}
-	.m_nav.on .nav > ul > li:hover > a {background-color: none; color: none;}
-	.m_nav.on .nav > ul ul {display: none;} */
+@media (max-width: 720px) {
+	.m_nav {right: -75%; width: 75%;}
+}
+
+@media (max-width: 480px) {
+	
 }
