@@ -905,7 +905,10 @@ body {
 
 	#banner {margin-top: 70px; height: 500px;}
 	.slides .s1 {background: url(../img/strawberry_banner_1000.jpg) no-repeat center;}
-	.slick-arrow {display: none;}
+	.slides .s2 {background: url(../img/coffeenie_sweet_pumpkin_banner_1000.jpg) no-repeat center;}
+	.slides .s3 {background: url(../img/b_big_1000.jpg) no-repeat center;}
+	.slides .slick-prev {display: none;}
+	.slides .slick-next {display: none;}
 }
 
 @media (max-width: 720px) {
