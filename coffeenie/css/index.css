@@ -903,7 +903,9 @@ body {
 
 	.m_nav .m_menu > ul > li > a:after {top: 18px;}
 
-	#banner {margin-top: 70px;}
+	#banner {margin-top: 70px; height: 500px;}
+	.slides .s1 {background: url(../img/strawberry_banner_1000.jpg) no-repeat center;}
+	.slick-arrow {display: none;}
 }
 
 @media (max-width: 720px) {
@@ -913,6 +915,8 @@ body {
 	.m_nav .nav_close {right: 16px;}
 	.m_nav .m_menu li a {padding: 15px 16px;}
 	.m_nav .m_menu > ul > li > a:after {right: 16px;}
+
+	
 }
 
 @media (max-width: 480px) {
