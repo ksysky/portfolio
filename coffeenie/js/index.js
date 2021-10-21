@@ -76,7 +76,15 @@ $('.slides').slick({
     infinite: true,
     autoplay: true,
     autoplaySpeed: 3000,
-    dots: true
+    dots: true,
+	responsive: [
+		{
+		  breakpoint: 1024,
+		  settings: {
+			arrows: false
+		  }
+		}
+	]	
 });
 
 // 슬릭 신메뉴 슬라이드
