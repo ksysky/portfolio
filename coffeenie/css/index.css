@@ -915,6 +915,8 @@ body {
 	.header .nav_btn {top: 18px;}
 	.header .nav_btn a {width: 27px; height: 23px;}
 	.header .nav_btn a i {font-size: 22px;}
+	.m_nav .m_login {height: 60px; line-height: 60px;}
+	.m_nav .nav_close {top: 15px; right: 10px;}
 
 	#banner {height: 350px; margin-top: 60px;}
 	.slides .slick-dots {bottom: 15px;}
