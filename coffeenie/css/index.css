@@ -11,7 +11,7 @@ body {
 }
 
 #banner {
-	max-width: 100%;
+	width: 100%;
 	height: 470px;
 	margin-bottom: 80px;
 }
@@ -347,7 +347,7 @@ body {
 /* 슬릭 배너 */
 .slides {
 	position: relative;
-	max-width: 100%;
+	width: 100%;
 	height: 100%;
 }
 
@@ -891,10 +891,10 @@ body {
 
 	.m_nav .m_menu > ul > li > a:after {top: 18px;}
 
-	#banner {margin-top: 70px; height: 500px;}
-	.slides .s1 {background: url(../img/strawberry_banner_1000.jpg) no-repeat center;}
-	.slides .s2 {background: url(../img/coffeenie_sweet_pumpkin_banner_1000.jpg) no-repeat center;}
-	.slides .s3 {background: url(../img/b_big_1000.jpg) no-repeat center;}
+	#banner {margin-top: 70px;}
+	.slides .s1 {background: url(../img/strawberry_banner_1000.jpg) no-repeat center; background-size: cover;}
+	.slides .s2 {background: url(../img/coffeenie_sweet_pumpkin_banner_1000.jpg) no-repeat center; background-size: cover;}
+	.slides .s3 {background: url(../img/b_big_1000.jpg) no-repeat center; background-size: cover;}
 	.slides .slick-prev {display: none;}
 	.slides .slick-next {display: none;}
 }
@@ -909,13 +909,14 @@ body {
 
 }
 
-@media (max-width: 600px) {
-	#banner {width: 100%; height: 700px;}
-	.slides .s1 {background: url(../img/strawberry_banner_550.jpg) no-repeat center top; background-size: 100%;}
-	.slides .s2 {background: url(../img/coffeenie_sweet_pumpkin_banner_550.jpg) no-repeat center top; background-size: 100%;}
-	.slides .s3 {background: url(../img/b_big_550.jpg) no-repeat center top; background-size: 100%;}
-}
-
 @media (max-width: 480px) {
-	
+	#header {height: 60px;}
+	.header .header_logo .m_logo {padding-top: 12px;}
+	.header .nav_btn {top: 18px;}
+	.header .nav_btn a {width: 27px; height: 23px;}
+	.header .nav_btn a i {font-size: 22px;}
+
+	#banner {height: 350px; margin-top: 60px;}
+	.slides .slick-dots {bottom: 15px;}
+	.slides .slick-dots li button {width: 10px; height: 10px;}
 }
