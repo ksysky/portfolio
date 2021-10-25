@@ -444,20 +444,6 @@ body {
 }
 
 /* 메인 */
-.main::after {
-	content: "";
-	display: block;
-	clear: both;
-}
-
-/*
-.main > div {
-	float: left;
-	height: 300px;
-	box-sizing: border-box;
-}
-*/
-
 .main_tit {
 	color: #5a87c5;
 	text-align: center;
@@ -466,22 +452,22 @@ body {
 	margin-bottom: 20px;
 }
 
-/* 메인 위 */
-.main .main_center {
+/* 메인 슬라이드 */
+.main .main_slide {
 	width: 100%;
 }
 
-.main .main_center .icon2 {
+.main .main_slide .icon2 {
 	background-position: 0 -20px;
 }
 
-.main_center .new_slide {
+.main_slide .new_slide {
 	position: relative;
 	width: 90%;
 	margin: 0 auto;
 }
 
-.main_center .new_slide .slick-prev {
+.main_slide .new_slide .slick-prev {
 	position: absolute;
 	top: 140px;
 	left: -35px;
@@ -492,12 +478,12 @@ body {
 	cursor: pointer;
 }
 
-.main_center .new_slide .slick-prev::after {
+.main_slide .new_slide .slick-prev::after {
 	content: "\f104";
 	font: 40px/1 'FontAwesome';
 }
 
-.main_center .new_slide .slick-next {
+.main_slide .new_slide .slick-next {
 	position: absolute;
 	top: 140px;
 	right: -35px;
@@ -508,20 +494,20 @@ body {
 	cursor: pointer;
 }
 
-.main_center .new_slide .slick-next::after {
+.main_slide .new_slide .slick-next::after {
 	content: "\f105";
 	font: 40px/1 'FontAwesome';
 }
 
-.main_center .new_slide div a {
+.main_slide .new_slide div a {
 	outline: none;
 }
 
-.main_center .new_slide img {
+.main_slide .new_slide img {
 	width: 100%;
 }
 
-.main_center .new_slide span {
+.main_slide .new_slide span {
 	font-size: 1.5rem;
 	display: block;
 	text-align: center;
@@ -554,92 +540,36 @@ body {
 	background-color: #5a87c5;
 }
 
-/* 메인 양쪽 같이 */
-.main .main_box {
-	margin-top: 100px;
-}
-
-
-/* 메인 왼쪽 */
-.main .main_left {
+/* 메인 알림 */
+.coffeenie_info {
 	position: relative;
-	float: left;
-	width: 48%;
-	height: 300px;
-	margin-right: 4%;
+	margin: 80px 0;
+	height: 350px;
+	background: url(../img/FRANCHISE.jpg) no-repeat center left;
+	background-size: cover;
 }
 
-.main .main_left .title {
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	font-weight: 900;
-	font-size: 30px;
-	color: #5a87c5;
+.coffeenie_info .info_text {
+	text-align: left;
+	max-width: 1000px;
+	width: 50%;
+	color: #fff;
+	margin-left: auto;
+	margin-right: 0;
 }
 
-.main .main_left .text {
-	position: absolute;
-	top: 78px;
-	right: 30px;
-	font-size: 14px;
+.coffeenie_info .info_text h2 {
+	font-size: 1.8rem;
 }
 
-.main .main_left .left_btn {
-	position: absolute;
-	top: 120px;
-	right: 30px;
+.coffeenie_info .info_text .info_logo img {
 	display: block;
-	width: 100px;
-	height: 35px;
-	text-align: center;
-	color: white;
-	line-height: 35px;
-	background-color: #5a87c5;
+	width: 180px;
+	margin-top: 10px;
 }
 
-/* 메인 오른쪽 */
-.main .main_right {
-	position: relative;
-	float: left;
-	width: 48%;
-	height: 300px;
-}
-
-.main .main_right img {
-	display: block;
-	width: 100%;
-}
-
-.main .main_right .search_box {
-	position: absolute;
-	width: 300px;
-	bottom: 30px;
-	left: 50px;
-	background-color: #5a87c5;
-	padding: 5px 70px 5px 5px;
-}
-
-.main .main_right .search_box .s_text {
-	width: 100%;
-	height: 40px;
-	font-size: 15px;
-	padding: 0 10px;
-	color: #cfcfcf;
-	background-color: #fff;
-	border: none;
-}
-
-.main .main_right .search_box .s_icon {
-	position: absolute;
-	top: 8px;
-	right: 12px;
-	width: 30px;
-	height: 30px;
-	border: none;
-	text-indent: -9999px;
-	cursor: pointer;
-	background: url(../img/search_icon.png);
+.coffeenie_info .info_text p {
+	margin-top: 20px;
 }
 
 /* MD 상품 */
