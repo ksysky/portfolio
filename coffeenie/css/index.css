@@ -196,6 +196,7 @@ body {
 	border-left: 2px solid #5a87c5;
 	box-sizing: border-box;
 	transition: all .3s;
+	z-index: 20;
 }
 
 .m_nav.on {
@@ -285,6 +286,16 @@ body {
 
 .m_nav .m_menu > ul ul li a.last {
 	border-bottom: 1px solid #d6d6d6;
+}
+
+.m_back.on {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:rgba(0, 0, 0, 0.4);
+	z-index: 18;
 }
 
 /* 배너 */
@@ -450,7 +461,7 @@ body {
 .main_tit {
 	color: #5a87c5;
 	text-align: center;
-	font-size: 30px;
+	font-size: 3rem;
 	font-weight: bold;
 	margin-bottom: 20px;
 }
@@ -511,11 +522,36 @@ body {
 }
 
 .main_center .new_slide span {
+	font-size: 1.5rem;
 	display: block;
 	text-align: center;
 	margin-top: 10px;
 	font-weight: bold;
 	color: #5a87c5;
+}
+
+.new_slide .slick-dots {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.new_slide .slick-dots li {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.new_slide .slick-dots li button {
+	text-indent: -9999px;
+	width: 15px;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.new_slide .slick-dots li.slick-active button {
+	background-color: #5a87c5;
 }
 
 /* 메인 양쪽 같이 */
@@ -860,7 +896,7 @@ body {
 /* media query */
 @media (max-width: 1024px) {
 	html {font-size: 50%;}
-	#header {position: fixed; top: 0; left: 0; height: 70px; z-index: 15;}
+	#header {position: fixed; top: 0; left: 0; height: 70px; z-index: 15; box-shadow: 0px 1px 10px #999;}
 
 	.container {
 		width: 100%;
@@ -897,6 +933,9 @@ body {
 	.slides .s3 {background: url(../img/b_big_1000.jpg) no-repeat center; background-size: cover;}
 	.slides .slick-prev {display: none;}
 	.slides .slick-next {display: none;}
+
+	.main_center .new_slide .slick-prev {left: -15px;}
+	.main_center .new_slide .slick-next {right: -15px;}
 }
 
 @media (max-width: 720px) {
@@ -921,4 +960,8 @@ body {
 	#banner {height: 350px; margin-top: 60px;}
 	.slides .slick-dots {bottom: 15px;}
 	.slides .slick-dots li button {width: 10px; height: 10px;}
+
+	.main_center .new_slide {width: 100%;}
+	.main_center .new_slide .slick-prev, .main_center .new_slide .slick-next {top: 100px;}
+	.new_slide .slick-dots li button {width: 10px; height: 10px;}
 }

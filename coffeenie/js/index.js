@@ -13,14 +13,16 @@ $(".nav ul").mouseout(function(){
 $(".nav_btn").click(function(e){
 	e.preventDefault();
 	$(".m_nav").addClass("on");
+	$(".m_back").addClass("on");
 });
 
 $(".nav_close").click(function(e){
 	e.preventDefault();
 	$(".m_nav").removeClass("on");
+	$(".m_back").removeClass("on");
 });
 
-// 반응형 모바일 메뉴
+// 반응형 모바일 메뉴 액티브
 $(".m_menu > ul > li").click(function(){
 	if ($(this).hasClass("active")) { // class 존재 확인
 		$(this).removeClass("active"); // active class를 없앰
@@ -94,7 +96,32 @@ $('.new_slide').slick({
 	slidesToShow: 4,
 	slidesToScroll: 1,
 	autoplay: true,
-	autoplaySpeed: 2500
+	autoplaySpeed: 2500,
+	dots: true,
+	touchMove: true,
+	responsive: [
+		{
+		  breakpoint: 1024,
+		  settings: {
+			slidesToShow: 3
+		  }
+		},
+		{
+			breakpoint: 720,
+			settings: {
+			  slidesToShow: 2,
+			  slidesToScroll: 2,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+			  slidesToShow: 2,
+			  slidesToScroll: 2,
+			  arrows: false
+			}
+		}
+	]	
 });
 
 // 슬릭 MD 상품 슬라이드
