@@ -20,6 +20,10 @@ body {
 	margin: 50px 0;
 }
 
+#md {
+
+}
+
 /* 컨테이너 */
 .container {
 	width: 1000px;
@@ -603,7 +607,8 @@ body {
 /* MD 상품 */
 .md {
 	position: relative;
-	height: 400px;
+	height: 450px;
+	margin-bottom: 80px;
 }
 
 .md_tit {
@@ -611,6 +616,7 @@ body {
 }
 
 .md .md_slide {
+	width: 100%;
 	text-align: center;
 }
 
@@ -694,7 +700,6 @@ body {
 
 /* 커피니 인스타그램 */
 .insta {
-	margin-top: 500px;
 	padding: 50px 0;
 	background-color: #5a87c5;
 	text-align: center;
