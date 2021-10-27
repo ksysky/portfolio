@@ -576,7 +576,7 @@ body {
 }
 
 .coffeenie_info .info_text .info_button {
-	margin-top: 20px;	
+	margin-top: 20px;
 }
 
 .coffeenie_info .info_text .info_button button {
@@ -585,6 +585,7 @@ body {
 	cursor: pointer;
 	margin-right: 6px;
 	padding: 8px 0;
+	font-weight: bold;
 }
 
 .coffeenie_info .info_text .info_button .franchise_btn {
@@ -603,7 +604,6 @@ body {
 .md {
 	position: relative;
 	height: 400px;
-	margin: 120px 0 100px 0;
 }
 
 .md_tit {
@@ -694,6 +694,7 @@ body {
 
 /* 커피니 인스타그램 */
 .insta {
+	margin-top: 500px;
 	padding: 50px 0;
 	background-color: #5a87c5;
 	text-align: center;
@@ -903,7 +904,7 @@ body {
 	.m_nav .m_menu li a {padding: 15px 16px;}
 	.m_nav .m_menu > ul > li > a:after {right: 16px;}
 
-	.coffeenie_info {height: 850px; background: url(../img/FRANCHISE_vertical.jpg) no-repeat center bottom; background-size: cover;}
+	.coffeenie_info {height: 830px; background: url(../img/FRANCHISE_vertical.jpg) no-repeat center bottom; background-size: cover;}
 	.coffeenie_info .info_text {top: 28%; width: 80%; transform: translate(-50%,-50%); text-align: center;}
 	.coffeenie_info .info_text h2 {font-size: 2.3rem;}
 	.coffeenie_info .info_text .info_logo img {width: 220px; margin: 15px auto;}
@@ -931,4 +932,9 @@ body {
 	.main_center .new_slide {width: 100%;}
 	.main_center .new_slide .slick-prev, .main_center .new_slide .slick-next {top: 100px;}
 	.new_slide .slick-dots li button {width: 10px; height: 10px;}
+
+	.coffeenie_info {height: 750px;}
+	.coffeenie_info .info_text {top: 33%;}
+	.coffeenie_info .info_text .info_button .franchise_btn {width: 80%;}
+	.coffeenie_info .info_text .info_button .brand_btn, .coffeenie_info .info_text .info_button .newshop_btn {width: 39%; margin-top: 6px;}
 }
