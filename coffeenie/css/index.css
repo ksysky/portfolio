@@ -453,7 +453,6 @@ body {
 	text-align: center;
 	font-size: 3rem;
 	font-weight: bold;
-	margin-bottom: 20px;
 }
 
 /* 메인 슬라이드 */
@@ -622,7 +621,7 @@ body {
 
 .md .md_slide .slick-dots {
 	position: absolute;
-	bottom: -40px;
+	bottom: -55px;
 	left: 50%;
 }
 
@@ -662,6 +661,7 @@ body {
 
 .md .md_slide_btn {
 	position: relative;
+	top: 15px;
 }
 
 .md .md_slide_btn .btn_line {
@@ -899,6 +899,9 @@ body {
 
 	.main_center .new_slide .slick-prev {left: -15px;}
 	.main_center .new_slide .slick-next {right: -15px;}
+
+	.md .md_slide_btn {right: 22px;}
+	.md .md_slide .slick-dots {left: 47.5%;}
 }
 
 @media (max-width: 720px) {
@@ -919,6 +922,10 @@ body {
 	.coffeenie_info .info_text .info_button .brand_btn {margin-right: 1%;}
 	.coffeenie_info .info_text .info_button .newshop_btn {margin-right: 0px;}
 	.coffeenie_info .info_text .info_button .brand_btn, .coffeenie_info .info_text .info_button .newshop_btn {width: 29%; margin-top: 10px;}
+
+	.md .md_slide_btn {right: 73px;}
+	.md .md_slide .slick-dots {left: 42%;}
+	.md .md_slide_btn .btn_line {left: 49.5%;}
 }
 
 @media (max-width: 480px) {
@@ -942,4 +949,7 @@ body {
 	.coffeenie_info .info_text {top: 33%;}
 	.coffeenie_info .info_text .info_button .franchise_btn {width: 80%;}
 	.coffeenie_info .info_text .info_button .brand_btn, .coffeenie_info .info_text .info_button .newshop_btn {width: 39%; margin-top: 6px;}
+
+	.md {height: 360px;}
+	.md .md_slide .slick-dots {left: 36%;}
 }
