@@ -556,11 +556,19 @@ body {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(7%,-50%);
+	transform: translate(7%,-60%);
 	text-align: left;
 	max-width: 1000px;
 	width: 40%;
 	color: #fff;
+	opacity: 0;
+	transition: all .6s ease-in-out;
+}
+
+.coffeenie_info .info_text.show {
+	transform: translate(7%,-50%);
+	display: block;
+	opacity: 1;
 }
 
 .coffeenie_info .info_text h2 {
@@ -920,6 +928,9 @@ body {
 	.m_nav .m_menu li a {padding: 15px 16px;}
 	.m_nav .m_menu > ul > li > a:after {right: 16px;}
 
+	.main_slide .new_slide .slick-prev {left: -14px;}
+	.main_slide .new_slide .slick-next {right: -14px;}
+
 	.coffeenie_info {height: 830px; background: url(../img/FRANCHISE_vertical.jpg) no-repeat center bottom; background-size: cover;}
 	.coffeenie_info .info_text {top: 28%; width: 80%; transform: translate(-50%,-50%); text-align: center;}
 	.coffeenie_info .info_text h2 {font-size: 2.3rem;}
@@ -959,8 +970,8 @@ body {
 	.slides .slick-dots {bottom: 15px;}
 	.slides .slick-dots li button {width: 10px; height: 10px;}
 
-	.main_center .new_slide {width: 100%;}
-	.main_center .new_slide .slick-prev, .main_center .new_slide .slick-next {top: 100px;}
+	.new_slide {width: 100%;}
+	.main_slide .new_slide .slick-prev, .main_slide .new_slide .slick-next {top: 90px;}
 	.new_slide .slick-dots li button {width: 10px; height: 10px;}
 
 	.coffeenie_info {height: 750px;}

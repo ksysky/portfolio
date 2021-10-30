@@ -35,43 +35,12 @@ $(".m_menu > ul > li").click(function(){
 	}
 });
 
-//$(".m_nav.on .nav ul li").click(function(){
-//	$(".nav > ul ul").slideToggle();
-//	$(".menuback").slideToggle();
-//});
-
-
-// 이미지 슬라이드
-//$(".banner > .side-bars > div").click(function(){
-//    var $clickedBtn = $(this);
-//    
-//    var $slider = $clickedBtn.closest('.banner');
-//    
-//    var isLeft = $clickedBtn.index() == 0;
-//    
-//    var $present = $slider.find('.slides > .active');
-//    
-//    var $post = null;
-//    
-//    if(isLeft) {
-//        $post = $present.prev();
-//    }
-//    else {
-//        $post = $present.next();
-//    }
-//    
-//    if ( $post.length == 0 ) {
-//        if(isLeft) {
-//            $post = $slider.find('.slides > div:last-child');    
-//        }
-//        else {
-//            $post = $slider.find('.slides > div:first-child');   
-//        }
-//    }
-//    
-//    $present.removeClass('active');
-//    $post.addClass('active');
-//});
+// 모바일 메뉴 검은색 뒷 배경 터치시 메뉴 닫기
+$(".m_back").click(function(e){
+	e.preventDefault();
+	$(".m_nav").removeClass("on");
+	$(".m_back").removeClass("on");
+});
 
 // 슬릭 배너 이미지 슬라이드
 $('.slides').slick({
@@ -117,11 +86,19 @@ $('.new_slide').slick({
 			breakpoint: 480,
 			settings: {
 			  slidesToShow: 2,
-			  slidesToScroll: 2,
-			  arrows: false
+			  slidesToScroll: 2
 			}
 		}
 	]	
+});
+
+// 커피니 창업 부분 텍스트 애니
+$(window).scroll(function(){
+	const wTop = $(this).scrollTop();
+	
+	if (wTop >= $(".coffeenie_info").offset().top - $(window).height()/1){
+        $(".info_text").addClass("show");
+    }
 });
 
 // 슬릭 MD 상품 슬라이드
