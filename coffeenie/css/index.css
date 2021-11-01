@@ -620,7 +620,7 @@ body {
 .md {
 	position: relative;
 	height: 450px;
-	margin-bottom: 80px;
+	margin-bottom: 70px;
 }
 
 .md_tit {
@@ -973,7 +973,7 @@ body {
 	.m_nav .m_login {height: 60px; line-height: 60px;}
 	.m_nav .nav_close {top: 15px; right: 10px;}
 
-	#banner {height: 350px; margin-top: 60px;}
+	#banner {height: 350px; margin-top: 60px; margin-bottom: 0;}
 	.slides .slick-dots {bottom: 15px;}
 	.slides .slick-dots li button {width: 10px; height: 10px;}
 
@@ -981,7 +981,7 @@ body {
 	.main_slide .new_slide .slick-prev, .main_slide .new_slide .slick-next {top: 90px;}
 	.new_slide .slick-dots li button {width: 10px; height: 10px;}
 
-	.coffeenie_info {height: 750px;}
+	.coffeenie_info {height: 750px; margin: 50px 0;}
 	.coffeenie_info .info_text {top: 33%;}
 	.coffeenie_info .info_text .info_button .franchise_btn {width: 80%;}
 	.coffeenie_info .info_text .info_button .brand_btn, .coffeenie_info .info_text .info_button .newshop_btn {width: 39%; margin-top: 6px;}
