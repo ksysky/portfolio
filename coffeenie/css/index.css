@@ -57,9 +57,9 @@ body {
 
 .header .header_nav li a {
 	display: block;
-	font-size: 12px;
+	font-size: 1.3rem;
 	color: #5a87c5;
-	font-weight: bold;
+	font-weight: 600;
 }
 
 .header .header_logo {
@@ -109,6 +109,7 @@ body {
 	position: relative;
 	text-align: center;
 	border-bottom: 2px solid #5a87c5;
+	margin-top: 20px;
 }
 
 .nav>ul {
@@ -131,8 +132,8 @@ body {
 .nav>ul>li>a {
 	display: block;
 	padding: 20px;
-	font-size: 16px;
-	font-weight: bold;
+	font-size: 1.8rem;
+	font-weight: 500;
 	color: #5a87c5;
 }
 
@@ -159,6 +160,8 @@ body {
 .nav ul ul>li>a {
 	color: #fff;
 	position: relative;
+	font-size: 1.6rem;
+	font-weight: 200;
 }
 
 .nav ul ul>li>a::after {
@@ -179,7 +182,7 @@ body {
 .nav>.menuback {
 	display: none;
 	position: absolute;
-	top: 64px;
+	top: 59px;
 	left: 0;
 	width: 100%;
 	height: 220px;
@@ -452,7 +455,7 @@ body {
 	color: #5a87c5;
 	text-align: center;
 	font-size: 3rem;
-	font-weight: bold;
+	font-weight: 600;
 }
 
 /* 메인 슬라이드 */
@@ -511,11 +514,11 @@ body {
 }
 
 .main_slide .new_slide span {
-	font-size: 1.5rem;
+	font-size: 1.6rem;
+	font-weight: 500;
 	display: block;
 	text-align: center;
 	margin-top: 10px;
-	font-weight: bold;
 	color: #5a87c5;
 }
 
@@ -572,18 +575,19 @@ body {
 }
 
 .coffeenie_info .info_text h2 {
-	font-size: 1.8rem;
+	font-size: 2rem;
 }
 
 .coffeenie_info .info_text .info_logo img {
 	display: block;
 	width: 180px;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .coffeenie_info .info_text p {
+	font-size: 1.6rem;
+	font-weight: 200;
 	margin-top: 20px;
-	/* word-wrap: break-word; */
 }
 
 .coffeenie_info .info_text .info_button {
@@ -597,6 +601,7 @@ body {
 	margin-right: 6px;
 	padding: 8px 0;
 	font-weight: bold;
+	font-size: 1.6rem;
 }
 
 .coffeenie_info .info_text .info_button .franchise_btn {
@@ -664,7 +669,8 @@ body {
 
 .md .md_slide span {
 	color: #5a87c5;
-	font-weight: bold;
+	font-size: 1.6rem;
+	font-weight: 500;
 }
 
 .md .md_slide_btn {
@@ -721,7 +727,7 @@ body {
 
 .ins_img .ins_tit {
 	color: #fff;
-	font-weight: bold;
+	font-weight: 600;
 	font-size: 2.5rem;
 	margin-bottom: 25px;
 }
@@ -765,8 +771,8 @@ body {
 	height: 40px;
 	display: inline-block;
 	text-align: center;
-	font-size: 1.4rem;
-	font-weight: bold;
+	font-size: 1.6rem;
+	font-weight: 600;
 	color: #5a87c5;
 	background-color: #fff;
 	line-height: 40px;
@@ -932,7 +938,8 @@ body {
 	.main_slide .new_slide .slick-next {right: -14px;}
 
 	.coffeenie_info {height: 830px; background: url(../img/FRANCHISE_vertical.jpg) no-repeat center bottom; background-size: cover;}
-	.coffeenie_info .info_text {top: 28%; width: 80%; transform: translate(-50%,-50%); text-align: center;}
+	.coffeenie_info .info_text {top: 28%; width: 80%; transform: translate(-50%,-60%); text-align: center;}
+	.coffeenie_info .info_text.show {transform: translate(-50%,-50%);}
 	.coffeenie_info .info_text h2 {font-size: 2.3rem;}
 	.coffeenie_info .info_text .info_logo img {width: 220px; margin: 15px auto;}
 	.coffeenie_info .info_text p {font-size: 1.8rem;}

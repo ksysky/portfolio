@@ -93,10 +93,11 @@ $('.new_slide').slick({
 });
 
 // 커피니 창업 부분 텍스트 애니
-$(window).scroll(function(){
+$(window).scroll(function(e){
+	e.preventDefault();
 	const wTop = $(this).scrollTop();
 	
-	if (wTop >= $(".coffeenie_info").offset().top - $(window).height()/1){
+	if (wTop >= $(".coffeenie_info").offset().top - $(window).height()/2){
         $(".info_text").addClass("show");
     }
 });
