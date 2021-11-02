@@ -939,6 +939,7 @@ body {
 	#footer .row {padding: 0 12px;}
 	.sns_icon {right: 8px;}
 	.sns_icon a {width: 40px; height: 40px; margin: 0 2px;}
+	.sns_icon a i {font-size: 20px;}
 	.foot_link li::before {top: 4px;}
 
 	#top_btn {right: 12px;}
@@ -980,7 +981,6 @@ body {
 	#footer {padding-top: 100px;}
 	.foot_link, .foot_copy_info, .foot_copy {text-align: center;}
 	.sns_icon {width: 140px; top: -65px; left: 50%; transform: translateX(-50%);}
-	/* .sns_icon {top: 50%; left: 50%; transform: translate(-50%,-50%);} */
 
 	#top_btn {right: 24px;}
 }
