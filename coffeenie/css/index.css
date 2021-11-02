@@ -182,7 +182,7 @@ body {
 .nav>.menuback {
 	display: none;
 	position: absolute;
-	top: 59px;
+	top: 61px;
 	left: 0;
 	width: 100%;
 	height: 220px;
@@ -588,6 +588,7 @@ body {
 	font-size: 1.6rem;
 	font-weight: 200;
 	margin-top: 20px;
+	font-size: 1.6rem;
 }
 
 .coffeenie_info .info_text .info_button {
@@ -855,21 +856,36 @@ body {
 /* top 버튼 */
 #top_btn {
 	position: fixed;
-	bottom: 100px;
-	right: 80px;
+	bottom: 50px;
+	right: 105px;
+	width: 70px;
+	height: 120px;
+	display: none;
 }
 
 #top_btn a .top_btn {
+	position: absolute;
+	top: 75px;
+	right: 10px;
 	width: 50px;
 	height: 50px;
 	text-indent: -9999px;
-	display: none;
-	background: url(../img/top_icon-01.png) no-repeat 0 0;
+	background: url(../img/coffeenie_top_btn-01.png) no-repeat;
+	background-size: 100%;
 }
 
-#top_btn a:hover .top_btn {
-	background: url(../img/top_icon_blue-01.png) no-repeat 0 0;
+/* 가맹문의 아이콘 */
+#top_btn a .q_btn {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 70px;
+	height: 70px;
+	text-indent: -9999px;
+	background: url(../img/coffeenie_q-02.png) no-repeat;
+	background-size: 100%;
 }
+
 
 /* media query */
 @media (max-width: 1024px) {
@@ -924,6 +940,8 @@ body {
 	.sns_icon {right: 8px;}
 	.sns_icon a {width: 40px; height: 40px; margin: 0 2px;}
 	.foot_link li::before {top: 4px;}
+
+	#top_btn {right: 12px;}
 }
 
 @media (max-width: 720px) {
@@ -962,6 +980,8 @@ body {
 	.foot_link, .foot_copy_info, .foot_copy {text-align: center;}
 	.sns_icon {width: 140px; top: -65px; left: 50%; transform: translateX(-50%);}
 	/* .sns_icon {top: 50%; left: 50%; transform: translate(-50%,-50%);} */
+
+	#top_btn {right: 24px;}
 }
 
 @media (max-width: 480px) {
@@ -991,4 +1011,6 @@ body {
 
 	.insta .row {padding: 0 8px;}
 	
+	#top_btn {right: 8px;}
+	#top_btn a .top_btn {width: 40px; height: 40px;}
 }

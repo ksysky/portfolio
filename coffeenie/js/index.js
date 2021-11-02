@@ -146,11 +146,10 @@ $(".pause").click(function(){
 // top 버튼
 $(function() {
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 130) {
-            $('.top_btn').css("display", "block");           
-//            $('.top_btn').css('right', $('#banner').offset().left);
+        if ($(this).scrollTop() > 350) {
+            $('#top_btn').css("display", "block");
         } else {
-            $('.top_btn').css("display", "none");
+            $('#top_btn').css("display", "none");
         }
     });
     
