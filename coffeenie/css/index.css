@@ -942,6 +942,7 @@ body {
 	.foot_link li::before {top: 4px;}
 
 	#top_btn {right: 12px;}
+	#top_btn a .top_btn {right: 0;}
 }
 
 @media (max-width: 720px) {
