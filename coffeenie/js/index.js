@@ -109,8 +109,8 @@ $(".md_slide").slick({
 	slidesToScroll: 4,
 	infinite: true,
 	autoplay: true,
-	autoplaySpeed: 2500,
-	speed: 2500,
+	autoplaySpeed: 2000,
+	speed: 1500,
 	dots: true,
 	arrows: false,
 	responsive: [
