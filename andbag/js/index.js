@@ -206,7 +206,11 @@ var swiper = new Swiper('.mp_slide', {
 $(window).scroll(function(){
 	const wTop = $(this).scrollTop();
 	
-	if (wTop >= $("#story").offset().top - $(window).height()/1 ){
+	if (wTop >= $("#banner2").offset().top - $(window).height()/2){
+        $(".t_box").addClass("show");
+    }
+
+	if (wTop >= $("#story").offset().top - $(window).height()/2){
         $(".story_text").addClass("show");
         $(".story_img").addClass("show");
     }
