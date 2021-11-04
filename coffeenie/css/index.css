@@ -1007,7 +1007,9 @@ body {
 	.coffeenie_info .info_text .info_button .brand_btn, .coffeenie_info .info_text .info_button .newshop_btn {width: 39%; margin-top: 6px;}
 
 	.md {height: 360px;}
-	.md .md_slide .slick-dots {left: 36%;}
+	.md .md_slide_btn {right: 60px;}
+	.md .md_slide .slick-dots {bottom: -55px; left: 40%;}
+	.md .md_slide .slick-dots li button {width: 10px; height: 10px;}
 
 	.insta .row {padding: 0 8px;}
 	
