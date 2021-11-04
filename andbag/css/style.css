@@ -83,7 +83,7 @@ html {
 
 #header.white {
 	background: #fff;
-	transition: background .3s;
+	transition: all .3s;
 	box-shadow: 0px 1px 5px #777;
 }
 
