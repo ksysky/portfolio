@@ -202,7 +202,7 @@ var swiper = new Swiper('.mp_slide', {
 	},
 });
 
-// 앤드백 스토리 페이드인 효과
+// 앤드백 두번째 배너 텍스트와 스토리 페이드인 효과
 $(window).scroll(function(){
 	const wTop = $(this).scrollTop();
 	
