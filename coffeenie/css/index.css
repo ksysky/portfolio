@@ -601,8 +601,8 @@ body {
 	cursor: pointer;
 	margin-right: 6px;
 	padding: 8px 0;
-	font-weight: bold;
-	font-size: 1.6rem;
+	font-weight: 500;
+	font-size: 1.8rem;
 }
 
 .coffeenie_info .info_text .info_button .franchise_btn {

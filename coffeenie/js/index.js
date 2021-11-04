@@ -97,7 +97,7 @@ $(window).scroll(function(e){
 	e.preventDefault();
 	const wTop = $(this).scrollTop();
 	
-	if (wTop >= $(".coffeenie_info").offset().top - $(window).height()/2){
+	if (wTop >= $(".coffeenie_info").offset().top - $(window).height()/1.5){
         $(".info_text").addClass("show");
     }
 });
