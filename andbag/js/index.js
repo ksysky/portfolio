@@ -84,9 +84,7 @@ $(".mNav > ul > li").click(function () {
 // 메인 슬라이드 배너
 var swiper = new Swiper('.banner1', {
 	slidesPerView: 1,
-	effect: "fade",
 	loop: true,
-	speed : 5000,
 	autoplay: {
 		delay: 3000,
 	},

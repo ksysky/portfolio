@@ -246,9 +246,9 @@
 }
 
 :root {
-    /*
-    --swiper-pagination-color: var(--swiper-theme-color);
-    */
+    
+    /* --swiper-pagination-color: var(--swiper-theme-color); */
+   
 }
 
 .swiper-pagination {
