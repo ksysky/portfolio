@@ -94,5 +94,6 @@ header {
 
 /* 반응형 */
 @media (max-width: 1200px) {
+    html {overflow: auto;}
     .container {width: 100%;}
 }
