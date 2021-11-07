@@ -91,3 +91,8 @@ header {
     font-size: 2rem;
     font-weight: bold;
 }
+
+/* 반응형 */
+@media (max-width: 1200px) {
+    .container {width: 100%;}
+}
