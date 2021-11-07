@@ -16,43 +16,52 @@
     <header>
         <div class="container">
             <div class="row">
-                <h1>로고</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">메인</a></li>
-                        <li><a href="#">자기소개</a></li>
-                        <li><a href="#">스킬</a></li>
-                        <li><a href="#">포폴1</a></li>
-                        <li><a href="#">포폴2</a></li>
-                        <li><a href="#">포폴3</a></li>
-                        <li><a href="#">연락</a></li>
-                    </ul>
-                </nav>
+                <div class="header_box">
+                    <h1>로고</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#main">메인</a></li>
+                            <li><a href="#intro">자기소개</a></li>
+                            <li><a href="#skills">스킬</a></li>
+                            <li><a href="#section1">포폴1</a></li>
+                            <li><a href="#section2">포폴2</a></li>
+                            <li><a href="#section3">포폴3</a></li>
+                            <li><a href="#connect">연락</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
     <!-- //header -->
 
     <!-- main -->
-    <main>
+    <section id="main" class="scroll">
         <p>메인 페이지</p>
-    </main>
-    <section class="intro">
+    </section>
+    <section id="intro" class="scroll">
         <p>자기소개</p>
     </section>
-    <section class="skills">
+    <section id="skills" class="scroll">
         <p>스킬</p>
     </section>
-    <section class="section1">
+    <section id="section1" class="scroll">
         <a href="https://ksysky.github.io/portfolio/coffeenie/index.html">coffeenie (개인 포폴)</a>
     </section>
-    <section class="section2">
+    <section id="section2" class="scroll">
         <a href="https://ksysky.github.io/portfolio/espoir/index.html">espoir (개인 포폴)</a>
     </section>
-    <section class="section3">
+    <section id="section3" class="scroll">
         <a href="https://ksysky.github.io/portfolio/andbag/index.html">and bag (개인 포폴)</a>
     </section>
     <!-- //main -->
-</body>
 
+    <!-- footer -->
+    <footer id="connect" class="scroll">
+        <p>연락</p>
+    </footer>
+    <!-- //footer -->
+</body>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/custom.js"></script>
 </html>
