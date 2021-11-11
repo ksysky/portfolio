@@ -38,11 +38,39 @@ aside {
 
 /* 메인 페이지 */
 #main {
+    position: relative;
     height: 100vh;
-    line-height: 100vh;
-    background: rgb(255, 232, 232);
     font-size: 2rem;
     font-weight: bold;
+}
+
+#main .text_box {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+#main .text_box .emoji {
+    animation: motion 0.8s linear 0s infinite alternate;
+    margin-bottom: 20px;
+}
+
+@keyframes motion {
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(-15px);}
+}
+
+#main .text_box p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 55px;
+    color: #707070;
+}
+
+#main .text_box p .blue {
+    color: #03658C;
 }
 
 #intro {
