@@ -9,59 +9,69 @@
     <!-- style -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"/>
     <!-- //style -->
 </head>
 
 <body>
-    <!-- header -->
-    <header>
+    <!-- aside -->
+    <aside>
         <div class="container">
             <div class="row">
-                <div class="header_box">
+                <div class="aside_box">
                     <h1>로고</h1>
                     <nav>
                         <ul>
-                            <li><a href="#main">메인</a></li>
-                            <li><a href="#intro">자기소개</a></li>
-                            <li><a href="#skills">스킬</a></li>
-                            <li><a href="#section1">포폴1</a></li>
-                            <li><a href="#section2">포폴2</a></li>
-                            <li><a href="#section3">포폴3</a></li>
-                            <li><a href="#connect">연락</a></li>
+                            <li><a href="#main">HOME</a></li>
+                            <li><a href="#intro">ABOUT ME</a></li>
+                            <li><a href="#skills">SKILLS</a></li>
+                            <li><a href="#portfolio">PORTFOLIO</a></li>
+                            <li><a href="#design">DESIGN</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
                         </ul>
                     </nav>
+                    <div class="dark_mode">
+                        <span>다크모드</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
-    <!-- //header -->
+    </aside>
+    <!-- //aside -->
 
     <!-- main -->
-    <section id="main" class="scroll">
-        <p>메인 페이지</p>
-    </section>
-    <section id="intro" class="scroll">
-        <p>자기소개</p>
-    </section>
-    <section id="skills" class="scroll">
-        <p>스킬</p>
-    </section>
-    <section id="section1" class="scroll">
-        <a href="https://ksysky.github.io/portfolio/coffeenie/index.html">coffeenie (개인 포폴)</a>
-    </section>
-    <section id="section2" class="scroll">
-        <a href="https://ksysky.github.io/portfolio/espoir/index.html">espoir (개인 포폴)</a>
-    </section>
-    <section id="section3" class="scroll">
-        <a href="https://ksysky.github.io/portfolio/andbag/index.html">and bag (개인 포폴)</a>
-    </section>
-    <!-- //main -->
-
-    <!-- footer -->
-    <footer id="connect" class="scroll">
-        <p>연락</p>
-    </footer>
-    <!-- //footer -->
+    <div class="content">
+        <section id="main" class="scroll">
+            <p>메인 페이지</p>
+        </section>
+        <section id="intro" class="scroll">
+            <p>자기소개</p>
+        </section>
+        <section id="skills" class="scroll">
+            <p>스킬</p>
+        </section>
+        <section id="portfolio">
+            <div id="section1" class="scroll">
+                <a href="https://ksysky.github.io/portfolio/coffeenie/index.html">coffeenie (개인 포폴)</a>
+            </div>
+            <div id="section2" class="scroll">
+                <a href="https://ksysky.github.io/portfolio/espoir/index.html">espoir (개인 포폴)</a>
+            </div>
+            <div id="section3" class="scroll">
+                <a href="https://ksysky.github.io/portfolio/andbag/index.html">and bag (개인 포폴)</a>
+            </div>
+        </section>
+        <section id="design">
+            <p>디자인</p>
+        </section>
+        <!-- //main -->
+    
+        <!-- footer -->
+        <footer id="contact" class="scroll">
+            <p>연락</p>
+        </footer>
+        <!-- //footer -->
+    </div>
 </body>
 <!-- script -->
 <script src="js/jquery-3.6.0.min.js"></script>
