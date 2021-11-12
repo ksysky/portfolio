@@ -19,15 +19,64 @@ aside {
     left: 0;
     width: 300px;
     height: 100%;
+    box-sizing: border-box;
     background: #03658C;
 }
 
+aside .row {
+    padding: 0 70px;
+}
+
 .aside_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     text-align: center;
 }
 
-.aside_box nav ul li a {
+.aside_box h1 {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    margin: 60px auto;
+}
+
+.aside_box h1 a {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 40px;
     color: #fff;
+    transition: text-shadow .2s ease-in-out;
+}
+
+.aside_box h1 a:hover {
+    text-shadow: 4px 4px #D9471A;
+}
+
+.aside_box h1:hover a.shadow {
+    top: 3px;
+    left: 4px;
+}
+
+.aside_box nav ul li {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.aside_box nav ul li a {
+    display: block;
+    font-weight: 500;
+    color: #fff;
+    transition: text-shadow .2s ease-in-out;
+}
+
+.aside_box nav ul li.active a {
+    font-weight: 800;
+}
+
+.aside_box nav ul li:hover a {
+    text-shadow: 3px 3px #D9471A;
 }
 
 /* 컨텐츠 */
@@ -71,6 +120,62 @@ aside {
 
 #main .text_box p .blue {
     color: #03658C;
+}
+
+#main .scroll_box {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -50%);
+}
+
+#main .scroll_box a {
+    font-size: 18px;
+    font-weight: 500;
+    color:#03658C;
+}
+
+#main .scroll_box a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1.7px solid #03658C;
+    border-bottom: 1.7px solid #03658C;
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+    animation: arrow 2s infinite;
+    opacity: 0;
+}
+
+#main .scroll_box a span:nth-of-type(1) {
+    animation-delay: 0;
+}
+
+#main .scroll_box a span:nth-of-type(2) {
+    top: 16px;
+    animation-delay: .15s;
+}
+
+#main .scroll_box a span:nth-of-type(3) {
+    top: 32px;
+    animation-delay: .3s;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 #intro {

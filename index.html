@@ -9,30 +9,31 @@
     <!-- style -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"/>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
     <!-- //style -->
 </head>
 
 <body>
     <!-- aside -->
     <aside>
-        <div class="container">
-            <div class="row">
-                <div class="aside_box">
-                    <h1>로고</h1>
-                    <nav>
-                        <ul>
-                            <li><a href="#main">HOME</a></li>
-                            <li><a href="#intro">ABOUT ME</a></li>
-                            <li><a href="#skills">SKILLS</a></li>
-                            <li><a href="#portfolio">PORTFOLIO</a></li>
-                            <li><a href="#design">DESIGN</a></li>
-                            <li><a href="#contact">CONTACT</a></li>
-                        </ul>
-                    </nav>
-                    <div class="dark_mode">
-                        <span>다크모드</span>
-                    </div>
+        <div class="row">
+            <div class="aside_box">
+                <h1>
+                    <a href="#main">KIM<br>SU<br>YEON</a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#main">Home</a></li>
+                        <li><a href="#intro">About me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#design">Design</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="dark_mode">
+                    <span>DARK MODE ON</span>
                 </div>
             </div>
         </div>
@@ -41,28 +42,33 @@
 
     <!-- main -->
     <div class="content">
-        <section id="main" class="scroll">
+        <section id="main">
             <div class="text_box">
                 <p class="emoji">&#x1F469;&#x200D;&#x1F4BB;</p>
                 <p>안녕하세요</p>
                 <p>신입 <em class="blue">웹퍼블리셔</em></p>
                 <p><em class="blue">김수연</em>의 <em class="blue">포트폴리오</em> 입니다.</p>
             </div>
+            <div class="scroll_box">
+                <a href="#">
+                    <span></span><span></span><span></span>
+                </a>
+            </div>
         </section>
-        <section id="intro" class="scroll">
+        <section id="intro">
             <p>자기소개</p>
         </section>
-        <section id="skills" class="scroll">
+        <section id="skills">
             <p>스킬</p>
         </section>
         <section id="portfolio">
-            <div id="section1" class="scroll">
+            <div id="section1">
                 <a href="https://ksysky.github.io/portfolio/coffeenie/index.html">coffeenie (개인 포폴)</a>
             </div>
-            <div id="section2" class="scroll">
+            <div id="section2">
                 <a href="https://ksysky.github.io/portfolio/espoir/index.html">espoir (개인 포폴)</a>
             </div>
-            <div id="section3" class="scroll">
+            <div id="section3">
                 <a href="https://ksysky.github.io/portfolio/andbag/index.html">and bag (개인 포폴)</a>
             </div>
         </section>
@@ -70,9 +76,9 @@
             <p>디자인</p>
         </section>
         <!-- //main -->
-    
+
         <!-- footer -->
-        <footer id="contact" class="scroll">
+        <footer id="contact">
             <p>연락</p>
         </footer>
         <!-- //footer -->
@@ -82,4 +88,5 @@
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/custom.js"></script>
 <!-- //script -->
+
 </html>
