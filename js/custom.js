@@ -1,26 +1,24 @@
-// 마우스 휠 이벤트
-// window.addEventListener("wheel", function(e) {
-//     e.preventDefault();
-// },{passive : false});
+// 메인 텍스트 타이핑 효과
+const typingBool = false;
+const typingIdx = 0;
+const liIndex = 0;
+const pLength = $(".typing p").length;
 
-// const $html = $("html");
-// let page = 1;
-// const lastPage = $(".scroll").length;
+const typingTxt = $(".typing p").eq(index).text();
+typingTxt = typingTxt.split("");
 
-// $html.animate({scrollTop : 0},10);
+if (typingBool == false) {
+    typingBool = true;
+    const tyInt = setInterval(typing,100);
+}
 
-// $(window).on("wheel", function(e) {
-//     if($html.is(":animated")) return;
+function typing() {
+    $(".typing p").removeClass("on");
+    $(".typing p").eq(liIndex).addClass("on");
+    if (typingIdx < typingTxt.length) {
+        $(".typing > p").eq(liIndex).append(typingTxt[typingIdx]);
+        typingIdx++;
+    } else {
 
-//     if(e.originalEvent.deltaY > 0) {
-//         if(page == lastPage) return;
-//         page++;
-//     } else if(e.originalEvent.deltaY < 0) {
-//         if(page == 1) return;
-//         page--;
-//     }
-
-//     const posTop = (page-1) * $(window).height();
-
-//     $html.animate({scrollTop : posTop});
-// });
+    }
+}

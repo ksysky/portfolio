@@ -4,6 +4,7 @@
 html, body {
     width: 100%;
     height: 100%;
+    background-color: #fafafa;
 }
 
 /* .container {
@@ -72,21 +73,31 @@ aside .row {
 }
 
 .aside_box nav ul li.active a {
-    font-weight: 800;
+    text-shadow: 3px 3px #D9471A;
 }
 
 .aside_box nav ul li:hover a {
     text-shadow: 3px 3px #D9471A;
 }
 
-.aside_box .dark_mode {
+.aside_box .mode_switch {
+    margin-top: 40px;
+}
+
+.aside_box .mode_switch .mode_tit {
+    margin-right: 10px;
+    color: #fff;
+}
+
+.aside_box .mode_switch .dark_mode {
     position: relative;
     display: inline-block;
     width: 55px;
     height: 30px;
+    top: -4px;
 }
 
-.aside_box .dark_mode input {
+.aside_box .mode_switch .dark_mode input {
     opacity: 0;
     width: 0;
     height: 0;
@@ -123,7 +134,7 @@ aside .row {
 }
 
 .dark_mode input:checked + .onoff_switch:before {
-    transform: translateX(25px);
+    transform: translateX(24px);
     background: url(../img/moon.png) no-repeat center;
     background-size: 18px;
     background-color: #fff;
@@ -143,22 +154,26 @@ aside .row {
     font-weight: bold;
 }
 
+#main .emoji {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: motion 0.6s linear 0s infinite alternate;
+    font-size: 3rem;
+}
+
+@keyframes motion {
+    0% {top: 25%;}
+    100% {top: 26%;}
+}
+
 #main .text_box {
     position: absolute;
     width: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -70%);
-}
-
-#main .text_box .emoji {
-    animation: motion 0.8s linear 0s infinite alternate;
-    margin-bottom: 20px;
-}
-
-@keyframes motion {
-    0% {transform: translateY(0px);}
-    100% {transform: translateY(-15px);}
+    transform: translate(-50%, -50%);
 }
 
 #main .text_box p {
@@ -166,10 +181,26 @@ aside .row {
     margin-bottom: 10px;
     font-size: 55px;
     color: #707070;
+    /* display: none; */
 }
 
 #main .text_box p .blue {
     color: #03658C;
+}
+
+#main .typing p {
+    display: block;
+}
+
+#main .typing p.on {
+    display: inline-block;
+    animation: cursor .3s infinite;
+}
+
+@keyframes cursor {
+    0% {border-right: 1px solid #fafafa;}
+    50% {border-right: 1px solid #707070;}
+    100% {border-right: 1px solid #fafafa;}
 }
 
 #main .scroll_box {
