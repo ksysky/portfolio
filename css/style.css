@@ -51,6 +51,10 @@ aside .row {
     transition: text-shadow .2s ease-in-out;
 }
 
+.aside_box h1 a.m_logo {
+    display: none;
+}
+
 .aside_box h1 a:hover {
     text-shadow: 4px 4px #D9471A;
 }
@@ -70,6 +74,10 @@ aside .row {
     font-weight: 500;
     color: #fff;
     transition: text-shadow .2s ease-in-out;
+}
+
+.aside_box nav ul li a.icon {
+    display: none;
 }
 
 .aside_box nav ul li.active a {
@@ -302,6 +310,24 @@ aside .row {
 }
 
 /* 반응형 */
-/* @media (max-width: 1200px) {
-    
-} */
+@media (max-width: 1024px) {
+    aside {width: 100%; height: 80px; z-index: 20;}
+    aside .row {padding: 0 24px;}
+    .aside_box {height: 80px; flex-direction: row; justify-content: space-between; align-items: center;}
+    .aside_box h1 {margin: 0;}
+    .aside_box h1 a.pc_logo {display: none;}
+    .aside_box h1 a.m_logo {display: block; font-size: 35px;}
+    .aside_box nav ul li {display: inline-block; margin-bottom: 0;}
+    .aside_box nav ul li a.text {display: none;}
+    .aside_box nav ul li a.icon {display: block; margin-right: 30px;}
+    .aside_box .mode_switch {margin-top: 0;}
+    .aside_box .mode_switch .mode_tit {display: none;}
+    .aside_box .mode_switch .dark_mode {top: 0;}
+
+    .content {padding-left: 0;}
+}
+
+@media (max-width: 840px) {
+    .aside_box h1 a.m_logo {font-size: 28px;}
+    .aside_box nav ul li a.icon {margin-right: 20px;}
+}
