@@ -259,15 +259,29 @@ nav ul li:hover a {
     height: 70px;
     background: url(../img/woman_technologist.png) no-repeat center;
     background-size: cover;
-    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: motion 0.6s linear 0s infinite alternate;
+    animation: motion1 0.6s linear 0s infinite alternate;
 }
 
-@keyframes motion {
+@keyframes motion1 {
     0% {top: 25%;}
     100% {top: 27%;}
+}
+
+@keyframes motion2 {
+    0% {top: 30%;}
+    100% {top: 32%;}
+}
+
+@keyframes motion3 {
+    0% {top: 35%;}
+    100% {top: 37%;}
+}
+
+@keyframes motion4 {
+    0% {top: 39%;}
+    100% {top: 41%;}
 }
 
 #main .text_box {
@@ -419,6 +433,8 @@ nav ul li:hover a {
     .mBtn {display: block;}
 
     .content {padding-left: 0;}
+    #main .emoji {animation: motion2 0.6s linear 0s infinite alternate;}
+    #main .text_box {top: 54%;}
 }
 
 @media (max-width: 840px) {
@@ -429,10 +445,18 @@ nav ul li:hover a {
     aside, .aside_box {height: 60px;}
     aside .row {padding: 0 16px;}
     .aside_box h1 a.m_logo {font-size: 30px;}
+
+    #main .emoji {width: 50px; height: 50px; animation: motion3 0.6s linear 0s infinite alternate;}
+    #main .text_box p {font-size: 34.5px;}
+    #main .scroll_box a span {width: 16px; height: 16px; border-left: 1px solid #03658C; border-bottom: 1px solid #03658C;}
 }
 
 @media (max-width: 400px) {
     aside, .aside_box {height: 50px;}
     .aside_box h1 a.m_logo {font-size: 24px;}
     .mBtn {width: 25px;}
+    .m_menu {width: 70%; right: -70%;}
+
+    #main .emoji {width: 40px; height: 40px; animation: motion4 0.6s linear 0s infinite alternate;}
+    #main .text_box p {font-size: 26px;}
 }
