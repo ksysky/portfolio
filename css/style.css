@@ -402,9 +402,9 @@ nav ul li:hover a {
 
 /* 반응형 */
 @media (max-width: 1024px) {
-    aside {width: 100%; height: 80px; z-index: 20;}
+    aside {width: 100%; height: 70px; z-index: 20;}
     aside .row {padding: 0 24px;}
-    .aside_box {height: 80px; flex-direction: row; justify-content: space-between; align-items: center;}
+    .aside_box {height: 70px; flex-direction: row; justify-content: space-between; align-items: center;}
     .aside_box h1 {margin: 0;}
     .aside_box h1 a.pc_logo {display: none;}
     .aside_box h1 a.m_logo {display: block; font-size: 35px;}
@@ -426,12 +426,13 @@ nav ul li:hover a {
 }
 
 @media (max-width: 600px) {
-    aside, .aside_box {height: 70px;}
+    aside, .aside_box {height: 60px;}
+    aside .row {padding: 0 16px;}
     .aside_box h1 a.m_logo {font-size: 30px;}
 }
 
 @media (max-width: 400px) {
-    aside, .aside_box {height: 60px;}
+    aside, .aside_box {height: 50px;}
     .aside_box h1 a.m_logo {font-size: 24px;}
     .mBtn {width: 25px;}
 }
