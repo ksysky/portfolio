@@ -22,3 +22,10 @@
 
 //     }
 // }
+
+// 모바일 메뉴 버튼
+$(".mBtn").click(function() {
+    $(".m_menu").toggleClass("on");
+    $(".mBtn").toggleClass("on");
+    $(".m_back").toggleClass("on");
+});
