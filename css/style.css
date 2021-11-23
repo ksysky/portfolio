@@ -290,14 +290,28 @@ nav ul li:hover a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-#main .text_box p {
+#main .text_box .t_text {
+    font-size: 50px;
+    color: #707070;
+}
+
+#main .text_box .line {
+    font-weight: 100;
+    animation: line .3s infinite;
+}
+
+@keyframes line {
+    to {opacity: 0;}
+}
+
+/* #main .text_box p {
     text-align: center;
     margin-bottom: 10px;
     font-size: 50px;
     color: #707070;
-    /* display: none; */
 }
 
 #main .text_box p .blue {
@@ -317,7 +331,7 @@ nav ul li:hover a {
     0% {border-right: 1px solid #fafafa;}
     50% {border-right: 1px solid #707070;}
     100% {border-right: 1px solid #fafafa;}
-}
+} */
 
 #main .scroll_box {
     position: absolute;
