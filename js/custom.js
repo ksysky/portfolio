@@ -11,12 +11,9 @@ const text = document.querySelector(".t_text");
 let i = 0;
 
 function typing() {
-    let txt = content[i++];
-    text.innerHTML += txt === "\n" ? "<br/>" : txt;
-    if(i > content.length) {
-        text.textContent = "";
-        i = 0;
+    if(i < content.length) {
+        let txt = content[i++]; // 0에서 끝 숫자까지
+        text.innerHTML += txt === "\n" ? "<br/>" : txt; // 줄바꿈
     }
 }
-
-setInterval(typing, 200);
+setInterval(typing, 150);
