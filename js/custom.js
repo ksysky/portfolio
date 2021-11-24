@@ -13,7 +13,7 @@ let i = 0;
 function typing() {
     if(i < content.length) {
         let txt = content[i++]; // 0에서 끝 숫자까지
-        text.innerHTML += txt === "\n" ? "<br/>" : txt; // 줄바꿈
+        text.innerHTML += txt === "\n" ? "<br/>" : txt;
     }
 }
 setInterval(typing, 150);

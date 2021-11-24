@@ -13,6 +13,19 @@ html, body {
     background: rgba(0,0,0,0.2);
 } */
 
+.content {
+    height: 100%;
+    padding-left: 300px;
+}
+
+.title_bold {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #03658C;
+}
+
 /* aside */
 aside {
     position: fixed;
@@ -24,7 +37,7 @@ aside {
     background: #03658C;
 }
 
-aside .row {
+aside > .row {
     padding: 0 70px;
 }
 
@@ -239,12 +252,6 @@ nav ul li:hover a {
     display: block;
 }
 
-/* 컨텐츠 */
-.content {
-    height: 100%;
-    padding-left: 300px;
-}
-
 /* 메인 페이지 */
 #main {
     position: relative;
@@ -275,13 +282,13 @@ nav ul li:hover a {
 }
 
 @keyframes motion3 {
-    0% {top: 35%;}
-    100% {top: 37%;}
+    0% {top: 38%;}
+    100% {top: 40%;}
 }
 
 @keyframes motion4 {
-    0% {top: 39%;}
-    100% {top: 41%;}
+    0% {top: 41%;}
+    100% {top: 43%;}
 }
 
 #main .text_box {
@@ -295,44 +302,19 @@ nav ul li:hover a {
 
 #main .text_box .t_text {
     font-size: 50px;
-    color: #707070;
+    color: #03658C;
 }
 
 #main .text_box .line {
     font-size: 50px;
     font-weight: 100;
     animation: line .8s infinite;
+    color: #303030;
 }
 
 @keyframes line {
     to {opacity: 0;}
 }
-
-/* #main .text_box p {
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 50px;
-    color: #707070;
-}
-
-#main .text_box p .blue {
-    color: #03658C;
-}
-
-#main .typing p {
-    display: block;
-}
-
-#main .typing p.on {
-    display: inline-block;
-    animation: cursor .3s infinite;
-}
-
-@keyframes cursor {
-    0% {border-right: 1px solid #fafafa;}
-    50% {border-right: 1px solid #707070;}
-    100% {border-right: 1px solid #fafafa;}
-} */
 
 #main .scroll_box {
     position: absolute;
@@ -390,14 +372,131 @@ nav ul li:hover a {
     }
 }
 
-#intro {
-    height: 100vh;
-    line-height: 100vh;
-    background: rgb(255, 224, 195);
-    font-size: 2rem;
+/* 자기 소개 */
+#intro .intro_box {
+    display: flex;
+    height: 500px;
+}
+
+#intro .intro_box .me {
+    position: relative;
+    width: 40%;
+}
+
+#intro .intro_box .me .me_img {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -60%);
+    width: 280px;
+    height: 280px;
+    border: 10px solid #D9471A;
+    background: url(../img/me.jpg) no-repeat top center;
+    background-size: cover;
+    animation: itsme 5s ease-in-out 1s infinite;
+    z-index: 5;
+}
+
+@keyframes itsme {
+    0% {
+        border-radius: 140% 180% 170% 140% / 140% 150% 180% 170%;
+    }
+    50% {
+        border-radius: 130% 140% 180% 160% / 180% 170% 160% 140%;
+    }
+    100% {
+        border-radius: 140% 180% 170% 140% / 140% 150% 180% 170%;
+    }
+}
+
+#intro .intro_box .me .back1 {
+    position: absolute;
+    left: 70px;
+    width: 180px;
+    height: 200px;
+    background: linear-gradient(to bottom right, #05A0A3, #03658C);
+    animation: back1 5s ease-in-out 1s infinite;
+}
+
+@keyframes back1 {
+    0% {
+        border-radius: 140% 180% 170% 140% / 140% 150% 180% 170%;
+    }
+    50% {
+        border-radius: 220% 170% 190% 250% / 170% 160% 170% 200%;
+    }
+    100% {
+        border-radius: 140% 180% 170% 140% / 140% 150% 180% 170%;
+    }
+}
+
+#intro .intro_box .me .back2 {
+    position: absolute;
+    right: 40px;
+    bottom: 110px;
+    width: 120px;
+    height: 150px;
+    transform: rotate(-30deg);
+    background: linear-gradient(to bottom right, #BE3C13,#D9471A);
+    animation: back2 5s ease-in-out 1s infinite;
+}
+
+@keyframes back2 {
+    0% {
+        border-radius: 140% 150% 200% 140% / 140% 150% 180% 170%;
+    }
+    50% {
+        border-radius: 220% 200% 190% 200% / 170% 160% 170% 200%;
+    }
+    100% {
+        border-radius: 140% 150% 200% 140% / 140% 150% 180% 170%;
+    }
+}
+
+#intro .intro_box .me .hashtag {
+    position: absolute;
+    width: 280px;
+    top: 85%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 23px;
+    font-weight: bold;
+    color: #05A0A3;
+}
+
+#intro .intro_box .intro_text {
+    width: 60%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+#intro .intro_box .intro_text p {
+    color: #03658C;
+    margin: 20px 0;
+}
+
+#intro .intro_box .intro_text p b {
+    display: inline-block;
+    width: 100px;
+    font-size: 20px;
     font-weight: bold;
 }
 
+#intro .intro_box .intro_text .column span {
+    display: block;
+}
+
+#intro .intro_box .intro_text p span {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+#intro .intro_box .intro_text p.resolution {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 스킬 */
 #skills {
     height: 100vh;
     line-height: 100vh;
@@ -462,7 +561,7 @@ nav ul li:hover a {
     .aside_box h1 a.m_logo {font-size: 30px;}
 
     #main .emoji {width: 50px; height: 50px; animation: motion3 0.6s linear 0s infinite alternate;}
-    #main .text_box p {font-size: 34.5px;}
+    #main .text_box .t_text, #main .text_box .line {font-size: 33px;}
     #main .scroll_box a span {width: 16px; height: 16px; border-left: 1px solid #03658C; border-bottom: 1px solid #03658C;}
 }
 
@@ -473,5 +572,5 @@ nav ul li:hover a {
     .m_menu {width: 70%; right: -70%;}
 
     #main .emoji {width: 40px; height: 40px; animation: motion4 0.6s linear 0s infinite alternate;}
-    #main .text_box p {font-size: 26px;}
+    #main .text_box .t_text, #main .text_box .line {font-size: 25px;}
 }
