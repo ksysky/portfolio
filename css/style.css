@@ -277,18 +277,18 @@ nav ul li:hover a {
 }
 
 @keyframes motion2 {
-    0% {top: 30%;}
-    100% {top: 32%;}
+    0% {top: 28%;}
+    100% {top: 30%;}
 }
 
 @keyframes motion3 {
-    0% {top: 38%;}
-    100% {top: 40%;}
+    0% {top: 34%;}
+    100% {top: 36%;}
 }
 
 @keyframes motion4 {
-    0% {top: 41%;}
-    100% {top: 43%;}
+    0% {top: 36%;}
+    100% {top: 38%;}
 }
 
 #main .text_box {
@@ -548,7 +548,6 @@ nav ul li:hover a {
 
     .content {padding-left: 0;}
     #main .emoji {animation: motion2 0.6s linear 0s infinite alternate;}
-    #main .text_box {top: 54%;}
 }
 
 @media (max-width: 840px) {
