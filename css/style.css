@@ -32,17 +32,14 @@ aside {
     top: 0;
     left: 0;
     width: 300px;
-    height: 100%;
+    height: 100vh;
+    padding: 0 70px;
     box-sizing: border-box;
     background: #03658C;
 }
 
-aside > .row {
-    padding: 0 70px;
-}
-
 .aside_box {
-    width: 100%;
+    width: 160px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -501,13 +498,10 @@ nav ul li:hover a {
 
 /* 스킬 */
 #skills {
-    height: 100vh;
-    line-height: 100vh;
-    background: rgb(255, 249, 199);
-    font-size: 2rem;
-    font-weight: bold;
+    
 }
 
+/* 포트폴리오 */
 #portfolio {
     height: 100vh;
     background: rgb(228, 253, 208);
@@ -546,9 +540,10 @@ nav ul li:hover a {
 }
 
 @media (max-width: 1024px) {
-    aside {width: 100%; height: 70px; z-index: 20;}
-    aside .row {padding: 0 24px;}
-    .aside_box {height: 70px; flex-direction: row; justify-content: space-between; align-items: center;}
+    .container {width: 100%; margin: 0 auto;}
+    .row {padding: 0 24px;}
+    aside {width: 100%; height: 70px; padding: 0 24px; z-index: 20;}
+    .aside_box {width: 100%; height: 70px; flex-direction: row; justify-content: space-between; align-items: center;}
     .aside_box h1 {margin: 0;}
     .aside_box h1 a.pc_logo {display: none;}
     .aside_box h1 a.m_logo {display: block; font-size: 35px;}
@@ -583,10 +578,11 @@ nav ul li:hover a {
 }
 
 @media (max-width: 600px) {
+    .row {padding: 0 16px;}
     .title_bold{font-size: 30px;}
-    
-    aside, .aside_box {height: 60px;}
-    aside .row {padding: 0 16px;}
+
+    aside {height: 60px; padding: 0 16px;}
+    .aside_box {height: 60px;}
     .aside_box h1 a.m_logo {font-size: 30px;}
 
     #main .emoji {width: 50px; height: 50px; animation: motion3 0.6s linear 0s infinite alternate;}
@@ -595,12 +591,17 @@ nav ul li:hover a {
 
     #intro .intro_box .me .back1 {left: 80px;}
     #intro .intro_box .me .back2 {right: 110px;}
-    #intro .intro_box .intro_text p b {font-size: 16px;}
+    #intro .intro_box .intro_text p b {width: 60px; font-size: 15px;}
     #intro .intro_box .intro_text p span {font-size: 14px;}
+    #intro .intro_box .intro_text p span.space {margin-left: 60px;}
+    #intro .intro_box .intro_text p.resolution {font-size: 14px; margin-top: 40px; line-height: 20px;}
 }
 
 @media (max-width: 400px) {
-    aside, .aside_box {height: 50px;}
+    .row {padding: 0 8px;}
+
+    aside {height: 50px; padding: 0 8px;}
+    .aside_box {height: 50px;}
     .aside_box h1 a.m_logo {font-size: 24px;}
     .mBtn {width: 25px;}
     .m_menu {width: 70%; right: -70%;}
