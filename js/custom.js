@@ -1,5 +1,6 @@
 // 모바일 메뉴 버튼
-$(".mBtn").click(function() {
+$(".mBtn").click(function(e) {
+    e.preventDefault();
     $(".m_menu").toggleClass("on");
     $(".mBtn").toggleClass("on");
     $(".m_back").toggleClass("on");
