@@ -380,13 +380,13 @@ nav ul li:hover a {
 
 #intro .intro_box .me {
     position: relative;
-    width: 40%;
+    width: 50%;
 }
 
 #intro .intro_box .me .me_img {
     position: absolute;
     top: 50%;
-    left: 60%;
+    left: 55%;
     transform: translate(-50%, -60%);
     width: 280px;
     height: 280px;
@@ -411,7 +411,8 @@ nav ul li:hover a {
 
 #intro .intro_box .me .back1 {
     position: absolute;
-    left: 70px;
+    top: 30px;
+    left: 95px;
     width: 180px;
     height: 200px;
     background: linear-gradient(to bottom right, #05A0A3, #03658C);
@@ -432,7 +433,7 @@ nav ul li:hover a {
 
 #intro .intro_box .me .back2 {
     position: absolute;
-    right: 40px;
+    right: 100px;
     bottom: 110px;
     width: 120px;
     height: 150px;
@@ -457,16 +458,16 @@ nav ul li:hover a {
     position: absolute;
     width: 280px;
     top: 85%;
-    left: 60%;
+    left: 55%;
     transform: translate(-50%, -50%);
-    font-size: 23px;
+    font-size: 18px;
     font-weight: bold;
     color: #05A0A3;
 }
 
 #intro .intro_box .intro_text {
-    width: 60%;
-    background-color: rgba(0,0,0,0.2);
+    width: 50%;
+    padding-top: 60px;
 }
 
 #intro .intro_box .intro_text p {
@@ -476,24 +477,26 @@ nav ul li:hover a {
 
 #intro .intro_box .intro_text p b {
     display: inline-block;
-    width: 100px;
-    font-size: 20px;
+    width: 85px;
+    font-size: 18px;
     font-weight: bold;
 }
 
-#intro .intro_box .intro_text .column span {
-    display: block;
-}
-
 #intro .intro_box .intro_text p span {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     margin: 20px 0;
 }
 
+#intro .intro_box .intro_text p span.space {
+    margin-left: 85px;
+}
+
 #intro .intro_box .intro_text p.resolution {
+    margin-top: 65px;
     font-size: 20px;
     font-weight: bold;
+    color: #D9471A;
 }
 
 /* 스킬 */
@@ -529,6 +532,19 @@ nav ul li:hover a {
 }
 
 /* 반응형 */
+@media (max-width: 1200px) {
+    #intro .intro_box .me {width: 48%;}
+    #intro .intro_box .me .me_img {left: 50%; width: 230px; height: 230px;}
+    #intro .intro_box .me .back1 {width: 160px; height: 180px; top: 50px; left: 60px;}
+    #intro .intro_box .me .back2 { right: 80px;}
+    #intro .intro_box .me .hashtag {left: 50%;}
+    #intro .intro_box .intro_text {width: 52%; padding-top: 80px;}
+    #intro .intro_box .intro_text p b {width: 70px; font-size: 17px;}
+    #intro .intro_box .intro_text p span {font-size: 14px;}
+    #intro .intro_box .intro_text p span.space {margin-left: 70px;}
+    #intro .intro_box .intro_text p.resolution {font-size: 18px;}
+}
+
 @media (max-width: 1024px) {
     aside {width: 100%; height: 70px; z-index: 20;}
     aside .row {padding: 0 24px;}
@@ -548,13 +564,27 @@ nav ul li:hover a {
 
     .content {padding-left: 0;}
     #main .emoji {animation: motion2 0.6s linear 0s infinite alternate;}
+
+    #intro .intro_box {flex-direction: column; height: auto;}
+    #intro .intro_box .me {width: 100%; height: 300px;}
+    #intro .intro_box .me .me_img {transform: translate(-50%, -50%);}
+    #intro .intro_box .me .back1 {top: -15px; left: 300px;}
+    #intro .intro_box .me .back2 {bottom: -2px; right: 300px;}
+    #intro .intro_box .me .hashtag {top: auto; bottom: -50px;}
+    #intro .intro_box .intro_text {width: auto; margin: 0 auto; box-sizing: border-box;}
+    #intro .intro_box .intro_text p b {font-size: 18px;}
+    #intro .intro_box .intro_text p span {font-size: 16px;}
+    #intro .intro_box .intro_text p.resolution {text-align: center;}
 }
 
 @media (max-width: 840px) {
-    
+    #intro .intro_box .me .back1 {left: 190px;}
+    #intro .intro_box .me .back2 {right: 230px; transform: rotate(-50deg);}
 }
 
 @media (max-width: 600px) {
+    .title_bold{font-size: 30px;}
+    
     aside, .aside_box {height: 60px;}
     aside .row {padding: 0 16px;}
     .aside_box h1 a.m_logo {font-size: 30px;}
@@ -562,6 +592,11 @@ nav ul li:hover a {
     #main .emoji {width: 50px; height: 50px; animation: motion3 0.6s linear 0s infinite alternate;}
     #main .text_box .t_text, #main .text_box .line {font-size: 33px;}
     #main .scroll_box a span {width: 16px; height: 16px; border-left: 1px solid #03658C; border-bottom: 1px solid #03658C;}
+
+    #intro .intro_box .me .back1 {left: 80px;}
+    #intro .intro_box .me .back2 {right: 110px;}
+    #intro .intro_box .intro_text p b {font-size: 16px;}
+    #intro .intro_box .intro_text p span {font-size: 14px;}
 }
 
 @media (max-width: 400px) {
