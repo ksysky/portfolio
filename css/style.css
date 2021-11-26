@@ -629,13 +629,17 @@ nav ul li:hover a {
     #intro .intro_box .intro_text p b {font-size: 18px;}
     #intro .intro_box .intro_text p span {font-size: 16px;}
     #intro .intro_box .intro_text p.resolution {text-align: center;}
+
+    .skill_box {width: 100%;}
+    .skill_box .box {flex-direction: column; margin-bottom: 65px;}
+    .skill_box .box .circle {margin-bottom: 30px;}
+    .skill_box .box .skill_text {margin-left: 0; text-align: center;}
+    .skill_box .box2 .skill_text {margin-right: 0;}
 }
 
 @media (max-width: 840px) {
     #intro .intro_box .me .back1 {left: 190px;}
     #intro .intro_box .me .back2 {right: 230px; transform: rotate(-50deg);}
-
-    
 }
 
 @media (max-width: 600px) {
@@ -656,6 +660,8 @@ nav ul li:hover a {
     #intro .intro_box .intro_text p span {font-size: 14px;}
     #intro .intro_box .intro_text p span.space {margin-left: 60px;}
     #intro .intro_box .intro_text p.resolution {font-size: 14px; margin-top: 40px; line-height: 20px;}
+
+    .skill_box .box .skill_text {font-size: 16px;}
 }
 
 @media (max-width: 400px) {
@@ -669,4 +675,7 @@ nav ul li:hover a {
 
     #main .emoji {width: 40px; height: 40px; animation: motion4 0.6s linear 0s infinite alternate;}
     #main .text_box .t_text, #main .text_box .line {font-size: 25px;}
+
+    .skill_box .box .circle {margin-bottom: 20px;}
+    .skill_box .box .skill_text {font-size: 14px;}
 }
