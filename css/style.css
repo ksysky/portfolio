@@ -497,8 +497,67 @@ nav ul li:hover a {
 }
 
 /* 스킬 */
-#skills {
-    
+.skill_box {
+    width: 680px;
+    margin: 0 auto;
+}
+
+.skill_box .box {
+    display: flex;
+    align-items: center;
+}
+
+.skill_box .box2 {
+    flex-direction: row-reverse;
+}
+
+.skill_box .box .circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #D9471A;
+}
+
+.skill_box .box .circle .circle_img img {
+    width: 70px;
+}
+
+.skill_box .box2 .circle .circle_img img {
+    width: 55px;
+    margin-right: 10px;
+}
+
+.skill_box .box2 .circle .circle_img img:last-child {
+    margin-right: 0;
+}
+
+.skill_box .box3 .circle .circle_img img {
+    width: 50px;
+}
+
+.skill_box .box3 .circle .circle_img .img1 {
+    margin-left: 25px;
+}
+
+.skill_box .box3 .circle .circle_img .img2,
+.skill_box .box3 .circle .circle_img .img3 {
+    margin-top: -5px;
+}
+
+.skill_box .box .skill_text {
+    margin-left: 25px;
+    color: #03658C;
+    font-size: 18px;
+}
+
+.skill_box .box2 .skill_text {
+    text-align: right;
+    margin-left: 0;
+    margin-right: 25px;
 }
 
 /* 포트폴리오 */
@@ -575,6 +634,8 @@ nav ul li:hover a {
 @media (max-width: 840px) {
     #intro .intro_box .me .back1 {left: 190px;}
     #intro .intro_box .me .back2 {right: 230px; transform: rotate(-50deg);}
+
+    
 }
 
 @media (max-width: 600px) {
