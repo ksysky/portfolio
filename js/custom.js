@@ -18,3 +18,19 @@ function typing() {
     }
 }
 setInterval(typing, 150);
+
+// 포트폴리오 슬라이드
+const swiper = new Swiper('.slider', {
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+  });

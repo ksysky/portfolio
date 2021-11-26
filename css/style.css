@@ -36,6 +36,7 @@ aside {
     padding: 0 70px;
     box-sizing: border-box;
     background: #03658C;
+    z-index: 20;
 }
 
 .aside_box {
@@ -213,7 +214,7 @@ nav ul li:hover a {
     background-color: #03658C;
     padding-top: 100px;
     text-align: center;
-    z-index: 20;
+    z-index: 19;
     transition: all .3s ease-in-out;
 }
 
@@ -552,6 +553,7 @@ nav ul li:hover a {
     margin-left: 25px;
     color: #03658C;
     font-size: 18px;
+    font-weight: 500;
     word-break: keep-all;
 }
 
@@ -563,12 +565,112 @@ nav ul li:hover a {
 
 /* 포트폴리오 */
 #portfolio {
-    height: 100vh;
-    background: rgb(228, 253, 208);
-    font-size: 2rem;
-    font-weight: bold;
+    width: 100%;
+    height: 500px;
+    /* background: rgba(0,0,0,0.1); */
 }
 
+.slider_back {
+    width: 50%;
+    height: 400px;
+    background: #03658C;
+}
+
+.slider {
+    width: 100%;
+}
+
+.slider .swiper-slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slider .swiper-slide .mockup_img {
+    width: 50%;
+    position: relative;
+}
+
+.slider .swiper-slide .mockup_img img {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.slider .swiper-slide .slide_text {
+    width: 50%;
+    height: 350px;
+    padding-left: 115px;
+    display: block;
+    background-color: #03658C;
+    color: #fff;
+}
+
+.slider .swiper-slide .slide_text p {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.slider .swiper-slide .slide_text h3 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.slider .swiper-slide .slide_text a {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all .3s;
+    z-index: 1;
+}
+
+.slider .swiper-slide .slide_text a:hover {
+    color: #03658C;
+}
+
+.slider .swiper-slide .slide_text a:hover .blue {
+    stroke: #03658C;
+}
+
+.slider .swiper-slide .slide_text a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    transition: all .3s;
+    z-index: -1;
+}
+
+.slider .swiper-slide .slide_text a:hover:after {
+    width: 100%;
+}
+
+.slider .swiper-slide .slide_text .site {
+    width: 124px;
+}
+
+.slider .swiper-slide .slide_text .work {
+    margin-top: 15px;
+    width: 83px;
+}
+
+.slider .swiper-slide .slide_text a svg {
+    margin-left: 6px;
+    margin-bottom: 4px;
+}
+
+/* 디자인 */
 #design {
     height: 100vh;
     line-height: 100vh;
@@ -602,7 +704,7 @@ nav ul li:hover a {
 @media (max-width: 1024px) {
     .container {width: 100%; margin: 0 auto;}
     .row {padding: 0 24px;}
-    aside {width: 100%; height: 70px; padding: 0 24px; z-index: 20;}
+    aside {width: 100%; height: 70px; padding: 0 24px;}
     .aside_box {width: 100%; height: 70px; flex-direction: row; justify-content: space-between; align-items: center;}
     .aside_box h1 {margin: 0;}
     .aside_box h1 a.pc_logo {display: none;}
@@ -677,6 +779,7 @@ nav ul li:hover a {
     #main .emoji {width: 40px; height: 40px; animation: motion4 0.6s linear 0s infinite alternate;}
     #main .text_box .t_text, #main .text_box .line {font-size: 25px;}
 
+    .skill_box .box {margin-bottom: 40px;}
     .skill_box .box .circle {margin-bottom: 20px;}
     .skill_box .box .skill_text {font-size: 14px;}
 }
