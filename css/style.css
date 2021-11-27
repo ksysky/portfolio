@@ -570,61 +570,66 @@ nav ul li:hover a {
     /* background: rgba(0,0,0,0.1); */
 }
 
-.slider_back {
-    width: 50%;
-    height: 400px;
-    background: #03658C;
-}
-
 .slider {
+    position: relative;
     width: 100%;
 }
 
 .slider .swiper-slide {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
 .slider .swiper-slide .mockup_img {
-    width: 50%;
-    position: relative;
+    width: 750px;
 }
 
 .slider .swiper-slide .mockup_img img {
-    position: absolute;
-    top: 50%;
-    left: 65%;
-    transform: translate(-50%, -50%);
     width: 100%;
 }
 
 .slider .swiper-slide .slide_text {
-    width: 50%;
-    height: 350px;
-    padding-left: 115px;
-    display: block;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
     background-color: #03658C;
     color: #fff;
 }
 
-.slider .swiper-slide .slide_text p {
-    font-size: 22px;
+.slider .swiper-slide .slide_text:after {
+    content: "";
+    position: absolute;
+    top: -180px;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    background-color: #03658C;
+    z-index: -2;
+}
+
+.slider .swiper-slide .slide_text .slide_tit p {
+    font-size: 20px;
     font-weight: 500;
-    margin-top: 50px;
-    margin-bottom: 15px;
 }
 
-.slider .swiper-slide .slide_text h3 {
-    font-size: 40px;
+.slider .swiper-slide .slide_text .slide_tit h3 {
+    margin-top: 15px;
+    font-size: 35px;
     font-weight: 700;
-    margin-bottom: 50px;
 }
 
-.slider .swiper-slide .slide_text a {
+.slider .swiper-slide .slide_text .slide_btn {
+    margin-top: 37px;
+}
+
+.slider .swiper-slide .slide_text .slide_btn a {
     position: relative;
-    display: block;
+    display: inline-block;
     padding: 10px 20px;
     color: #fff;
     border: 1px solid #fff;
@@ -632,15 +637,15 @@ nav ul li:hover a {
     z-index: 1;
 }
 
-.slider .swiper-slide .slide_text a:hover {
+.slider .swiper-slide .slide_text .slide_btn a:hover {
     color: #03658C;
 }
 
-.slider .swiper-slide .slide_text a:hover .blue {
+.slider .swiper-slide .slide_text .slide_btn a:hover .blue {
     stroke: #03658C;
 }
 
-.slider .swiper-slide .slide_text a:after {
+.slider .swiper-slide .slide_text .slide_btn a:after {
     position: absolute;
     content: "";
     top: 0;
@@ -652,22 +657,26 @@ nav ul li:hover a {
     z-index: -1;
 }
 
-.slider .swiper-slide .slide_text a:hover:after {
+.slider .swiper-slide .slide_text .slide_btn a:hover:after {
     width: 100%;
 }
 
-.slider .swiper-slide .slide_text .site {
+.slider .swiper-slide .slide_text .slide_btn .site {
     width: 124px;
 }
 
-.slider .swiper-slide .slide_text .work {
-    margin-top: 15px;
+.slider .swiper-slide .slide_text .slide_btn .work {
     width: 83px;
 }
 
-.slider .swiper-slide .slide_text a svg {
+.slider .swiper-slide .slide_text .slide_btn a svg {
     margin-left: 6px;
     margin-bottom: 4px;
+}
+
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
 }
 
 /* 디자인 */
@@ -695,9 +704,9 @@ nav ul li:hover a {
     #intro .intro_box .me .back2 { right: 80px;}
     #intro .intro_box .me .hashtag {left: 50%;}
     #intro .intro_box .intro_text {width: 52%; padding-top: 80px;}
-    #intro .intro_box .intro_text p b {width: 70px; font-size: 17px;}
+    /* #intro .intro_box .intro_text p b {width: 70px; font-size: 17px;}
     #intro .intro_box .intro_text p span {font-size: 14px;}
-    #intro .intro_box .intro_text p span.space {margin-left: 70px;}
+    #intro .intro_box .intro_text p span.space {margin-left: 70px;} */
     #intro .intro_box .intro_text p.resolution {font-size: 18px;}
 }
 

@@ -9,7 +9,7 @@
     <!-- style -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
     <script src="https://kit.fontawesome.com/3a49bdd301.js" crossorigin="anonymous"></script>
@@ -144,7 +144,7 @@
                 </section>
                 <section id="portfolio" class="mb90">
                     <h2 class="title_bold">PORTFOLIO</h2>
-                    <div class="slider">
+                    <div class="swiper-container slider">
                         <div class="swiper-wrapper">
                             <!-- Slides -->
                             <div class="swiper-slide">
@@ -152,26 +152,30 @@
                                     <img src="img/coffeenie_mockup.png" alt="커피니 목업">
                                 </div>
                                 <div class="slide_text">
-                                    <p>Responsive Web</p>
-                                    <h3>커피니 리뉴얼 사이트</h3>
-                                    <a class="site" href="https://ksysky.github.io/portfolio/coffeenie/index.html">사이트 보러가기
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg" width="13" height="4.191"
-                                            viewBox="0 0 13 4.191">
-                                            <path id="path_4" data-name="path 4" class="blue" d="M875.443,2491.8h12l-4.659-3"
-                                                transform="translate(-874.943 -2488.113)" fill="none" stroke="#fff"
-                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                                        </svg>
-                                    </a>
-                                    <a class="work" href="#">작업 내용
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg" width="13" height="4.191"
-                                            viewBox="0 0 13 4.191">
-                                            <path id="path_4" data-name="path 4" class="blue" d="M875.443,2491.8h12l-4.659-3"
-                                                transform="translate(-874.943 -2488.113)" fill="none" stroke="#fff"
-                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                                        </svg>
-                                    </a>
+                                    <div class="slide_tit">
+                                        <p>Responsive Web</p>
+                                        <h3>커피니 리뉴얼 사이트</h3>
+                                    </div>
+                                    <div class="slide_btn">
+                                        <a class="site" href="https://ksysky.github.io/portfolio/coffeenie/index.html">사이트 보러가기
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg" width="13" height="4.191"
+                                                viewBox="0 0 13 4.191">
+                                                <path id="path_4" data-name="path 4" class="blue" d="M875.443,2491.8h12l-4.659-3"
+                                                    transform="translate(-874.943 -2488.113)" fill="none" stroke="#fff"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+                                            </svg>
+                                        </a>
+                                        <a class="work" href="#">작업 내용
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg" width="13" height="4.191"
+                                                viewBox="0 0 13 4.191">
+                                                <path id="path_4" data-name="path 4" class="blue" d="M875.443,2491.8h12l-4.659-3"
+                                                    transform="translate(-874.943 -2488.113)" fill="none" stroke="#fff"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -179,53 +183,61 @@
                                     <img src="img/espoir_mockup.png" alt="에스쁘아 목업">
                                 </div>
                                 <div class="slide_text">
-                                    <p>Responsive Web</p>
-                                    <h3>에스쁘아 모작 사이트</h3>
-                                    <a class="site" href="https://ksysky.github.io/portfolio/espoir/index.html">사이트 보러가기
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg" width="13" height="4.191"
-                                            viewBox="0 0 13 4.191">
-                                            <path id="path_4" data-name="path 4" class="blue" d="M875.443,2491.8h12l-4.659-3"
-                                                transform="translate(-874.943 -2488.113)" fill="none" stroke="#fff"
-                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                                        </svg>
-                                    </a>
-                                    <a class="work" href="#">작업 내용
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg" width="13" height="4.191"
-                                            viewBox="0 0 13 4.191">
-                                            <path id="path_4" data-name="path 4" class="blue" d="M875.443,2491.8h12l-4.659-3"
-                                                transform="translate(-874.943 -2488.113)" fill="none" stroke="#fff"
-                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                                        </svg>
-                                    </a>
+                                    <div class="slide_tit">
+                                        <p>Responsive Web</p>
+                                        <h3>에스쁘아 모작 사이트</h3>
+                                    </div>
+                                    <div class="slide_btn">
+                                        <a class="site" href="https://ksysky.github.io/portfolio/espoir/index.html">사이트 보러가기
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg" width="13" height="4.191"
+                                                viewBox="0 0 13 4.191">
+                                                <path id="path_4" data-name="path 4" class="blue" d="M875.443,2491.8h12l-4.659-3"
+                                                    transform="translate(-874.943 -2488.113)" fill="none" stroke="#fff"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+                                            </svg>
+                                        </a>
+                                        <a class="work" href="#">작업 내용
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg" width="13" height="4.191"
+                                                viewBox="0 0 13 4.191">
+                                                <path id="path_4" data-name="path 4" class="blue" d="M875.443,2491.8h12l-4.659-3"
+                                                    transform="translate(-874.943 -2488.113)" fill="none" stroke="#fff"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="mockup_img">
-                                    <img src="img/espoir_mockup.png" alt="에스쁘아 목업">
+                                    <img src="img/andbag_mockup.png" alt="앤드백 목업">
                                 </div>
                                 <div class="slide_text">
-                                    <p>Responsive Web</p>
-                                    <h3>앤드백 리뉴얼 사이트</h3>
-                                    <a class="site" href="https://ksysky.github.io/portfolio/andbag/index.html">사이트 보러가기
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg" width="13" height="4.191"
-                                            viewBox="0 0 13 4.191">
-                                            <path id="path_4" data-name="path 4" class="blue" d="M875.443,2491.8h12l-4.659-3"
-                                                transform="translate(-874.943 -2488.113)" fill="none" stroke="#fff"
-                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                                        </svg>
-                                    </a>
-                                    <a class="work" href="#">작업 내용
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg" width="13" height="4.191"
-                                            viewBox="0 0 13 4.191">
-                                            <path id="path_4" data-name="path 4" class="blue" d="M875.443,2491.8h12l-4.659-3"
-                                                transform="translate(-874.943 -2488.113)" fill="none" stroke="#fff"
-                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                                        </svg>
-                                    </a>
+                                    <div class="slide_tit">
+                                        <p>Responsive Web</p>
+                                        <h3>앤드백 리뉴얼 사이트</h3>
+                                    </div>
+                                    <div class="slide_btn">
+                                        <a class="site" href="https://ksysky.github.io/portfolio/andbag/index.html">사이트 보러가기
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg" width="13" height="4.191"
+                                                viewBox="0 0 13 4.191">
+                                                <path id="path_4" data-name="path 4" class="blue" d="M875.443,2491.8h12l-4.659-3"
+                                                    transform="translate(-874.943 -2488.113)" fill="none" stroke="#fff"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+                                            </svg>
+                                        </a>
+                                        <a class="work" href="#">작업 내용
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg" width="13" height="4.191"
+                                                viewBox="0 0 13 4.191">
+                                                <path id="path_4" data-name="path 4" class="blue" d="M875.443,2491.8h12l-4.659-3"
+                                                    transform="translate(-874.943 -2488.113)" fill="none" stroke="#fff"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -233,8 +245,8 @@
                         <div class="swiper-pagination"></div>
 
                         <!-- If we need navigation buttons -->
-                        <!-- <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div> -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </section>
                 <section id="design">
