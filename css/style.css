@@ -214,7 +214,7 @@ nav ul li:hover a {
     background-color: #03658C;
     padding-top: 100px;
     text-align: center;
-    z-index: 19;
+    z-index: 20;
     transition: all .3s ease-in-out;
 }
 
@@ -681,13 +681,30 @@ nav ul li:hover a {
 
 /* 디자인 */
 #design {
-    height: 100vh;
-    line-height: 100vh;
-    background: rgb(187, 233, 255);
-    font-size: 2rem;
-    font-weight: bold;
+    height: 500px;
 }
 
+#design h2 {
+    padding-top: 170px;
+}
+
+.design_box {
+    width: 100%;
+}
+
+.design_box div {
+    float: left;
+    width: 25%;
+    height: 25%;
+    overflow: hidden;
+}
+
+.design_box div img {
+}
+
+
+
+/* 연락 */
 #contact {
     height: 100vh;
     line-height: 100vh;
@@ -752,6 +769,13 @@ nav ul li:hover a {
 @media (max-width: 840px) {
     #intro .intro_box .me .back1 {left: 190px;}
     #intro .intro_box .me .back2 {right: 230px; transform: rotate(-50deg);}
+
+    .slider .swiper-slide .mockup_img {width: 580px;}
+    .slider .swiper-slide .slide_text {height: 290px; align-items: center; flex-direction: column; justify-content: flex-start;}
+    .slider .swiper-slide .slide_text:after {top: -120px; height: 120px;}
+    .slider .swiper-slide .slide_text .slide_tit p {text-align: center;}
+    .slider .swiper-slide .slide_text .slide_btn a {display: block;}
+    .slider .swiper-slide .slide_text .slide_btn .work {width: 124px; text-align: center; margin-top: 10px;}
 }
 
 @media (max-width: 600px) {
@@ -774,6 +798,15 @@ nav ul li:hover a {
     #intro .intro_box .intro_text p.resolution {font-size: 14px; margin-top: 40px; line-height: 20px;}
 
     .skill_box .box .skill_text {font-size: 16px;}
+
+    .slider .swiper-slide .mockup_img {width: 415px;}
+    .slider .swiper-slide .slide_text {height: 270px;}
+    .slider .swiper-slide .slide_text .slide_tit p {font-size: 18px;}
+    .slider .swiper-slide .slide_text .slide_tit h3 {font-size: 30px;}
+    .slider .swiper-slide .slide_text .slide_btn a {font-size: 14px;}
+    .slider .swiper-slide .slide_text .slide_btn .site {width: 111px;}
+    .slider .swiper-slide .slide_text .slide_btn .work {width: 111px;}
+    
 }
 
 @media (max-width: 400px) {
@@ -791,4 +824,6 @@ nav ul li:hover a {
     .skill_box .box {margin-bottom: 40px;}
     .skill_box .box .circle {margin-bottom: 20px;}
     .skill_box .box .skill_text {font-size: 14px;}
+
+    .slider .swiper-slide .mockup_img {width: 325px;}
 }
