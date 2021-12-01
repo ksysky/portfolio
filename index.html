@@ -328,15 +328,18 @@
 
             <!-- footer -->
             <footer id="contact" class="mb90">
-                <h2 class="title_bold">Contact</h2>
-                <form class="address_box">
-                    <input type="text" name="name" placeholder="성함을 입력해주세요">
-                    <input type="text" name="email" placeholder="메일 주소를 입력해주세요">
-                    <input type="text" name="phone" placeholder="연락처를 입력해주세요 (생략 가능)">
-                    <textarea name="message" rows="5" placeholder="내용을 입력해주세요 "></textarea>
-                    <input type="button" name="submit" class="btn blue" value="메일보내기" />
-                </form>
-                <address>COPYRIGHT 2021 KIM SU YEON. all rights reserved.</address>
+                <div class="row">
+                    <h2 class="title_bold">Contact</h2>
+                    <div class="mail_icon ir_pm">메일 아이콘</div>
+                    <form class="address_box">
+                        <input type="text" name="name" placeholder="성함을 입력해주세요">
+                        <input type="text" name="email" placeholder="메일 주소를 입력해주세요">
+                        <input type="text" name="phone" placeholder="연락처를 입력해주세요 (생략 가능)">
+                        <textarea name="message" rows="5" placeholder="내용을 입력해주세요 "></textarea>
+                        <input type="button" name="submit" class="btn blue" value="메일보내기" />
+                    </form>
+                    <address>COPYRIGHT 2021 KIM SU YEON. all rights reserved.</address>
+                </div>
             </footer>
             <!-- //footer -->
         </div>
@@ -370,9 +373,9 @@
             emailjs.send('service_7ptqt2n', 'template_ucq9424', templateParams)
                 //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)
                 .then(function (response) {
-                    console.log('SUCCESS!', response.status, response.text);
+                    alert('메일이 보내졌습니다.', response.status, response.text);
                 }, function (error) {
-                    console.log('FAILED...', error);
+                    alert('메일을 보내지 못했습니다.', error);
                 });
         });
 

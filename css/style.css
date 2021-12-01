@@ -777,7 +777,15 @@ nav ul li:hover a {
 
 /* 연락 */
 #contact {
-    
+    height: 100%;
+}
+
+.mail_icon {
+    width: 50px;
+    height: 50px;
+    background: url(../img/email.png) no-repeat center;
+    background-size: cover;
+    margin: 0 auto 20px auto;
 }
 
 .address_box {
@@ -797,16 +805,21 @@ nav ul li:hover a {
     box-sizing: border-box;
 }
 
+.address_box textarea {
+    resize: none;
+}
+
 .address_box .btn {
     background-color: #03658C;
     color: #fff;
+    cursor: pointer;
 }
 
 address {
     text-align: center;
     font-size: 14px;
     color:#03658C;
-    cursor: pointer;
+    padding: 50px 0;
 }
 
 /* 반응형 */
@@ -909,6 +922,7 @@ address {
     .slider .swiper-slide .slide_text .slide_btn .site {width: 111px;}
     .slider .swiper-slide .slide_text .slide_btn .work {width: 111px;}
     
+    .address_box {width: 100%;}
 }
 
 @media (max-width: 400px) {
@@ -934,5 +948,5 @@ address {
     .design_box .item .icon {width: 30px; height: 30px;}
     .design_box .item .icon2 {width: 65px; bottom: 25px;}
 
-    
+    address {font-size: 12px;}
 }
