@@ -567,8 +567,8 @@ nav ul li:hover a {
 /* 포트폴리오 */
 #portfolio {
     width: 100%;
-    height: 500px;
-    /* background: rgba(0,0,0,0.1); */
+    height: 660px;
+    overflow: hidden;
 }
 
 .slider {
@@ -686,10 +686,6 @@ nav ul li:hover a {
     /* height: 900px; */
     height: 100%;
     margin-bottom: 90px;
-}
-
-#design h2 {
-    padding-top: 170px;
 }
 
 .design_box .item {

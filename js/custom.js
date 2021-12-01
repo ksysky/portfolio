@@ -33,4 +33,9 @@ const swiper = new Swiper('.slider', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+      1024: {
+        navigation: false,
+      },
+    }
   });
