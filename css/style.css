@@ -777,11 +777,36 @@ nav ul li:hover a {
 
 /* 연락 */
 #contact {
-    height: 100vh;
-    line-height: 100vh;
-    background: rgb(188, 187, 255);
-    font-size: 2rem;
-    font-weight: bold;
+    
+}
+
+.address_box {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.address_box input,
+.address_box textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border: 3px solid #03658C;
+    border-radius: 5px;
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
+
+.address_box .btn {
+    background-color: #03658C;
+    color: #fff;
+}
+
+address {
+    text-align: center;
+    font-size: 14px;
+    color:#03658C;
+    cursor: pointer;
 }
 
 /* 반응형 */
@@ -874,7 +899,8 @@ nav ul li:hover a {
     #intro .intro_box .intro_text p.resolution {font-size: 14px; margin-top: 40px; line-height: 20px;}
 
     .skill_box .box .skill_text {font-size: 16px;}
-
+    
+    #portfolio {height: 558px;}
     .slider .swiper-slide .mockup_img {width: 415px;}
     .slider .swiper-slide .slide_text {height: 270px;}
     .slider .swiper-slide .slide_text .slide_tit p {font-size: 18px;}
@@ -883,7 +909,6 @@ nav ul li:hover a {
     .slider .swiper-slide .slide_text .slide_btn .site {width: 111px;}
     .slider .swiper-slide .slide_text .slide_btn .work {width: 111px;}
     
-    #design h2 {padding-top: 70px;}
 }
 
 @media (max-width: 400px) {
@@ -902,10 +927,12 @@ nav ul li:hover a {
     .skill_box .box .circle {margin-bottom: 20px;}
     .skill_box .box .skill_text {font-size: 14px;}
 
+    #portfolio {height: 515px;}
     .slider .swiper-slide .mockup_img {width: 325px;}
+    .slider .swiper-slide .slide_text:after {top: -70px;}
 
     .design_box .item .icon {width: 30px; height: 30px;}
     .design_box .item .icon2 {width: 65px; bottom: 25px;}
 
-    #design h2 {padding-top: 30px;}
+    
 }
