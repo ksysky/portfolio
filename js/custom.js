@@ -8,12 +8,38 @@ document.querySelectorAll(".pc_menu ul li a").forEach((li)=>{
   });
 });
 
+document.querySelectorAll(".m_menu ul li a").forEach((li)=>{
+  li.addEventListener("click", (event)=>{
+    event.preventDefault();
+    document.querySelector(li.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+});
+
+window.addEventListener("scroll", function(){
+  let scrollTop = document.documentElement.scrollTop || window.scrollY || window.pageYOffset;
+
+  // 메뉴 액티브
+  if (scrollTop > 0) {
+    document.querySelector(".pc_menu").classList.add("active");
+  } else {
+    document.querySelector(".pc_menu").classList.remove("active");
+  }
+});
+
 // 모바일 메뉴 버튼
 $(".mBtn").click(function (e) {
   e.preventDefault();
   $(".m_menu").toggleClass("on");
   $(".mBtn").toggleClass("on");
   $(".m_back").toggleClass("on");
+});
+
+$(".m_back").click(function(){
+  $(".m_menu").removeClass("on");
+  $(".mBtn").removeClass("on");
+  $(".m_back").removeClass("on");
 });
 
 // 메인 타이핑 애니메이션
@@ -43,9 +69,4 @@ const swiper = new Swiper('.slider', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  breakpoints: {
-    1024: {
-      navigation: false,
-    },
-  }
 });
