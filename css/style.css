@@ -818,7 +818,7 @@ nav ul li:hover a {
     padding: none;
     background-color: #03658C;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 0;
     cursor: pointer;
 }
 
