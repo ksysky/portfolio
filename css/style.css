@@ -805,6 +805,10 @@ nav ul li:hover a {
     box-sizing: border-box;
 }
 
+.address_box input {
+    height: 40px;
+}
+
 .address_box textarea {
     resize: none;
 }
