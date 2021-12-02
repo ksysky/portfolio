@@ -21,11 +21,14 @@ window.addEventListener("scroll", function(){
   let scrollTop = document.documentElement.scrollTop || window.scrollY || window.pageYOffset;
 
   // 메뉴 액티브
-  if (scrollTop > 0) {
-    document.querySelector(".pc_menu").classList.add("active");
-  } else {
-    document.querySelector(".pc_menu").classList.remove("active");
-  }
+  document.querySelectorAll("section").forEach((item,index)=>{
+    if(scrollTop > item.offsetTop) {
+      document.querySelectorAll(".pc_menu ul li").forEach(li=>{
+        li.classList.remove("active");
+      })
+      document.querySelector(".pc_menu ul li:nth-child("+ (index+1) +")").classList.add("active");
+    }
+  });
 });
 
 // 모바일 메뉴 버튼
