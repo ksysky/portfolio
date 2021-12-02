@@ -815,10 +815,8 @@ nav ul li:hover a {
 }
 
 .address_box .btn {
-    padding: none;
     background-color: #03658C;
     color: #fff;
-    border-radius: 0;
     cursor: pointer;
 }
 

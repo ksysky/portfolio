@@ -1,3 +1,13 @@
+// 메뉴 버튼 클릭
+document.querySelectorAll(".pc_menu ul li a").forEach((li)=>{
+  li.addEventListener("click", (e)=>{
+    e.preventDefault();
+    document.querySelector(li.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+});
+
 // 모바일 메뉴 버튼
 $(".mBtn").click(function (e) {
   e.preventDefault();
