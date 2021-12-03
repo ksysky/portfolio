@@ -851,6 +851,7 @@ address {
 
     .skill_box {width: 100%;}
     .skill_box .box {flex-direction: column; margin-bottom: 65px;}
+    .skill_box .box:last-child {margin-bottom: 0;}
     .skill_box .box .circle {margin-bottom: 30px;}
     .skill_box .box .skill_text {margin-left: 0; text-align: center;}
     .skill_box .box2 .skill_text {margin-right: 0;}
