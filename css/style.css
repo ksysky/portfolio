@@ -27,6 +27,17 @@ html, body {
     color: #03658C;
 }
 
+.ani {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all .8s;
+}
+
+.ani.show {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 /* aside */
 aside {
     position: fixed;

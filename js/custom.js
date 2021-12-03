@@ -36,6 +36,19 @@ window.addEventListener("scroll", function(){
   });
 });
 
+// 페이드인 스크롤 애니메이션
+function scrollProgress() {
+  let scroll_top = (document.documentElement.scrollTop || windowscrollY || window.pageYOffset) + window.innerHeight/2;
+  document.getElementsByClassName("ani").forEach(item=>{
+    if(scroll_top > item.offsetTop) {
+      item.classList.add("show");
+    }
+    // scroll_top > item.offsetTop ? item.classList.add("show") : item.classList.remove("show");
+  });
+}
+
+window.addEventListener("scroll", scrollProgress);
+
 // 모바일 메뉴 버튼
 $(".mBtn").click(function (e) {
   e.preventDefault();
