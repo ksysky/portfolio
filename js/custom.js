@@ -18,15 +18,20 @@ document.querySelectorAll(".m_menu ul li a").forEach((li)=>{
 });
 
 window.addEventListener("scroll", function(){
-  let scrollTop = document.documentElement.scrollTop || window.scrollY || window.pageYOffset;
-
+  let scrollTop = document.documentElement.scrollTop || window.scrollY || window.pageYOffset + 90;
   // 메뉴 액티브
   document.querySelectorAll("section").forEach((item,index)=>{
-    if(scrollTop > item.offsetTop) {
+    let sTop = item.offsetTop - 50;
+    if(scrollTop >= sTop) {
       document.querySelectorAll(".pc_menu ul li").forEach(li=>{
         li.classList.remove("active");
-      })
+      });
       document.querySelector(".pc_menu ul li:nth-child("+ (index+1) +")").classList.add("active");
+
+      document.querySelectorAll(".m_menu ul li").forEach(li=>{
+        li.classList.remove("active");
+      });
+      document.querySelector(".m_menu ul li:nth-child("+ (index+1) +")").classList.add("active");
     }
   });
 });
@@ -36,13 +41,11 @@ $(".mBtn").click(function (e) {
   e.preventDefault();
   $(".m_menu").toggleClass("on");
   $(".mBtn").toggleClass("on");
-  $(".m_back").toggleClass("on");
 });
 
 $(".m_back").click(function(){
   $(".m_menu").removeClass("on");
   $(".mBtn").removeClass("on");
-  $(".m_back").removeClass("on");
 });
 
 // 메인 타이핑 애니메이션
