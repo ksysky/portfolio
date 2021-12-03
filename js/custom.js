@@ -1,4 +1,9 @@
-// 메뉴 버튼 클릭
+// 사파리 스크롤 애니메이션
+import smoothscroll from 'smoothscroll-polyfill';
+
+smoothscroll.polyfill();
+
+// 메뉴 버튼 클릭 애니메이션
 document.querySelectorAll(".pc_menu ul li a").forEach((li)=>{
   li.addEventListener("click", (e)=>{
     e.preventDefault();
@@ -17,9 +22,9 @@ document.querySelectorAll(".m_menu ul li a").forEach((li)=>{
   });
 });
 
+// 메뉴 액티브
 window.addEventListener("scroll", function(){
-  let scrollTop = document.documentElement.scrollTop || window.scrollY || window.pageYOffset + 90;
-  // 메뉴 액티브
+  let scrollTop = document.documentElement.scrollTop || window.scrollY || window.pageYOffset;
   document.querySelectorAll("section").forEach((item,index)=>{
     let sTop = item.offsetTop - 50;
     if(scrollTop >= sTop) {
@@ -41,11 +46,6 @@ $(".mBtn").click(function (e) {
   e.preventDefault();
   $(".m_menu").toggleClass("on");
   $(".mBtn").toggleClass("on");
-});
-
-$(".m_back").click(function(){
-  $(".m_menu").removeClass("on");
-  $(".mBtn").removeClass("on");
 });
 
 // 메인 타이핑 애니메이션
