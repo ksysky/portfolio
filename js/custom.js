@@ -54,6 +54,14 @@ $(".mBtn").click(function (e) {
   e.preventDefault();
   $(".m_menu").toggleClass("on");
   $(".mBtn").toggleClass("on");
+  $(".m_back").toggleClass("on");
+});
+
+$(".m_back").click(function(e) {
+  e.preventDefault();
+  $(".m_menu").toggleClass("on");
+  $(".mBtn").toggleClass("on");
+  $(".m_back").toggleClass("on");
 });
 
 // 메인 타이핑 애니메이션

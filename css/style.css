@@ -239,6 +239,20 @@ nav ul li:hover a {
     margin-bottom: 30px;
 }
 
+.m_back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    display: none;
+}
+
+.m_back.on {
+    display: block;
+}
+
 /* 메인 페이지 */
 #main {
     position: relative;
@@ -764,6 +778,8 @@ nav ul li:hover a {
 /* 연락 */
 #contact {
     height: 100%;
+    padding-top: 70px;
+    padding-bottom: 90px;
 }
 
 .mail_icon {
@@ -809,8 +825,7 @@ address {
     text-align: center;
     font-size: 14px;
     color:#03658C;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 70px;
 }
 
 /* 반응형 */
