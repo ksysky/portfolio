@@ -1,6 +1,6 @@
 // 메뉴 버튼 클릭 애니메이션
-document.querySelectorAll(".pc_menu ul li a").forEach((li)=>{
-  li.addEventListener("click", (e)=>{
+document.querySelectorAll(".pc_menu ul li a").forEach((li) => {
+  li.addEventListener("click", (e) => {
     e.preventDefault();
     document.querySelector(li.getAttribute("href")).scrollIntoView({
       behavior: "smooth"
@@ -8,8 +8,8 @@ document.querySelectorAll(".pc_menu ul li a").forEach((li)=>{
   });
 });
 
-document.querySelectorAll(".m_menu ul li a").forEach((li)=>{
-  li.addEventListener("click", (event)=>{
+document.querySelectorAll(".m_menu ul li a").forEach((li) => {
+  li.addEventListener("click", (event) => {
     event.preventDefault();
     document.querySelector(li.getAttribute("href")).scrollIntoView({
       behavior: "smooth"
@@ -18,29 +18,29 @@ document.querySelectorAll(".m_menu ul li a").forEach((li)=>{
 });
 
 // 메뉴 액티브
-window.addEventListener("scroll", function(){
+window.addEventListener("scroll", function () {
   let scrollTop = document.documentElement.scrollTop || window.scrollY || window.pageYOffset;
-  document.querySelectorAll("section").forEach((item,index)=>{
+  document.querySelectorAll("section").forEach((item, index) => {
     let sTop = item.offsetTop - 50;
-    if(scrollTop >= sTop) {
-      document.querySelectorAll(".pc_menu ul li").forEach(li=>{
+    if (scrollTop >= sTop) {
+      document.querySelectorAll(".pc_menu ul li").forEach(li => {
         li.classList.remove("active");
       });
-      document.querySelector(".pc_menu ul li:nth-child("+ (index+1) +")").classList.add("active");
+      document.querySelector(".pc_menu ul li:nth-child(" + (index + 1) + ")").classList.add("active");
 
-      document.querySelectorAll(".m_menu ul li").forEach(li=>{
+      document.querySelectorAll(".m_menu ul li").forEach(li => {
         li.classList.remove("active");
       });
-      document.querySelector(".m_menu ul li:nth-child("+ (index+1) +")").classList.add("active");
+      document.querySelector(".m_menu ul li:nth-child(" + (index + 1) + ")").classList.add("active");
     }
   });
 });
 
 // 페이드인 스크롤 애니메이션
 function scrollProgress() {
-  let scroll_top = (document.documentElement.scrollTop || window.scrollY || window.pageYOffset) + window.innerHeight/2;
-  document.getElementsByClassName("ani").forEach(item=>{
-    if(scroll_top > item.offsetTop) {
+  let scroll_top = (document.documentElement.scrollTop || window.scrollY || window.pageYOffset) + window.innerHeight / 2;
+  document.getElementsByClassName("ani").forEach(item => {
+    if (scroll_top >= item.offsetTop) {
       item.classList.add("show");
     }
     // scroll_top > item.offsetTop ? item.classList.add("show") : item.classList.remove("show");
@@ -57,7 +57,7 @@ $(".mBtn").click(function (e) {
   $(".m_back").toggleClass("on");
 });
 
-$(".m_back").click(function(e) {
+$(".m_back").click(function (e) {
   e.preventDefault();
   $(".m_menu").toggleClass("on");
   $(".mBtn").toggleClass("on");
@@ -91,4 +91,11 @@ const swiper = new Swiper('.slider', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+});
+
+// 디자인 갤러리
+
+
+lightGallery(document.querySelector(".lightgallery"), {
+  plugins: [lgZoom]
 });
