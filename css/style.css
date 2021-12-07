@@ -27,7 +27,7 @@ html, body {
     color: #03658C;
 }
 
-.ani {
+/* .ani {
     opacity: 0;
     transform: translateY(-100px);
     transition: all .8s;
@@ -36,7 +36,7 @@ html, body {
 .ani.show {
     opacity: 1;
     transform: translateY(0px);
-}
+} */
 
 /* aside */
 aside {
@@ -484,7 +484,7 @@ nav ul li:hover a {
 }
 
 #intro .intro_box .intro_text p span {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     margin: 20px 0;
 }
@@ -727,6 +727,33 @@ nav ul li:hover a {
     bottom: 10px;
 }
 
+.design_box a .blue_back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(3,101,140,0.8);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.design_box a .blue_back:hover {
+    opacity: 1;
+}
+
+.design_box a .blue_back p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+    word-break: keep-all;
+    color: #fff;
+}
+
 /* 연락 */
 #contact {
     height: 100%;
@@ -823,8 +850,6 @@ address {
     #intro .intro_box .me .back2 {bottom: -2px; right: 300px;}
     #intro .intro_box .me .hashtag {top: auto; bottom: -50px;}
     #intro .intro_box .intro_text {width: auto; margin: 0 auto; box-sizing: border-box;}
-    #intro .intro_box .intro_text p b {font-size: 18px;}
-    #intro .intro_box .intro_text p span {font-size: 16px;}
     #intro .intro_box .intro_text p.resolution {text-align: center;}
 
     .skill_box {width: 100%;}
@@ -864,10 +889,10 @@ address {
 
     #intro .intro_box .me .back1 {left: 80px;}
     #intro .intro_box .me .back2 {right: 110px;}
-    #intro .intro_box .intro_text p b {width: 60px; font-size: 15px;}
-    #intro .intro_box .intro_text p span {font-size: 14px;}
+    #intro .intro_box .intro_text p b {width: 60px; font-size: 16px;}
+    #intro .intro_box .intro_text p span {font-size: 16px;}
     #intro .intro_box .intro_text p span.space {margin-left: 60px;}
-    #intro .intro_box .intro_text p.resolution {font-size: 14px; margin-top: 40px; line-height: 20px;}
+    #intro .intro_box .intro_text p.resolution {font-size: 16px; margin-top: 40px; line-height: 20px;}
 
     .skill_box .box .skill_text {font-size: 16px;}
     
@@ -895,6 +920,10 @@ address {
     #main .emoji {width: 40px; height: 40px; animation: motion4 0.6s linear 0s infinite alternate;}
     #main .text_box .t_text, #main .text_box .line {font-size: 25px;}
 
+    #intro .intro_box .intro_text p b,
+    #intro .intro_box .intro_text p span,
+    #intro .intro_box .intro_text p.resolution {font-size: 14px;}
+
     .skill_box .box {margin-bottom: 40px;}
     .skill_box .box .circle {margin-bottom: 20px;}
     .skill_box .box .skill_text {font-size: 14px;}
@@ -905,6 +934,7 @@ address {
 
     .design_box a .icon {width: 30px;}
     .design_box a .icon2 {width: 65px;}
+    .design_box a .blue_back p {font-size: 20px;}
 
     address {font-size: 12px;}
 }
