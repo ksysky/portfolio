@@ -120,6 +120,7 @@ header .btn a:hover svg path {
 
 .explain dl .intro {
     line-height: 1.6;
+    word-break: keep-all;
 }
 
 .explain dl dd .c_chart {
@@ -171,4 +172,9 @@ footer address {
     line-height: 200px;
     text-align: center;
     color: #fff;
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 1024px) {
+    .container {width: 100%;}
 }
