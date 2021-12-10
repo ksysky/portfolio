@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+/* 레이아웃 */
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    /* background: rgba(0,0,0,0.1); */
+}
+
+/* 헤더 */
+header {
+    width: 100%;
+    height: 200px;
+    background: #03658C;
+}
+
+header > .container {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .tit {
+    padding-left: 90px;
+    color: #fff;
+}
+
+header .tit p {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+header .tit h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+header .btn {
+    padding-right: 90px;
+}
+
+header .btn a {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+}
+
+header .btn a:hover {
+    color: #03658C;
+}
+
+header .btn a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #fff;
+    transition: all .3s ease-in-out;
+    z-index: -1;
+}
+
+header .btn a:hover:after {
+    width: 100%;
+}
+
+header .btn a svg {
+    margin-left: 6px;
+    margin-bottom: 4px;
+}
+
+header .btn a:hover svg path {
+    stroke: #03658C;
+    transition: .3s ease-in-out;
+}
+
+/* 목업 사진 */
+.mockup {
+    position: relative;
+    width: 100%;
+    height: 370px;
+}
+
+.mockup img {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+}
+
+/* 설명 */
+.explain {
+    margin-top: 50px;
+}
+
+.explain dl {
+    padding: 0 90px;
+    color: #03658C;
+}
+
+.explain dl dt {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.explain dl dd {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.explain dl .intro {
+    line-height: 1.6;
+    word-break: keep-all;
+}
+
+.explain dl dd .c_chart {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.explain dl dd .c1 {
+    background: #5A87C5;
+    margin-right: 5px;
+}
+
+.explain dl dd .c2 {
+    background: #DDDDDD;
+}
+
+.explain dl .font {
+    color:#707070;
+}
+
+.explain dl .font_e {
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+.explain dl .font_m {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.explain dl .font_s {
+    font-weight: 600;
+}
+
+.explain dl .template img {
+    width: 100%;
+}
+
+/* 푸터 */
+footer {
+    width: 100%;
+    height: 200px;
+    background: #03658C;
+}
+
+footer address {
+    line-height: 200px;
+    text-align: center;
+    color: #fff;
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 1024px) {
+    .container {width: 100%;}
+}
