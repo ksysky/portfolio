@@ -209,6 +209,8 @@ footer address {
     header .btn {font-size: 25px;}
     header .btn a {font-size: 14px;}
 
-    .explain dl dt {font-size: 18px;}
-    .explain dl dd {font-size: 16px;}
+    .explain dl dt {font-size: 16px;}
+    .explain dl dd {font-size: 14px;}
+
+    footer address {font-size: 12px;}
 }
