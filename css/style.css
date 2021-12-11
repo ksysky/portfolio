@@ -807,6 +807,35 @@ address {
     padding-top: 70px;
 }
 
+/* 탑버튼 */
+.top_btn {
+    position: fixed;
+    right: 40px;
+    bottom: 60px;
+    z-index: 100;
+}
+
+.top_btn a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #05A0A3;
+    transition: all .3s ease-in-out;
+}
+
+.top_btn a:hover {
+    background: #D9471A;
+}
+
+.top_btn a svg {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 /* 반응형 */
 @media (max-width: 1200px) {
     #intro .intro_box .me {width: 48%;}

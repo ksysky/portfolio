@@ -94,8 +94,20 @@ const swiper = new Swiper('.slider', {
 });
 
 // 디자인 갤러리
-
-
 lightGallery(document.querySelector(".lightgallery"), {
   plugins: [lgZoom]
+});
+
+// 탑버튼 이동 스크롤
+$(window).scroll(function(){
+  if($(this).scrollTop() > 700) {
+    $(".top_btn").fadeIn();
+  } else {
+    $(".top_btn").fadeOut();
+  }
+});
+
+$(".top_btn").click(function(){
+  $("html, body").animate({scrollTop: 0},500);
+  return false;
 });
