@@ -1,3 +1,9 @@
+// 메인 화살표 스크롤 자동 이동
+$(".scroll_box").click(function(){
+  const secondTop = $("#intro").offset().top;
+  $("html, body").animate({scrollTop: secondTop},500);
+});
+
 // 메뉴 버튼 클릭 애니메이션
 document.querySelectorAll(".pc_menu ul li a").forEach((li) => {
   li.addEventListener("click", (e) => {
