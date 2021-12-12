@@ -85,23 +85,16 @@ header .btn a:hover svg path {
 
 /* 목업 사진 */
 .mockup {
-    position: relative;
     width: 100%;
-    height: 370px;
 }
 
 .mockup img {
-    position: absolute;
-    top: -80px;
-    left: 0;
     width: 100%;
+    display: block;
+    margin-top: -80px;
 }
 
 /* 설명 */
-.explain {
-    margin-top: 50px;
-}
-
 .explain dl {
     padding: 0 90px;
     color: #03658C;
@@ -157,6 +150,10 @@ header .btn a:hover svg path {
     font-weight: 600;
 }
 
+.explain dl .template a {
+    display: block;
+}
+
 .explain dl .template img {
     width: 100%;
 }
@@ -174,7 +171,87 @@ footer address {
     color: #fff;
 }
 
+/* 탑 버튼 */
+.top_btn {
+    position: fixed;
+    top: auto;
+    right: 50px;
+    bottom: 50px;
+}
+
+.top_btn a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #05A0A3;
+    transition: all .3s ease-in-out;
+}
+
+.top_btn a:hover {
+    background: #D9471A;
+}
+
+.top_btn a svg {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 /* 미디어 쿼리 */
 @media (max-width: 1024px) {
     .container {width: 100%;}
+
+    .top_btn {right: 24px;}
+}
+
+@media (max-width: 840px) {
+    header .tit {padding-left: 60px;}
+    header .tit p {font-size: 18px; margin-bottom: 10px;}
+    header .tit h1 {font-size: 30px;}
+
+    header .btn {padding-right: 60px;}
+    header .btn a {font-size: 14px; padding: 9px 20px;}
+
+    .explain dl {padding: 0 24px;}
+}
+
+@media (max-width: 600px) {
+    header > .container {flex-direction: column; justify-content: center;}
+
+    header .tit {text-align: center; padding-left: 0;}
+
+    header .btn {padding-right: 0; margin-top: 20px;}
+
+    .mockup img {margin-top: -45px;}
+
+    .explain dl {padding: 0 16px;}
+    .explain dl dt {font-size: 18px;}
+    .explain dl dd {font-size: 16px;}
+
+    footer {height: 100px;}
+    footer address {font-size: 14px; line-height: 100px;}
+
+    .top_btn {right: 16px;}
+    .top_btn a {width: 40px; height: 40px;}
+    .top_btn a svg {width: 18px;}
+}
+
+@media (max-width: 400px) {
+    header .tit {font-size: 16px;}
+    header .tit p {font-size: 16px;}
+    header .tit h1 {font-size: 25px;}
+
+    header .btn {font-size: 25px;}
+    header .btn a {font-size: 12px;}
+
+    .explain dl {padding: 0 8px;}
+    .explain dl dt {font-size: 16px;}
+    .explain dl dd {font-size: 14px;}
+
+    footer address {font-size: 12px;}
+
+    .top_btn {right: 8px;}
 }
