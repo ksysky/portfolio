@@ -111,9 +111,14 @@ header .btn a:hover svg path {
     margin-bottom: 30px;
 }
 
+.explain dl .intro_tit {
+    padding-top: 20px;
+}
+
 .explain dl .intro {
     line-height: 1.6;
     word-break: keep-all;
+    padding-bottom: 20px;
 }
 
 .explain dl dd .c_chart {
@@ -124,29 +129,38 @@ header .btn a:hover svg path {
 }
 
 .explain dl dd .c1 {
-    background: #5A87C5;
+    background: #222222;
     margin-right: 5px;
 }
 
 .explain dl dd .c2 {
-    background: #DDDDDD;
+    background: #ff2a00;
 }
 
 .explain dl .font {
     color:#707070;
 }
 
-.explain dl .font_e {
+.explain dl .font_o {
     margin-bottom: 10px;
-    font-weight: 200;
-}
-
-.explain dl .font_m {
-    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
     font-weight: 500;
 }
 
-.explain dl .font_s {
+.explain dl .font_l {
+    margin-bottom: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+}
+
+.explain dl .font_r {
+    margin-bottom: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+
+.explain dl .font_m {
+    font-family: 'Noto Sans KR', sans-serif;
     font-weight: 600;
 }
 

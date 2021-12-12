@@ -111,9 +111,14 @@ header .btn a:hover svg path {
     margin-bottom: 30px;
 }
 
+.explain dl .intro_tit {
+    padding-top: 20px;
+}
+
 .explain dl .intro {
     line-height: 1.6;
     word-break: keep-all;
+    padding-bottom: 20px;
 }
 
 .explain dl dd .c_chart {
