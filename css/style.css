@@ -256,15 +256,17 @@ nav ul li:hover a {
 /* 메인 페이지 */
 #main {
     position: relative;
-    height: 100vh;
+    height: 700px;
     font-size: 2rem;
     font-weight: bold;
+    background: url(../img/monitor.png) no-repeat center;
+    background-size: contain;
 }
 
 #main .emoji {
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     background: url(../img/woman_technologist.png) no-repeat center;
     background-size: cover;
     left: 50%;
@@ -273,13 +275,13 @@ nav ul li:hover a {
 }
 
 @keyframes motion1 {
-    0% {top: 25%;}
-    100% {top: 27%;}
+    0% {top: 27%;}
+    100% {top: 29%;}
 }
 
 @keyframes motion2 {
-    0% {top: 28%;}
-    100% {top: 30%;}
+    0% {top: 30%;}
+    100% {top: 32%;}
 }
 
 @keyframes motion3 {
@@ -302,12 +304,12 @@ nav ul li:hover a {
 }
 
 #main .text_box .t_text {
-    font-size: 50px;
+    font-size: 40px;
     color: #03658C;
 }
 
 #main .text_box .line {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 100;
     animation: line .8s infinite;
     color: #303030;
@@ -320,7 +322,7 @@ nav ul li:hover a {
 #main .scroll_box {
     position: absolute;
     left: 50%;
-    bottom: 20%;
+    bottom: 33%;
     transform: translate(-50%, -50%);
 }
 
@@ -334,8 +336,8 @@ nav ul li:hover a {
     position: absolute;
     top: 0;
     left: 50%;
-    width: 24px;
-    height: 24px;
+    width: 15px;
+    height: 15px;
     margin-left: -12px;
     border-left: 1.7px solid #03658C;
     border-bottom: 1.7px solid #03658C;
@@ -457,13 +459,15 @@ nav ul li:hover a {
 
 #intro .intro_box .me .hashtag {
     position: absolute;
-    width: 280px;
+    width: 257px;
     top: 85%;
     left: 55%;
     transform: translate(-50%, -50%);
+    text-align: center;
     font-size: 18px;
     font-weight: bold;
     color: #05A0A3;
+    word-break: keep-all;
 }
 
 #intro .intro_box .intro_text {
@@ -813,6 +817,7 @@ address {
     right: 40px;
     bottom: 60px;
     z-index: 100;
+    display: none;
 }
 
 .top_btn a {
@@ -844,9 +849,6 @@ address {
     #intro .intro_box .me .back2 { right: 80px;}
     #intro .intro_box .me .hashtag {left: 50%;}
     #intro .intro_box .intro_text {width: 52%; padding-top: 80px;}
-    /* #intro .intro_box .intro_text p b {width: 70px; font-size: 17px;}
-    #intro .intro_box .intro_text p span {font-size: 14px;}
-    #intro .intro_box .intro_text p span.space {margin-left: 70px;} */
     #intro .intro_box .intro_text p.resolution {font-size: 18px;}
 }
 
@@ -870,6 +872,7 @@ address {
     .mBtn {display: block;}
 
     .content {padding-left: 0;}
+    #main {margin-top: 70px; background: url(../img/tablet.png) no-repeat center; background-size: contain;}
     #main .emoji {animation: motion2 0.6s linear 0s infinite alternate;}
 
     #intro .intro_box {flex-direction: column; height: auto;}
@@ -914,9 +917,9 @@ address {
     .aside_box {height: 60px;}
     .aside_box h1 a.m_logo {font-size: 30px;}
 
+    #main {margin-top: 60px; background: url(../img/phone.png) no-repeat center; background-size: contain;}
     #main .emoji {width: 50px; height: 50px; animation: motion3 0.6s linear 0s infinite alternate;}
-    #main .text_box .t_text, #main .text_box .line {font-size: 33px;}
-    #main .scroll_box a span {width: 16px; height: 16px;}
+    #main .text_box .t_text, #main .text_box .line {font-size: 25px;}
 
     #intro .intro_box .me .back1 {left: 80px;}
     #intro .intro_box .me .back2 {right: 110px;}
@@ -952,8 +955,10 @@ address {
     .mBtn {width: 25px;}
     .m_menu {width: 70%; right: -70%;}
 
+    #main {margin-top: 50px;}
     #main .emoji {width: 40px; height: 40px; animation: motion4 0.6s linear 0s infinite alternate;}
-    #main .text_box .t_text, #main .text_box .line {font-size: 25px;}
+    #main .text_box .t_text, #main .text_box .line {font-size: 22px;}
+    #main .scroll_box a span {border-left: 1px solid #03658C; border-bottom: 1px solid #03658C;}
 
     #intro .intro_box .intro_text p b,
     #intro .intro_box .intro_text p span,
