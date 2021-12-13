@@ -880,7 +880,7 @@ address {
     #intro .intro_box .me .me_img {transform: translate(-50%, -50%);}
     #intro .intro_box .me .back1 {top: -15px; left: 300px;}
     #intro .intro_box .me .back2 {bottom: -2px; right: 300px;}
-    #intro .intro_box .me .hashtag {top: auto; bottom: -50px;}
+    #intro .intro_box .me .hashtag {top: auto; bottom: -75px;}
     #intro .intro_box .intro_text {width: auto; margin: 0 auto; box-sizing: border-box;}
     #intro .intro_box .intro_text p.resolution {text-align: center;}
 
