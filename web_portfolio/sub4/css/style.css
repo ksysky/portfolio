@@ -124,21 +124,21 @@ header .btn a:hover svg path {
 }
 
 .explain dl dd .c1 {
-    background: #5A87C5;
+    background: #03658C;
     margin-right: 5px;
 }
 
 .explain dl dd .c2 {
-    background: #DDDDDD;
+    background: #D9471A;
+    margin-right: 5px;
+}
+
+.explain dl dd .c3 {
+    background: #05A0A3;
 }
 
 .explain dl .font {
     color:#707070;
-}
-
-.explain dl .font_e {
-    margin-bottom: 10px;
-    font-weight: 200;
 }
 
 .explain dl .font_m {
@@ -146,8 +146,13 @@ header .btn a:hover svg path {
     font-weight: 500;
 }
 
-.explain dl .font_s {
-    font-weight: 600;
+.explain dl .font_b {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.explain dl .font_bb {
+    font-weight: 900;
 }
 
 .explain dl .template a {
@@ -235,7 +240,7 @@ footer address {
     footer address {font-size: 14px; line-height: 100px;}
 
     .top_btn {right: 16px;}
-    .top_btn a {width: 40px; height: 40px;}
+    .top_btn a {width: 50px; height: 50px;}
     .top_btn a svg {width: 18px;}
 }
 
