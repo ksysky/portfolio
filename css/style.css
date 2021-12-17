@@ -902,8 +902,8 @@ address {
     .slider .swiper-slide .slide_text {height: 290px; align-items: center; flex-direction: column; justify-content: flex-start;}
     .slider .swiper-slide .slide_text:after {top: -120px; height: 120px;}
     .slider .swiper-slide .slide_text .slide_tit p {text-align: center;}
-    .slider .swiper-slide .slide_text .slide_btn a {display: block;}
-    .slider .swiper-slide .slide_text .slide_btn .work {width: 124px; text-align: center; margin-top: 10px;}
+    .slider .swiper-slide .slide_text .slide_btn a {display: block; text-align: center;}
+    .slider .swiper-slide .slide_text .slide_btn .work {width: 124px; margin-top: 10px;}
 
     .design_box a {width: 49%; height: 49%; margin-top: 2%; margin-right: 2%;}
     .design_box a:nth-child(2n) {margin-right: 0;}
@@ -936,8 +936,8 @@ address {
     .slider .swiper-slide .slide_text .slide_tit p {font-size: 18px;}
     .slider .swiper-slide .slide_text .slide_tit h3 {font-size: 30px;}
     .slider .swiper-slide .slide_text .slide_btn a {font-size: 14px;}
-    .slider .swiper-slide .slide_text .slide_btn .site {width: 111px;}
-    .slider .swiper-slide .slide_text .slide_btn .work {width: 111px;}
+    .slider .swiper-slide .slide_text .slide_btn .site {width: 120px;}
+    .slider .swiper-slide .slide_text .slide_btn .work {width: 120px;}
     
     .address_box {width: 100%;}
 
