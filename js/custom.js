@@ -101,7 +101,7 @@ const swiper = new Swiper('.slider', {
 
 // 디자인 갤러리
 lightGallery(document.querySelector(".lightgallery"), {
-  plugins: [lgZoom]
+  plugins: [lgZoom],
 });
 
 // 탑버튼 이동 스크롤
