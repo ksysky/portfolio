@@ -236,7 +236,7 @@ nav ul li:hover a {
 }
 
 .m_menu nav ul li {
-    margin-bottom: 5 0px;
+    margin-bottom: 50px;
 }
 
 .m_back {
@@ -245,7 +245,7 @@ nav ul li:hover a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0);
+    background: rgba(0,0,0,0.4);
     display: none;
 }
 
@@ -349,7 +349,7 @@ nav ul li:hover a {
 }
 
 #main .scroll_box a span:nth-of-type(1) {
-    animation-delay: 0;
+    animation-delay: 0s;
 }
 
 #main .scroll_box a span:nth-of-type(2) {
@@ -817,7 +817,7 @@ address {
     position: fixed;
     right: 40px;
     bottom: 60px;
-    z-index: 100;
+    z-index: 19;
     display: none;
 }
 
