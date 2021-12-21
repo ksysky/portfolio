@@ -305,6 +305,7 @@ nav ul li:hover a {
 
 #main .text_box .t_text {
     font-size: 40px;
+    font-weight: bold;
     color: #03658C;
 }
 

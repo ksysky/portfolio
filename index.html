@@ -80,9 +80,9 @@
             <div class="row">
                 <section id="main">
                     <div class="emoji"></div>
-                    <div class="text_box">
+                    <h2 class="text_box">
                         <span class="t_text"></span><span class="line">|</span>
-                    </div>
+                    </h2>
                     <div class="scroll_box">
                         <a href="#">
                             <span></span><span></span><span></span>
@@ -375,6 +375,7 @@
                             </div>
                         </a>
                     </div>
+                </div>
             </section>
             <!-- //main -->
 
@@ -405,44 +406,44 @@
             </svg>
         </a>
     </div>
-</body>
-<!-- script -->
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/lightgallery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/plugins/zoom/lg-zoom.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script>
-    (function () {
-        emailjs.init("user_EbHx4mOQ5jtqa1EjfP7Sx");
-    })();
+    <!-- script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("user_EbHx4mOQ5jtqa1EjfP7Sx");
+        })();
 
-    $(document).ready(function () {
-        emailjs.init("user_EbHx4mOQ5jtqa1EjfP7Sx");
-        //"user_xxxxx"이 부분은 사용자마다 다르니 반드시 emailJS의 installation 화면을 확인
-        $('input[name=submit]').click(function () {
+        $(document).ready(function () {
+            emailjs.init("user_EbHx4mOQ5jtqa1EjfP7Sx");
+            //"user_xxxxx"이 부분은 사용자마다 다르니 반드시 emailJS의 installation 화면을 확인
+            $('input[name=submit]').click(function () {
 
-            var templateParams = {
-                //각 요소는 emailJS에서 설정한 템플릿과 동일한 명으로 작성!
-                name: $('input[name=name]').val(),
-                phone: $('input[name=phone]').val(),
-                email: $('input[name=email]').val(),
-                message: $('textarea[name=message]').val()
-            };
+                var templateParams = {
+                    //각 요소는 emailJS에서 설정한 템플릿과 동일한 명으로 작성!
+                    name: $('input[name=name]').val(),
+                    phone: $('input[name=phone]').val(),
+                    email: $('input[name=email]').val(),
+                    message: $('textarea[name=message]').val()
+                };
 
 
-            emailjs.send('service_7ptqt2n', 'template_ucq9424', templateParams)
-                //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)
-                .then(function (response) {
-                    alert('메일이 보내졌습니다.', response.status, response.text);
-                }, function (error) {
-                    alert('메일을 보내지 못했습니다.', error);
-                });
+                emailjs.send('service_7ptqt2n', 'template_ucq9424', templateParams)
+                    //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)
+                    .then(function (response) {
+                        alert('메일이 보내졌습니다.', response.status, response.text);
+                    }, function (error) {
+                        alert('메일을 보내지 못했습니다.', error);
+                    });
+            });
+
         });
-
-    });
-</script>
-<script src="js/custom.js"></script>
-<!-- //script -->
+    </script>
+    <script src="js/custom.js"></script>
+    <!-- //script -->
+</body>
 
 </html>
