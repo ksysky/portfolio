@@ -244,18 +244,7 @@ html {
 	display: inline-block;
 	margin-left: -5px;
 	padding-right: 10px;
-	background: blue;
 }
-
-/* .menu > ul > li:after {
-	content: "";
-	position: absolute;
-	top: 0;
-	width: 18px;
-	height: 23px;
-	background: red;
-	z-index: -5;
-} */
 
 .header .menu > ul > li:hover > ul {
 	display: block;
