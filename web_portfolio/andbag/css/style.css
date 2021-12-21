@@ -522,10 +522,21 @@ html {
 }
 
 .main_slide .ms_slide .description .pWrap .price {
+	position: relative;
 	font-size: 1.4rem;
-	text-decoration: line-through;
 	color: #9c9c9c;
 	margin: 12px 0 4px 0;
+}
+
+.main_slide .ms_slide .description .pWrap .price:after {
+	content: "";
+	position: absolute;
+	width: 70px;
+	height: 1px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #9c9c9c;
 }
 
 .main_slide .ms_slide .description .pWrap .sale {
@@ -1145,6 +1156,7 @@ html {
 	.main_slide .ms_title li:last-child:after {top: 10px;}
 	.main_slide .all {width: 83px;}
 	.main_slide .swiper-container2 .swiper-pagination .swiper-pagination-bullet {width: 100px;}
+	.main_slide .ms_slide .description .pWrap .price:after {width: 60px;}
 
 	.banner2 .t_box h2, .banner2 .t_box span {padding-left: 80px;}
 	.banner2 .t_box button {margin-left: 80px;}
