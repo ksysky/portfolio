@@ -242,16 +242,20 @@ html {
 
 .menu > ul > li {
 	display: inline-block;
-	margin-right: 10px;
+	margin-left: -5px;
+	padding-right: 10px;
+	background: blue;
 }
 
-.menu > ul > li:after {
+/* .menu > ul > li:after {
 	content: "";
 	position: absolute;
+	top: 0;
 	width: 18px;
 	height: 23px;
-	background: none;
-}
+	background: red;
+	z-index: -5;
+} */
 
 .header .menu > ul > li:hover > ul {
 	display: block;
