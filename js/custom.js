@@ -40,17 +40,34 @@ document.querySelectorAll(".m_menu ul li a").forEach(function(li) {
 });
 
 // 메뉴 액티브
+// window.addEventListener("scroll", function () {
+//   let scrollTop = document.documentElement.scrollTop || window.scrollY || window.pageYOffset;
+//   document.querySelectorAll("section").forEach((item, index) => {
+//     let sTop = item.offsetTop - 50;
+//     if (scrollTop >= sTop) {
+//       document.querySelectorAll(".pc_menu ul li").forEach(li => {
+//         li.classList.remove("active");
+//       });
+//       document.querySelector(".pc_menu ul li:nth-child(" + (index + 1) + ")").classList.add("active");
+
+//       document.querySelectorAll(".m_menu ul li").forEach(li => {
+//         li.classList.remove("active");
+//       });
+//       document.querySelector(".m_menu ul li:nth-child(" + (index + 1) + ")").classList.add("active");
+//     }
+//   });
+// });
 window.addEventListener("scroll", function () {
   let scrollTop = document.documentElement.scrollTop || window.scrollY || window.pageYOffset;
-  document.querySelectorAll("section").forEach((item, index) => {
+  document.querySelectorAll("section").forEach(function(item, index) {
     let sTop = item.offsetTop - 50;
     if (scrollTop >= sTop) {
-      document.querySelectorAll(".pc_menu ul li").forEach(li => {
+      document.querySelectorAll(".pc_menu ul li").forEach(function(li) {
         li.classList.remove("active");
       });
       document.querySelector(".pc_menu ul li:nth-child(" + (index + 1) + ")").classList.add("active");
 
-      document.querySelectorAll(".m_menu ul li").forEach(li => {
+      document.querySelectorAll(".m_menu ul li").forEach(function(li) {
         li.classList.remove("active");
       });
       document.querySelector(".m_menu ul li:nth-child(" + (index + 1) + ")").classList.add("active");
