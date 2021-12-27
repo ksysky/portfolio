@@ -5,8 +5,16 @@ $(".scroll_box").click(function(){
 });
 
 // 메뉴 버튼 클릭 애니메이션
-document.querySelectorAll(".pc_menu ul li a").forEach((li) => {
-  li.addEventListener("click", (e) => {
+// document.querySelectorAll(".pc_menu ul li a").forEach((li) => {
+//   li.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     document.querySelector(li.getAttribute("href")).scrollIntoView({
+//       behavior: "smooth"
+//     });
+//   });
+// });
+document.querySelectorAll(".pc_menu ul li a").forEach(function(li) {
+  li.addEventListener("click", function(e) {
     e.preventDefault();
     document.querySelector(li.getAttribute("href")).scrollIntoView({
       behavior: "smooth"
@@ -14,8 +22,16 @@ document.querySelectorAll(".pc_menu ul li a").forEach((li) => {
   });
 });
 
-document.querySelectorAll(".m_menu ul li a").forEach((li) => {
-  li.addEventListener("click", (event) => {
+// document.querySelectorAll(".m_menu ul li a").forEach((li) => {
+//   li.addEventListener("click", (event) => {
+//     event.preventDefault();
+//     document.querySelector(li.getAttribute("href")).scrollIntoView({
+//       behavior: "smooth"
+//     });
+//   });
+// });
+document.querySelectorAll(".m_menu ul li a").forEach(function(li) {
+  li.addEventListener("click", function(event) {
     event.preventDefault();
     document.querySelector(li.getAttribute("href")).scrollIntoView({
       behavior: "smooth"
