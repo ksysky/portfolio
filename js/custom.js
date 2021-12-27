@@ -1,6 +1,6 @@
 // 메인 화살표 스크롤 자동 이동
 $(".scroll_box").click(function(){
-  const secondTop = $("#intro").offset().top;
+  var secondTop = $("#intro").offset().top;
   $("html, body").animate({scrollTop: secondTop},500);
 });
 
@@ -42,9 +42,9 @@ document.querySelectorAll(".m_menu ul li a").forEach(function(li) {
 //   });
 // });
 window.addEventListener("scroll", function () {
-  let scrollTop = document.documentElement.scrollTop || window.scrollY || window.pageYOffset;
+  var scrollTop = document.documentElement.scrollTop || window.scrollY || window.pageYOffset;
   document.querySelectorAll("section").forEach(function(item, index) {
-    let sTop = item.offsetTop - 50;
+    var sTop = item.offsetTop - 50;
     if (scrollTop >= sTop) {
       document.querySelectorAll(".pc_menu ul li").forEach(function(li) {
         li.classList.remove("active");
