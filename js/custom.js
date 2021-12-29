@@ -89,7 +89,7 @@ $(".m_back").click(function (e) {
 
 // 메인 타이핑 애니메이션
 var content = "안녕하세요.\n신입 웹퍼블리셔\n김수연의 포트폴리오입니다."
-var text = document.querySelector(".text_box");
+var text = document.querySelector(".t_text");
 var i = 0;
 
 function typing() {
