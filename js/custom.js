@@ -1,3 +1,16 @@
+// 메인 타이핑 애니메이션
+var content = "안녕하세요.\n신입 웹퍼블리셔\n김수연의 포트폴리오입니다."
+var text = document.querySelector(".t_text");
+var i = 0;
+
+function typing() {
+  if (i < content.length) {
+    var txt = content[i++]; // 0에서 끝 숫자까지 0~30
+    text.innerHTML += txt === "\n" ? "<br/>" : txt;
+  }
+}
+setInterval(typing, 150);
+
 // 메인 화살표 스크롤 자동 이동
 $(".scroll_box").click(function(){
   var secondTop = $("#intro").offset().top;
@@ -88,17 +101,17 @@ $(".m_back").click(function (e) {
 });
 
 // 메인 타이핑 애니메이션
-var content = "안녕하세요.\n신입 웹퍼블리셔\n김수연의 포트폴리오입니다."
-var text = document.querySelector(".t_text");
-var i = 0;
+// var content = "안녕하세요.\n신입 웹퍼블리셔\n김수연의 포트폴리오입니다."
+// var text = document.querySelector(".t_text");
+// var i = 0;
 
-function typing() {
-  if (i < content.length) {
-    var txt = content[i++]; // 0에서 끝 숫자까지 0~30
-    text.innerHTML += txt === "\n" ? "<br/>" : txt;
-  }
-}
-setInterval(typing, 150);
+// function typing() {
+//   if (i < content.length) {
+//     var txt = content[i++]; // 0에서 끝 숫자까지 0~30
+//     text.innerHTML += txt === "\n" ? "<br/>" : txt;
+//   }
+// }
+// setInterval(typing, 150);
 
 // 포트폴리오 슬라이드
 var swiper = new Swiper('.slider', {
