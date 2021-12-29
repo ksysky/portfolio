@@ -92,18 +92,13 @@ var content = "안녕하세요.\n신입 웹퍼블리셔\n김수연의 포트폴�
 var text = document.querySelector(".t_text");
 var i = 0;
 
-// function typing() {
-//   if (i < content.length) {
-//     var txt = content[i++]; // 0에서 끝 숫자까지 0~30
-//     text.innerHTML += txt === "\n" ? "<br/>" : txt;
-//   }
-// }
-setInterval(function(){
+function typing() {
   if (i < content.length) {
     var txt = content[i++]; // 0에서 끝 숫자까지 0~30
     text.innerHTML += txt === "\n" ? "<br/>" : txt;
   }
-}, 150);
+}
+setInterval(typing, 150);
 
 // 포트폴리오 슬라이드
 var swiper = new Swiper('.slider', {
