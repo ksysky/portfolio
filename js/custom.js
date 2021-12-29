@@ -94,7 +94,7 @@ var i = 0;
 
 function typing() {
   if (i < content.length) {
-    var txt = content[i++]; // 0에서 끝 숫자까지
+    var txt = content[i++]; // 0에서 끝 숫자까지 0~30
     text.innerHTML += txt === "\n" ? "<br/>" : txt;
   }
 }
