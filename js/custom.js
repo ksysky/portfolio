@@ -1,7 +1,3 @@
-jQuery(document).ready(function(){
-
-
-
 // 메인 화살표 스크롤 자동 이동
 $(".scroll_box").click(function(){
   var secondTop = $("#intro").offset().top;
@@ -137,6 +133,4 @@ $(window).scroll(function(){
 $(".top_btn").click(function(){
   $("html, body").animate({scrollTop: 0},500);
   return false;
-});
-
 });
