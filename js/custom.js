@@ -17,6 +17,19 @@ $(".scroll_box").click(function(){
   $("html, body").animate({scrollTop: secondTop},500);
 });
 
+// 포트폴리오 슬라이드
+var swiper = new Swiper('.slider', {
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
 // 메뉴 버튼 클릭 애니메이션
 document.querySelectorAll(".pc_menu ul li a").forEach(function(li) {
   li.addEventListener("click", function(e) {
@@ -113,21 +126,7 @@ $(".m_back").click(function (e) {
 // }
 // setInterval(typing, 150);
 
-// 포트폴리오 슬라이드
-var swiper = new Swiper('.slider', {
-  loop: true,
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
 
 // 디자인 갤러리
 lightGallery(document.querySelector(".lightgallery"), {
