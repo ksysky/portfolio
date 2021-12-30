@@ -604,6 +604,7 @@ nav ul li:hover a {
 
 .slider .swiper-slide .mockup_img {
     width: 750px;
+    height: 400px;
 }
 
 .slider .swiper-slide .mockup_img img {
@@ -616,9 +617,12 @@ nav ul li:hover a {
     height: 200px;
     display: flex;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: #03658C;
     color: #fff;
+    display: -ms-flexbox;
+    -ms-flex-align: start;
+    
 }
 
 .slider .swiper-slide .slide_text:after {
@@ -630,6 +634,10 @@ nav ul li:hover a {
     height: 180px;
     background-color: #03658C;
     z-index: -2;
+}
+
+.slider .swiper-slide .slide_text .slide_tit {
+    margin-right: 100px;
 }
 
 .slider .swiper-slide .slide_text .slide_tit p {
@@ -911,9 +919,10 @@ address {
     #intro .intro_box .me .back1 {left: 190px;}
     #intro .intro_box .me .back2 {right: 230px; transform: rotate(-50deg);}
 
-    .slider .swiper-slide .mockup_img {width: 580px;}
+    .slider .swiper-slide .mockup_img {width: 580px; height: 280px;}
     .slider .swiper-slide .slide_text {height: 290px; align-items: center; flex-direction: column; justify-content: flex-start;}
     .slider .swiper-slide .slide_text:after {top: -120px; height: 120px;}
+    .slider .swiper-slide .slide_text .slide_tit {margin-right: 0;}
     .slider .swiper-slide .slide_text .slide_tit p {text-align: center;}
     .slider .swiper-slide .slide_text .slide_btn a {display: block; text-align: center;}
     .slider .swiper-slide .slide_text .slide_btn .work {width: 124px; margin-top: 10px;}
@@ -944,7 +953,7 @@ address {
     .skill_box .box .skill_text {font-size: 16px;}
     
     #portfolio {height: 558px;}
-    .slider .swiper-slide .mockup_img {width: 415px;}
+    .slider .swiper-slide .mockup_img {width: 415px; height: 210px;}
     .slider .swiper-slide .slide_text {height: 270px;}
     .slider .swiper-slide .slide_text .slide_tit p {font-size: 18px;}
     .slider .swiper-slide .slide_text .slide_tit h3 {font-size: 30px;}
@@ -982,7 +991,7 @@ address {
     .skill_box .box .skill_text {font-size: 14px;}
 
     #portfolio {height: 515px;}
-    .slider .swiper-slide .mockup_img {width: 325px;}
+    .slider .swiper-slide .mockup_img {width: 325px; height: 160px;}
     .slider .swiper-slide .slide_text:after {top: -70px;}
 
     .design_box a .icon {width: 30px;}
