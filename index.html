@@ -15,8 +15,6 @@
 
     <!-- swiper slider -->
     <link rel="stylesheet" href="css/swiper.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css" integrity="sha512-cjuGuLmHnZITUy7HuGAl8RiiaNtzKH6ocCsISihxqrK98P1Ki7ugF+Oot0DHgPG++ZpywwsNNUxL4InsG6iYQw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 
     <!-- lightgallery -->
     <link rel="stylesheet" href="css/lightgallery.css">
@@ -275,7 +273,7 @@
                                 </div>
                                 <div class="slide_btn">
                                     <a class="site"
-                                        href="https://ksysky.github.io/portfolio/web_portfolio/coffeenie/index.html"
+                                        href="https://ksysky.github.io/portfolio"
                                         target="_blank">사이트
                                         보러가기
                                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="4.191"
@@ -428,39 +426,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/lightgallery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/plugins/zoom/lg-zoom.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script>
-        (function () {
-            emailjs.init("user_EbHx4mOQ5jtqa1EjfP7Sx");
-        })();
-
-        $(document).ready(function () {
-            emailjs.init("user_EbHx4mOQ5jtqa1EjfP7Sx");
-            //"user_xxxxx"이 부분은 사용자마다 다르니 반드시 emailJS의 installation 화면을 확인
-            $('input[name=submit]').click(function () {
-
-                var templateParams = {
-                    //각 요소는 emailJS에서 설정한 템플릿과 동일한 명으로 작성!
-                    name: $('input[name=name]').val(),
-                    phone: $('input[name=phone]').val(),
-                    email: $('input[name=email]').val(),
-                    message: $('textarea[name=message]').val()
-                };
-
-
-                emailjs.send('service_7ptqt2n', 'template_ucq9424', templateParams)
-                    //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)
-                    .then(function (response) {
-                        alert('메일이 보내졌습니다.', response.status, response.text);
-                    }, function (error) {
-                        alert('메일을 보내지 못했습니다.', error);
-                    });
-            });
-
-        });
-    </script>
     <script src="js/custom.js"></script>
-    <script>
-    </script>
     <!-- //script -->
 </body>
 

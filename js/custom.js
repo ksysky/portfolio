@@ -30,6 +30,37 @@ var swiper = new Swiper('.slider', {
   },
 });
 
+// 디자인 갤러리
+lightGallery(document.querySelector(".lightgallery"), {
+  plugins: [lgZoom],
+});
+
+// email.js
+$(document).ready(function () {
+  emailjs.init("user_EbHx4mOQ5jtqa1EjfP7Sx");
+  //"user_xxxxx"이 부분은 사용자마다 다르니 반드시 emailJS의 installation 화면을 확인
+  $('input[name=submit]').click(function () {
+
+      var templateParams = {
+          //각 요소는 emailJS에서 설정한 템플릿과 동일한 명으로 작성!
+          name: $('input[name=name]').val(),
+          phone: $('input[name=phone]').val(),
+          email: $('input[name=email]').val(),
+          message: $('textarea[name=message]').val()
+      };
+
+
+      emailjs.send('service_7ptqt2n', 'template_ucq9424', templateParams)
+          //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)
+          .then(function (response) {
+              alert('메일이 보내졌습니다.', response.status, response.text);
+          }, function (error) {
+              alert('메일을 보내지 못했습니다.', error);
+          });
+  });
+
+});
+
 // 메뉴 버튼 클릭 애니메이션
 document.querySelectorAll(".pc_menu ul li a").forEach(function(li) {
   li.addEventListener("click", function(e) {
@@ -113,25 +144,7 @@ $(".m_back").click(function (e) {
   $(".m_back").toggleClass("on");
 });
 
-// 메인 타이핑 애니메이션
-// var content = "안녕하세요.\n신입 웹퍼블리셔\n김수연의 포트폴리오입니다."
-// var text = document.querySelector(".t_text");
-// var i = 0;
 
-// function typing() {
-//   if (i < content.length) {
-//     var txt = content[i++]; // 0에서 끝 숫자까지 0~30
-//     text.innerHTML += txt === "\n" ? "<br/>" : txt;
-//   }
-// }
-// setInterval(typing, 150);
-
-
-
-// 디자인 갤러리
-lightGallery(document.querySelector(".lightgallery"), {
-  plugins: [lgZoom],
-});
 
 // 탑버튼 이동 스크롤
 $(window).scroll(function(){
