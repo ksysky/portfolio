@@ -29,8 +29,11 @@ button {border: 0;}
 /* 반응형 이미지 */
 img, video {width: 100%;}
 
-/*반응형 이미지 */
+/* 반응형 이미지 */
 img {width: 100%;}
+
+/* ie 이미지 */
+img {-ms-interpolation-mode: bicubic;}
 
 /* clearfix */
 /* .clearfix {*zoom: 1;} */
