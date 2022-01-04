@@ -35,6 +35,35 @@ lightGallery(document.querySelector(".lightgallery"), {
   plugins: [lgZoom],
 });
 
+// 탑버튼 이동 스크롤
+$(window).scroll(function(){
+  if($(this).scrollTop() > 700) {
+    $(".top_btn").fadeIn();
+  } else {
+    $(".top_btn").fadeOut();
+  }
+});
+
+$(".top_btn").click(function(){
+  $("html, body").animate({scrollTop: 0},500);
+  return false;
+});
+
+// 모바일 메뉴 버튼
+$(".mBtn").click(function (e) {
+  e.preventDefault();
+  $(".m_menu").toggleClass("on");
+  $(".mBtn").toggleClass("on");
+  $(".m_back").toggleClass("on");
+});
+
+$(".m_back").click(function (e) {
+  e.preventDefault();
+  $(".m_menu").toggleClass("on");
+  $(".mBtn").toggleClass("on");
+  $(".m_back").toggleClass("on");
+});
+
 // email.js
 $(document).ready(function () {
   emailjs.init("user_EbHx4mOQ5jtqa1EjfP7Sx");
@@ -81,23 +110,6 @@ document.querySelectorAll(".m_menu ul li a").forEach(function(li) {
 });
 
 // 메뉴 액티브
-// window.addEventListener("scroll", function () {
-//   let scrollTop = document.documentElement.scrollTop || window.scrollY || window.pageYOffset;
-//   document.querySelectorAll("section").forEach((item, index) => {
-//     let sTop = item.offsetTop - 50;
-//     if (scrollTop >= sTop) {
-//       document.querySelectorAll(".pc_menu ul li").forEach(li => {
-//         li.classList.remove("active");
-//       });
-//       document.querySelector(".pc_menu ul li:nth-child(" + (index + 1) + ")").classList.add("active");
-
-//       document.querySelectorAll(".m_menu ul li").forEach(li => {
-//         li.classList.remove("active");
-//       });
-//       document.querySelector(".m_menu ul li:nth-child(" + (index + 1) + ")").classList.add("active");
-//     }
-//   });
-// });
 window.addEventListener("scroll", function () {
   var scrollTop = document.documentElement.scrollTop || window.scrollY || window.pageYOffset;
   document.querySelectorAll("section").forEach(function(item, index) {
@@ -129,33 +141,7 @@ window.addEventListener("scroll", function () {
 
 // window.addEventListener("scroll", scrollProgress);
 
-// 모바일 메뉴 버튼
-$(".mBtn").click(function (e) {
-  e.preventDefault();
-  $(".m_menu").toggleClass("on");
-  $(".mBtn").toggleClass("on");
-  $(".m_back").toggleClass("on");
-});
-
-$(".m_back").click(function (e) {
-  e.preventDefault();
-  $(".m_menu").toggleClass("on");
-  $(".mBtn").toggleClass("on");
-  $(".m_back").toggleClass("on");
-});
 
 
 
-// 탑버튼 이동 스크롤
-$(window).scroll(function(){
-  if($(this).scrollTop() > 700) {
-    $(".top_btn").fadeIn();
-  } else {
-    $(".top_btn").fadeOut();
-  }
-});
 
-$(".top_btn").click(function(){
-  $("html, body").animate({scrollTop: 0},500);
-  return false;
-});
