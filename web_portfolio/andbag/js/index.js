@@ -101,6 +101,9 @@ var swiper = new Swiper('.banner1', {
 
 // 신상 베스트 슬라이드
 var swiper = new Swiper('.ms_slide', {
+	slidesPerView: 4,
+	slidesPerGroup: 4,
+	spaceBetween: 30,
 	loop: true,
 	pagination: {
 		el: ".swiper-pagination",
@@ -112,17 +115,14 @@ var swiper = new Swiper('.ms_slide', {
 		prevEl: '.swiper-button-prev',
 	},
 	breakpoints: {
-		1024: {
-			slidesPerView: 4,
-			slidesPerGroup: 4,
-			spaceBetween: 30,
-		},
 		768: {
+			slidesPerView: 3,
+			slidesPerGroup: 3,
 			spaceBetween: 20,
 		},
 		480: {
-			slidesPerView: 3,
-			slidesPerGroup: 3,
+			slidesPerView: 2,
+			slidesPerGroup: 2,
 			spaceBetween: 15,
 		},
 		320: {
@@ -163,6 +163,9 @@ ms_btn.click(function (e) {
 
 // MD 추천 슬라이드
 var swiper = new Swiper('.mp_slide', {
+	slidesPerView: 4,
+	slidesPerGroup: 4,
+	spaceBetween: 30,
 	loop: true,
 	pagination: {
 		el: ".swiper-pagination",
@@ -174,11 +177,6 @@ var swiper = new Swiper('.mp_slide', {
 		prevEl: '.swiper-button-prev',
 	},
 	breakpoints: {
-		1024: {
-			slidesPerView: 4,
-			slidesPerGroup: 4,
-			spaceBetween: 30,
-		},
 		768: {
 			spaceBetween: 20,
 		},

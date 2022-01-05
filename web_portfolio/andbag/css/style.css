@@ -561,14 +561,26 @@ html {
 }
 
 .main_slide .swiper-container2 .swiper-pagination .swiper-pagination-bullet {
+	background-color: #e2e2e2;
+}
+
+.main_slide .swiper-container2 .swiper-pagination .swiper-pagination-bullet-active {
 	background-color: #000002;
 }
 
 .main_slide .ms_slide .swiper-button-prev, 
 .main_slide .ms_slide .swiper-button-next {
-	top: 25%;
-	margin: 0;
-	color: #000002;
+	top: 28%;
+}
+
+.main_slide .ms_slide .swiper-button-prev {
+	left: 8px;
+	background: url(../img/arrow_black_l.svg);
+}
+
+.main_slide .ms_slide .swiper-button-next {
+	right: 8px;
+	background: url(../img/arrow_black_r.svg);
 }
 
 .main_slide .ms_slide .swiper-button-disabled {
@@ -1155,8 +1167,8 @@ html {
 
 	.main_slide .ms_title li:last-child:after {top: 10px;}
 	.main_slide .all {width: 83px;}
-	.main_slide .swiper-container2 .swiper-pagination .swiper-pagination-bullet {width: 100px;}
 	.main_slide .ms_slide .description .pWrap .price:after {width: 60px;}
+	.main_slide .ms_slide .swiper-button-prev, .main_slide .ms_slide .swiper-button-next {display: none;}
 
 	.banner2 .t_box h2, .banner2 .t_box span {padding-left: 80px;}
 	.banner2 .t_box button {margin-left: 80px;}
