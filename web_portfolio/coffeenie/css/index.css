@@ -168,11 +168,12 @@ body {
 	width: 0;
 	height: 1px;
 	background-color: #fff;
-	transition: all .3s ease;
+	
 }
 
-.nav ul ul>li:hover>a:after {
+.nav ul ul > li:hover > a:after {
 	width: 100%;
+	transition: all .3s ease;
 }
 
 .nav>.menuback {
