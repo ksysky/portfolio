@@ -405,6 +405,7 @@ nav ul li:hover a {
     border: 10px solid #D9471A;
     background: url(../img/me.jpg) no-repeat top center;
     background-size: cover;
+    -ms-interpolation-mode: bicubic;
     animation: itsme 5s ease-in-out 1s infinite;
     z-index: 5;
 }
