@@ -125,16 +125,6 @@ var swiper = new Swiper('.ms_slide', {
 			slidesPerGroup: 2,
 			spaceBetween: 15,
 		},
-		320: {
-			slidesPerView: 2,
-			slidesPerGroup: 2,
-			spaceBetween: 15,
-		},
-		200: {
-			slidesPerView: 2,
-			slidesPerGroup: 2,
-			spaceBetween: 15,
-		},
 	},
 });
 
@@ -178,19 +168,11 @@ var swiper = new Swiper('.mp_slide', {
 	},
 	breakpoints: {
 		768: {
+			slidesPerView: 3,
+			slidesPerGroup: 3,
 			spaceBetween: 20,
 		},
 		480: {
-			slidesPerView: 3,
-			slidesPerGroup: 3,
-			spaceBetween: 15,
-		},
-		320: {
-			slidesPerView: 2,
-			slidesPerGroup: 2,
-			spaceBetween: 15,
-		},
-		200: {
 			slidesPerView: 2,
 			slidesPerGroup: 2,
 			spaceBetween: 15,
