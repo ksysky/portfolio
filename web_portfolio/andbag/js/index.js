@@ -212,10 +212,10 @@ var swiper = new Swiper('.cam_slide', {
 		type: "bullets",
 		clickable: true,
 	},
-	// navigation: {
-	// 	nextEl: '.swiper-button-next',
-	// 	prevEl: '.swiper-button-prev',
-	// },
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
 });
 
 // 반응형 대응

@@ -130,20 +130,18 @@ html {
 }
 
 .header .logo {
-	width: 146px;
-	height: 21px;
+	width: 148px;
+	height: 24px;
 	margin: 33px 0 33px 30px;
-	background: url(../img/logo.svg) no-repeat 100% center;
+	background: url(../img/logo.svg) no-repeat center top;
+	background-size: 100%;
 	text-indent: -9999px;
 	cursor: pointer;
 }
 
-.header.on .logo {
-	background: url(../img/logo_2.svg) no-repeat 100% center;
-}
-
-.header.black .logo {
-	background: url(../img/logo_2.svg) no-repeat 100% center;
+.header.on .logo, .header.black .logo {
+	background: url(../img/logo_2.svg) no-repeat center top;
+	background-size: 100%;
 }
 
 .header .mNav {
@@ -855,13 +853,6 @@ html {
 	color: #000002;
 }
 
-.campaign .cam_box {
-	/* display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1.2fr;
-	grid-gap: 30px; */
-}
-
 .campaign .cam_box div {
 	position: relative;
 }
@@ -990,7 +981,11 @@ html {
 
 .campaign .cam_slide .swiper-pagination .swiper-pagination-bullet {
 	width: 33.333%;
-	background: #000;
+	background: #e2e2e2;
+}
+
+.campaign .cam_slide .swiper-pagination .swiper-pagination-bullet-active {
+	background: #000002;
 }
 
 /* 푸터 */
