@@ -70,30 +70,29 @@ $(".m_back").click(function (e) {
 });
 
 // email.js
-$(document).ready(function () {
-  emailjs.init("user_EbHx4mOQ5jtqa1EjfP7Sx");
-  //"user_xxxxx"이 부분은 사용자마다 다르니 반드시 emailJS의 installation 화면을 확인
-  $('input[name=submit]').click(function () {
+// $(document).ready(function () {
+//   emailjs.init("user_EbHx4mOQ5jtqa1EjfP7Sx");
+//   //"user_xxxxx"이 부분은 사용자마다 다르니 반드시 emailJS의 installation 화면을 확인
+//   $('input[name=submit]').click(function () {
 
-      var templateParams = {
-          //각 요소는 emailJS에서 설정한 템플릿과 동일한 명으로 작성!
-          name: $('input[name=name]').val(),
-          phone: $('input[name=phone]').val(),
-          email: $('input[name=email]').val(),
-          message: $('textarea[name=message]').val()
-      };
+//       var templateParams = {
+//           //각 요소는 emailJS에서 설정한 템플릿과 동일한 명으로 작성!
+//           name: $('input[name=name]').val(),
+//           phone: $('input[name=phone]').val(),
+//           email: $('input[name=email]').val(),
+//           message: $('textarea[name=message]').val()
+//       };
 
 
-      emailjs.send('service_7ptqt2n', 'template_ucq9424', templateParams)
-          //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)
-          .then(function (response) {
-              alert('메일이 보내졌습니다.', response.status, response.text);
-          }, function (error) {
-              alert('메일을 보내지 못했습니다.', error);
-          });
-  });
-
-});
+//       emailjs.send('service_7ptqt2n', 'template_ucq9424', templateParams)
+//           //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)
+//           .then(function (response) {
+//               alert('메일이 보내졌습니다.', response.status, response.text);
+//           }, function (error) {
+//               alert('메일을 보내지 못했습니다.', error);
+//           });
+//   });
+// });
 
 // 메뉴 버튼 클릭 애니메이션
 document.querySelectorAll(".pc_menu ul li a").forEach(function(li) {
