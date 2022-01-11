@@ -95,22 +95,18 @@ $(".m_back").click(function (e) {
 // });
 
 // 메뉴 버튼 클릭 애니메이션
-document.querySelectorAll(".pc_menu ul li a").forEach(function(li) {
-  li.addEventListener("click", function(e) {
-    e.preventDefault();
-    document.querySelector(li.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
-    });
-  });
+$(".pc_menu ul li a").click(function(){
+  $("html, body").animate({
+    scrollTop: $($.attr(this,"href")).offset().top
+  },500);
+  return false;
 });
 
-document.querySelectorAll(".m_menu ul li a").forEach(function(li) {
-  li.addEventListener("click", function(event) {
-    event.preventDefault();
-    document.querySelector(li.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
-    });
-  });
+$(".m_menu ul li a").click(function(){
+  $("html, body").animate({
+    scrollTop: $($.attr(this,"href")).offset().top
+  },500);
+  return false;
 });
 
 // 메뉴 액티브
