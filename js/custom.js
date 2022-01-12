@@ -3,6 +3,15 @@ if (window.NodeList && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = Array.prototype.forEach;
 }
 
+// ie 알림
+agent = navigator.userAgent.toLowerCase(); 
+if ( 
+  (navigator.appName === 'Netscape' && navigator.userAgent.search('Trident') !== -1)
+  || (agent.indexOf("msie") !== -1) 
+) { 
+    alert('이 사이트는 크롬 브라우저의 사용을 권장합니다.');
+}
+
 // 메인 타이핑 애니메이션
 var content = "안녕하세요.\n신입 웹퍼블리셔\n김수연의 포트폴리오입니다."
 var text = document.querySelector(".t_text");
