@@ -89,7 +89,6 @@ header .btn a:hover svg path {
 }
 
 .mockup img {
-    width: 100%;
     display: block;
     margin-top: -80px;
 }
@@ -161,6 +160,10 @@ header .btn a:hover svg path {
 }
 
 .explain dl .template a {
+    display: block;
+}
+
+.explain dl .template a img {
     display: block;
 }
 
@@ -236,7 +239,7 @@ footer .copyright {
     .explain dl dt {font-size: 18px;}
     .explain dl dd {font-size: 16px;}
 
-    footer address {font-size: 14px; padding: 30px 0;}
+    footer .copyright {font-size: 14px; padding: 30px 0;}
 
     .top_btn {right: 16px;}
     .top_btn a {width: 50px;  height: 50px;}
@@ -255,7 +258,7 @@ footer .copyright {
     .explain dl dt {font-size: 16px;}
     .explain dl dd {font-size: 14px;}
 
-    footer address {font-size: 12px;}
+    footer .copyright {font-size: 12px;}
 
     .top_btn {right: 8px;}
 }
