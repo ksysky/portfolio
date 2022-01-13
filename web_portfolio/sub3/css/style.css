@@ -164,19 +164,14 @@ header .btn a:hover svg path {
     display: block;
 }
 
-.explain dl .template img {
-    width: 100%;
-}
-
 /* 푸터 */
 footer {
     width: 100%;
-    height: 200px;
     background: #03658C;
 }
 
-footer address {
-    line-height: 200px;
+footer .copyright {
+    padding: 80px 0;
     text-align: center;
     color: #fff;
 }
@@ -241,11 +236,10 @@ footer address {
     .explain dl dt {font-size: 18px;}
     .explain dl dd {font-size: 16px;}
 
-    footer {height: 100px;}
-    footer address {font-size: 14px; line-height: 100px;}
+    footer address {font-size: 14px; padding: 30px 0;}
 
     .top_btn {right: 16px;}
-    .top_btn a {width: 50px; height: 50px;}
+    .top_btn a {width: 50px;  height: 50px;}
     .top_btn a svg {width: 18px;}
 }
 
