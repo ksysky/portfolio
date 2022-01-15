@@ -74,6 +74,11 @@ aside {
     line-height: 40px;
     color: #fff;
     text-shadow: 4px 4px #D9471A;
+    transition: all .3s;
+}
+
+.aside_box h1 a:hover {
+    text-shadow: 0px 0px #D9471A;
 }
 
 .aside_box h1 a.pc_logo {
