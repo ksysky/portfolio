@@ -706,10 +706,21 @@ html {
 }
 
 .md_slide .mp_slide .description .pWrap .price {
+	position: relative;
 	font-size: 1.4rem;
-	text-decoration: line-through;
 	color: #9c9c9c;
 	margin: 12px 0 4px 0;
+}
+
+.md_slide .mp_slide .description .pWrap .price:after {
+	content: "";
+	position: absolute;
+	width: 70px;
+	height: 1px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #9c9c9c;
 }
 
 .md_slide .mp_slide .description .pWrap .sale {
