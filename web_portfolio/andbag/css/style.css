@@ -139,6 +139,11 @@ html {
 	cursor: pointer;
 }
 
+.header .logo a {
+	display: block;
+	width: 100%;
+}
+
 .header.on .logo, .header.black .logo {
 	background: url(../img/logo_2.svg) no-repeat center top;
 	background-size: 100%;
