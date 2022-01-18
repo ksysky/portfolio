@@ -411,12 +411,11 @@ nav ul li:hover a {
     border: 10px solid #D9471A;
     background: url(../img/me.jpg) no-repeat top center;
     background-size: cover;
-    /* animation: itsme 5s ease-in-out 1s infinite; */
-    border-radius: 140% 180% 170% 140% / 140% 150% 180% 170%;
+    animation: itsme 5s ease-in-out 1s infinite;
     z-index: 5;
 }
 
-/* @keyframes itsme {
+@keyframes itsme {
     0% {
         border-radius: 140% 180% 170% 140% / 140% 150% 180% 170%;
     }
@@ -426,7 +425,7 @@ nav ul li:hover a {
     100% {
         border-radius: 140% 180% 170% 140% / 140% 150% 180% 170%;
     }
-} */
+}
 
 #intro .intro_box .me .back1 {
     position: absolute;
@@ -435,11 +434,10 @@ nav ul li:hover a {
     width: 180px;
     height: 200px;
     background: linear-gradient(to bottom right, #05A0A3, #03658C);
-    /* animation: back1 5s ease-in-out 1s infinite; */
-    border-radius: 140% 180% 170% 140% / 140% 150% 180% 170%;
+    animation: back1 5s ease-in-out 1s infinite;
 }
 
-/* @keyframes back1 {
+@keyframes back1 {
     0% {
         border-radius: 140% 180% 170% 140% / 140% 150% 180% 170%;
     }
@@ -449,7 +447,7 @@ nav ul li:hover a {
     100% {
         border-radius: 140% 180% 170% 140% / 140% 150% 180% 170%;
     }
-} */
+}
 
 #intro .intro_box .me .back2 {
     position: absolute;
@@ -459,11 +457,10 @@ nav ul li:hover a {
     height: 150px;
     transform: rotate(-30deg);
     background: linear-gradient(to bottom right, #BE3C13,#D9471A);
-    /* animation: back2 5s ease-in-out 1s infinite; */
-    border-radius: 140% 150% 200% 140% / 140% 150% 180% 170%;
+    animation: back2 5s ease-in-out 1s infinite;
 }
 
-/* @keyframes back2 {
+@keyframes back2 {
     0% {
         border-radius: 140% 150% 200% 140% / 140% 150% 180% 170%;
     }
@@ -473,7 +470,7 @@ nav ul li:hover a {
     100% {
         border-radius: 140% 150% 200% 140% / 140% 150% 180% 170%;
     }
-} */
+}
 
 #intro .intro_box .me .hashtag {
     position: absolute;
