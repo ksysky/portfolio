@@ -695,11 +695,11 @@ nav ul li:hover a {
 }
 
 .slider .swiper-slide .slide_text .slide_btn .site {
-    width: 124px;
+    width: auto;
 }
 
 .slider .swiper-slide .slide_text .slide_btn .work {
-    width: 83px;
+    width: auto;
 }
 
 .slider .swiper-slide .slide_text .slide_btn a svg {
