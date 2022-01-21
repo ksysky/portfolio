@@ -117,6 +117,14 @@ header .btn a:hover svg path {
     margin-bottom: 30px;
 }
 
+.explain dl .em {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background: #03658C;
+    color: #fff;
+}
+
 .explain dl .intro_tit {
     padding-top: 20px;
 }
